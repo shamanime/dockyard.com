@@ -15,6 +15,10 @@ gem 'haml'
 
 gem 'jquery-rails'
 
+group :production do
+  gem 'therubyracer'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
