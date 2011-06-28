@@ -11,6 +11,7 @@ gem 'sqlite3'
 gem 'uglifier'
 gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git'
 gem 'compass',    :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
+gem 'haml'
 
 gem 'jquery-rails'
 
