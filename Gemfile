@@ -5,8 +5,6 @@ gem 'rails', '3.1.0.rc4'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 # Asset template engines
 gem 'uglifier'
 gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git'
@@ -16,6 +14,7 @@ gem 'haml'
 gem 'jquery-rails'
 
 group :production do
+  gem 'pg'
   gem 'therubyracer'
 end
 
@@ -29,6 +28,7 @@ end
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'ruby-debug19', :require => 'ruby-debug'
