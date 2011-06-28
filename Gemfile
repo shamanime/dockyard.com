@@ -8,9 +8,9 @@ gem 'rails', '3.1.0.rc4'
 gem 'sqlite3'
 
 # Asset template engines
-gem 'sass-rails', "~> 3.1.0.rc"
-gem 'coffee-script'
 gem 'uglifier'
+gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git'
+gem 'compass',    :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 
 gem 'jquery-rails'
 
@@ -22,6 +22,12 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'ruby-debug19', :require => 'ruby-debug'
+end
 
 group :test do
   # Pretty printed test output
