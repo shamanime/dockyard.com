@@ -1,3 +1,87 @@
 @import "compass/reset";
 @import "compass/utilities";
+@import "compass/css3/box-shadow";
+@import "blueprint";
+
+@font-face {
+  font-family: LeagueGothic;
+  src: url(/assets/league_gothic.otf);
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+nav.menu ul {
+  @include horizontal-list;
+  li {
+    @include horizontal-list-item;
+  }
+}
+
+section#container {
+  @include container;
+
+  &>header:first-child {
+    @include column(24);
+    @include box-shadow(rgba(black, 0.75), 0, 1px, 0px, 0px);
+    background-color: white;
+    position: fixed;
+
+    h1 {
+      display: inline;
+      float: left;
+      font-family: LeagueGothic;
+      color: #005a7c;
+      font-size: 6em;
+    }
+
+    nav.menu {
+      float: left;
+      margin-left: 20px;
+    }
+  }
+
+  section#content {
+    @include column(24);
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 6em;
+
+    &>section {
+      margin-bottom: 20px;
+
+      header {
+        font-size: 3em;
+      }
+
+      article {
+        margin-left: 10px;
+      }
+
+      section {
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+        &:first-child {
+          margin-top: 20px;
+        }
+
+        header {
+          font-size: 2em;
+        }
+      }
+    }
+
+    header {
+      font-family: "museo-slab-1","museo-slab-2",Georgia,"Times New Roman",serif;
+      color: #005a7c;
+    }
+  }
+
+  footer {
+    @include column(24, true);
+  }
+}
 
