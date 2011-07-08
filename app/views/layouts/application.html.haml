@@ -4,17 +4,17 @@
     %title DockYard
     = stylesheet_link_tag    'application'
     = javascript_include_tag 'application'
+    %script{:src => "http://use.typekit.com/ocs3hao.js"}
+    %script try{Typekit.load();}catch(e){}
+
     = csrf_meta_tags
 
   %body
-    %section#container
+    %header
+      = render :partial => 'layouts/header'
 
-      %header
-        = render :partial => 'layouts/header'
+    %section#content
+      = yield
 
-      %section#content
-        = yield
-
-      %footer
-        = render :partial => 'layouts/footer'
-
+    %footer
+      = render :partial => 'layouts/footer'

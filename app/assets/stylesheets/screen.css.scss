@@ -3,19 +3,48 @@
 @import "compass/css3/box-shadow";
 @import "blueprint";
 
-@font-face {
-  font-family: LeagueGothic;
-  src: url(/assets/league_gothic.otf);
-}
-
-@font-face {
-  font-family: RalewayThin;
-  src: url(/assets/raleway_thin.otf);
-}
+/*
+  font-family: utopia-std,serif;
+  font-family: ff-meta-web-pro,sans-serif;
+  font-family: league-gothic,sans-serif;
+*/
 
 body {
-  font-family: "Helvetica Neue", Helvetica;
-  // background-image: url('/assets/subtle_freckles.png');
+  color: #2a4954;
+  background: #cfe5e4;
+  font-family: ff-meta-web-pro, sans-serif;
+}
+
+a {
+  color: #2a4954;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4A7588;
+  font-family: league-gothic,sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  font-size: 24px
+}
+
+p {
+  line-height: 20px;
+  margin: 0 0 20px 0;
+}
+
+ul {
+  line-height: 20px;
 }
 
 nav.menu ul {
@@ -25,79 +54,63 @@ nav.menu ul {
   }
 }
 
-section#container {
-  @include container;
-
-  &>header:first-child {
-    @include column(24);
-    @include box-shadow(rgba(black, 0.75), 0, 1px, 0px, 0px);
-    background-color: white;
-    // background-image: url('/assets/subtle_freckles.png');
-    position: fixed;
-
-    h1 {
-      display: inline;
-      float: left;
-      font-family: LeagueGothic;
-      color: #005a7c;
-      font-size: 6em;
-    }
-
-    nav.menu {
-      float: left;
-      margin-left: 20px;
-    }
+header {
+  color: #cfe5e4;
+  background: #2a4954;
+  a {
+    color: #cfe5e4;
   }
-
-  section#content {
-    @include column(24);
-
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 6.5em;
-
-    &>section {
-      margin-bottom: 40px;
-
-      header {
-        font-family: RalewayThin;
-        h1, h2 {
-          display: inline-block;
-        }
-        h1 {
-          font-size: 3em;
-        }
-        h2 {
-          font-size: 1.75em;
-        }
-      }
-
-      article {
-        margin-left: 10px;
-      }
-
-      section {
-        margin-left: 10px;
-        margin-bottom: 10px;
-
-        &:first-child {
-          margin-top: 20px;
-        }
-
-        header {
-          font-size: 2em;
-        }
-      }
-    }
-
-    header {
-      font-family: "museo-slab-1","museo-slab-2",Georgia,"Times New Roman",serif;
-      color: #005a7c;
-    }
+  section {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+    background: none;
   }
-
-  footer {
-    @include column(24, true);
+  h1 {
+    margin: 0;
+    float: left;
+    font-size: 96px;
+  }
+  ul {
+    float: right;
+    line-height: 96px;
   }
 }
 
+section {
+  padding: 20px 0 0 0;
+  section {
+    width: 920px;
+    padding: 20px;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+    background: rgba(0,0,0,.05);
+  }
+  .what-we-do, .how-we-work {
+    h1 {
+      margin: 0;
+      float: left;
+    }
+    article {
+      float: right;
+    }
+    li {
+      padding: 0 40px;
+      display: inline;
+      line-height: 48px;
+      border-right: 1px solid rgba(0,0,0,.1);
+    }
+    li.last {
+      border-right: none;
+    }      
+  }
+  .who-we-are, .community {
+    article {
+      float: left;
+      width: 440px;
+      padding: 0 20px 0 0;
+    }
+  }
+  
+}
