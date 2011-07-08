@@ -7,7 +7,7 @@ gem 'rails', '3.1.0.rc4'
 
 # Asset template engines
 gem 'uglifier'
-gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git'
+gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git', :ref => 'eee12e2e0bbfca56d458c82df47213e130ef5830'
 gem 'compass',    :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 gem 'haml'
 
@@ -31,7 +31,8 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'ruby-debug19', :require => 'ruby-debug', :platform => :mri_19
+  gem 'ruby-debug', :platform => :mri_18
 end
 
 group :test do
