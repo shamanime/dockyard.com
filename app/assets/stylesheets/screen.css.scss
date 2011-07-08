@@ -16,7 +16,13 @@ body {
 }
 
 a {
-  color: #2a4954;
+  color: #e65c17;
+  text-decoration: none;
+}
+
+a:hover {
+  color:  #cc5f29;
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,19 +53,8 @@ ul {
   line-height: 20px;
 }
 
-nav.menu ul {
-  @include horizontal-list;
-  li {
-    @include horizontal-list-item;
-  }
-}
-
 header {
-  color: #cfe5e4;
-  background: #2a4954;
-  a {
-    color: #cfe5e4;
-  }
+  background: #add2d9;
   section {
     width: 960px;
     margin: 0 auto;
@@ -74,12 +69,18 @@ header {
   }
   ul {
     float: right;
+    font-size: 20px;
     line-height: 96px;
+    text-transform: uppercase;
+    li {
+      display: inline;
+      margin: 0 0 0 20px;
+    }
   }
 }
 
 section {
-  padding: 20px 0 0 0;
+  padding: 20px 0 240px 0;
   section {
     width: 920px;
     padding: 20px;
@@ -87,7 +88,7 @@ section {
     margin: 0 auto 20px auto;
     background: rgba(0,0,0,.05);
   }
-  .what-we-do, .how-we-work {
+  #what-we-do, #how-we-work {
     h1 {
       margin: 0;
       float: left;
@@ -105,7 +106,7 @@ section {
       border-right: none;
     }      
   }
-  .who-we-are, .community {
+  #who-we-are, #community {
     article {
       float: left;
       width: 440px;

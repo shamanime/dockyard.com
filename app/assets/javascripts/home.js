@@ -1,5 +1,5 @@
 $(function() {
   debugger;
-  $('nav.menu ul.links').localScroll({margin: true});
+  $('nav ul').localScroll({margin: true});
 });
 
