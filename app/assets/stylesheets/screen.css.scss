@@ -8,8 +8,14 @@
   src: url(/assets/league_gothic.otf);
 }
 
+@font-face {
+  font-family: RalewayThin;
+  src: url(/assets/raleway_thin.otf);
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica;
+  // background-image: url('/assets/subtle_freckles.png');
 }
 
 nav.menu ul {
@@ -26,6 +32,7 @@ section#container {
     @include column(24);
     @include box-shadow(rgba(black, 0.75), 0, 1px, 0px, 0px);
     background-color: white;
+    // background-image: url('/assets/subtle_freckles.png');
     position: fixed;
 
     h1 {
@@ -47,13 +54,22 @@ section#container {
 
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 6em;
+    margin-top: 6.5em;
 
     &>section {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
 
       header {
-        font-size: 3em;
+        font-family: RalewayThin;
+        h1, h2 {
+          display: inline-block;
+        }
+        h1 {
+          font-size: 3em;
+        }
+        h2 {
+          font-size: 1.75em;
+        }
       }
 
       article {
