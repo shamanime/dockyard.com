@@ -57,6 +57,7 @@ ul {
 header {
   background: #add2d9;
   background: #b4d6d4;
+  background: #FFF;
   section {
     width: 960px;
     margin: 0 auto;
@@ -82,15 +83,19 @@ header {
 }
 
 section {
-  padding: 20px 0 0px 0;
+  padding: 0;
   section {
-    width: 920px;
-    padding: 20px;
-    overflow: hidden;
-    margin: 0 auto 20px auto;
-    background: rgba(255,255,255,.333);
+    margin: 0;
+    padding: 0;
+    section {
+      width: 960px;
+      margin: 0 auto;
+      padding: 20px 0;
+      overflow: hidden;
+    }
   }
   #what-we-do, #how-we-work {
+    background: rgba(255,255,255,.5);
     h1 {
       margin: 0;
       float: left;
@@ -109,22 +114,25 @@ section {
     }
   }
   #who-we-are, #community {
+    background: rgba(255,255,255,.25);
     article {
       float: left;
       width: 440px;
       padding: 0 20px 0 0;
     }
   }
+  #contact {
+    background: rgba(255,255,255,.5);
+  }
 }
 
 footer {
-  padding: 0 0 640px 0;
+  padding: 0 0 240px 0;
   section {
     width: 920px;
     padding: 20px;
     overflow: hidden;
     margin: 0 auto 20px auto;
-    background: rgba(255,255,255,.333);
   }
 }
 .message {
