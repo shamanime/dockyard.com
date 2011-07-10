@@ -55,7 +55,7 @@ ul {
 }
 
 header {
-  color: #b4d6d4;
+  color: #4A7588;
   background: #FFF;
   section {
     width: 960px;
@@ -72,12 +72,19 @@ header {
   ul {
     float: right;
     font-size: 20px;
-    line-height: 96px;
+    line-height: 36px;
+    padding: 12px 0 0 0;
     text-transform: uppercase;
     li {
       float: left;
       margin: 0 0 0 20px;
     }
+  }
+  p {
+    clear: both;
+    float: right;
+    padding: 0 0 12px 0;
+    line-height: 36px;
   }
 }
 
