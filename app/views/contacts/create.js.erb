@@ -1,0 +1,5 @@
+var message = $("<div class='message success' style='display:none'><%= flash[:success] -%></div>"),
+    form = $('#new_contact');
+form.before(message);
+message.slideDown(600);
+

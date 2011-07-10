@@ -9,3 +9,6 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.include Rails.application.routes.url_helpers, :type => :request
 end
+
+Capybara.javascript_driver = :webkit
+

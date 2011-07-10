@@ -10,6 +10,8 @@ gem 'uglifier'
 gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git', :ref => 'eee12e2e0bbfca56d458c82df47213e130ef5830'
 gem 'compass',    :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 gem 'haml'
+gem 'simple_form'
+gem 'client_side_validations'
 
 gem 'jquery-rails'
 
@@ -36,6 +38,6 @@ group :development, :test do
 end
 
 group :test do
-  # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'capybara-webkit', '1.0.0.beta4'
+  gem 'valid_attribute'
 end
