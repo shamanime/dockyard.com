@@ -63,6 +63,7 @@ header {
     padding: 20px 0;
     overflow: hidden;
     background: none;
+//    background: url(/assets/anchor.png) 210px -175px no-repeat;
   }
   h1 {
     margin: 0;
@@ -134,6 +135,9 @@ section {
       border-right: none;
     }
   }
+  #what-we-do section {
+//    background: url(/assets/anchor.png) 210px -311px no-repeat;
+  }
   #who-we-are, #community {
     background: rgba(255,255,255,.25);
     article {
@@ -142,7 +146,32 @@ section {
       padding: 0 20px 0 0;
     }
   }
+  #who-we-are {
+    li {
+      overflow: hidden;
+      .photo {
+        float: left;
+        margin: 0 10px 0 0;
+        img {
+          width: 72px;
+        }
+      }
+      .info {
+        float: left;
+        width: 358px;
+      }
+      .links {
+        clear: both;
+        li {
+          display: inline-block;
+        }      
+      }
+    }
+  }
   #contact {
+    section {
+      background: url(/assets/anchor.png) 80% -60px no-repeat;
+    }
     .input {
       padding: 14px 0 15px 0;
       border-bottom: 1px dashed rgba(0,0,0,.15);
@@ -155,13 +184,16 @@ section {
     input {
       margin: 14px 0 0 130px;
     }
-    .string input {
-      margin: 0;
-      width: 480px;
-      border: none;
-      background: #FFF;
-      display: inline-block;
-      vertical-align: middle;
+    div.string {
+      width: 620px;
+      input {
+        margin: 0;
+        width: 480px;
+        border: none;
+        background: #FFF;
+        display: inline-block;
+        vertical-align: middle;
+      }
     }
     textarea {
       width: 700px;
@@ -171,7 +203,10 @@ section {
       vertical-align: text-top;
     }
     .error {
-      margin: 0 0 0 10px;
+      color: #FFF;
+      padding: 2px 5px;
+      background: #BA4F3A;
+      vertical-align: middle;
     }
   }
 }
@@ -195,10 +230,6 @@ footer {
   color: #5fcc29;
 }
 
-.error {
-  color: #cc2929;
-}
-
 form input, form textarea, form label {
   padding: 5px;
   font-size: 16px;
@@ -206,4 +237,13 @@ form input, form textarea, form label {
 
 div.field_with_errors div.ui-effects-wrapper {
   display: inline-block !important;
+}
+
+.anchor {
+  top: 0;
+  left: 0px;
+  width: 159px;
+  height: 356px;
+  position: absolute;
+  background: url(/assets/anchor.png) 0 0 no-repeat;
 }
