@@ -1,16 +1,15 @@
 %section#contact
   %section
-    %h1 Contact
+    %header
+      %h1 Contact
+      %h2 Call: 855.DOCK.YRD
   
     %article
-      %h2 Call us - 855.DOCK.YRD
-  
-    %article
-      %h2 Email us
+      %h2 Send us a message:
   
       = simple_form_for Contact.new, :validate => true, :remote => true do |f|
         = f.input :company_name,  :label => 'Company Name'
         = f.input :contact_name,  :label => 'Contact Name'
         = f.input :contact_email, :label => 'Contact Email'
         = f.input :message, :as => :text
-        = f.submit 'Send'
+        = f.submit 'Send Message'
