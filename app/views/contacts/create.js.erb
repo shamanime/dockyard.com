@@ -1,5 +1,7 @@
 var message = $("<div class='message success' style='display:none'><%= flash[:success] -%></div>"),
     form = $('#new_contact');
-form.before(message);
-message.slideDown(600);
+if (form.parent().find('.message')[0] == undefined) {
+  form.before(message);
+  message.slideDown(600);
+}
 
