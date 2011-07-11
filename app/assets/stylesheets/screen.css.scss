@@ -130,7 +130,6 @@ section {
       float: right;
     }
     li {
-      padding: 0 40px;
       display: inline;
       line-height: 48px;
       border-right: 1px solid rgba(0,0,0,.1);
@@ -143,6 +142,16 @@ section {
       clear: both;
       padding-left: 20px;
       padding-right: 20px;
+    }
+  }
+  #what-we-do {
+    li {
+      padding: 0 40px;
+    }
+  }
+  #how-we-work {
+    li {
+      padding: 0 30px;
     }
   }
   #what-we-do section {
