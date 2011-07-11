@@ -1,21 +1,25 @@
 $(function() {
-  $('nav ul').localScroll({margin: true});
+  $('body>header nav ul').localScroll({margin: true});
 //  $('body > header > section').append('<div class="anchor"></div>');
 
   // Only hide if javascript is enabled
-  $('ul.hidden-info-list').parent().find('section').hide();
+  $('ul.hidden-info-list').parents('nav').siblings('article').hide();
   $('ul.hidden-info-list li a').click(function () {
     var that = $(this),
-        visibleSection = that.parents('article').find('section:visible'),
-        current = that.parents('ul').find('.current');
+        current = that.parents('ul').find('.current'),
+        target = $(convertTextToId(this.text));
 
-    debugger;
-    that.parents('article').find('section').hide();
-    that.parents('ul').find('.current').removeClass('current');
-
-    if (this !== current[0]) {
-      $(convertTextToId(this.text)).show();
+    if (current[0] == undefined) {
+      target.slideDown();
       that.addClass('current');
+    } else if (this !== current[0]) {
+      that.parents('nav').siblings('article').hide();
+      target.show();
+      that.parents('ul').find('.current').removeClass('current');
+      that.addClass('current');
+    } else if (this === current[0]) {
+      target.slideUp();
+      that.removeClass('current');
     }
 
     return false;
