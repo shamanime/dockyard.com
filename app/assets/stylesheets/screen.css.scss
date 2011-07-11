@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+a.current, a.current:hover {
+  color: #2a4954;
+}
+
 a:hover {
   color:  #E65C17;
   text-decoration: underline;
@@ -164,7 +168,7 @@ section {
         clear: both;
         li {
           display: inline-block;
-        }      
+        }
       }
     }
   }
@@ -247,3 +251,4 @@ div.field_with_errors div.ui-effects-wrapper {
   position: absolute;
   background: url(/assets/anchor.png) 0 0 no-repeat;
 }
+

@@ -11,7 +11,7 @@ feature 'Email DockYard', %{
     fill_in 'Contact Name',  :with => 'Test Contact'
     fill_in 'Contact Email', :with => 'test@test.com'
     fill_in 'Message',       :with => 'Test Message'
-    click_button 'Send'
+    click_button 'Send Message'
     page.should have_content 'Thank-you. Someone will be in contact shortly.'
   end
 end
