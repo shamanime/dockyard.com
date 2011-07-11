@@ -1,5 +1,5 @@
 $(function() {
-  $('body>header nav ul').localScroll({margin: true});
+  $('body>header nav ul, body>footer ul').localScroll({margin: true});
 //  $('body > header > section').append('<div class="anchor"></div>');
 
   // Only hide if javascript is enabled

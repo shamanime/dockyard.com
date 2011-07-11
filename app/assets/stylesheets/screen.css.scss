@@ -29,7 +29,7 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: league-gothic,sans-serif;
   -webkit-mask-image: url(/assets/mask2.png);
   -o-mask-image: url(/assets/mask2.png);
@@ -43,15 +43,10 @@ h1 {
   margin: 0 0 20px 0;
 }
 
-h2 {
+h2, h3 {
   color: #4A7588;
   font-size: 36px;
   margin: 0 0 20px 0;
-}
-
-h3 {
-  font-weight: bold;
-  margin: 0 0 10px 0;
 }
 
 p {
@@ -81,8 +76,7 @@ header {
   ul {
     float: right;
     font-size: 24px;
-    line-height: 36px;
-    padding: 12px 0 0 0;
+    line-height: 96px;
     li {
       float: left;
       margin: 0 0 0 20px;
@@ -91,8 +85,8 @@ header {
       clear: both;
       float: right;
       font-size: 16px;
-      line-height: 36px;
-      padding: 0 0 12px 0;
+      margin: -24px 0 0 0;
+      line-height: 1;
     }
   }
 }
@@ -114,15 +108,13 @@ section {
         overflow: hidden;
         background: none;
         margin: 0 0 20px 0;
-        h1 {
-          margin: 0;
-          float: left;
-          font-size: 48px;
-        }
         h2 {
           margin: 0;
+          float: left;
+        }
+        h3 {
+          margin: 0;
           float: right;
-          line-height: 48px;
         }
       }
     }
@@ -196,6 +188,12 @@ section {
       .info {
         float: left;
         width: 378px;
+        h3 {
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0 0 10px 0;
+          font-family: ff-meta-web-pro, sans-serif;
+        }
       }
       .links {
         clear: both;
@@ -266,7 +264,7 @@ footer {
       float: left;
       margin: 0;
     }
-    ul {
+    nav {
       float: right;
       margin: 0;
       li {

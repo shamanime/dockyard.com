@@ -1,11 +1,11 @@
 %section#contact
   %section
-    %header
-      %h1 Contact
-      %h2 Call: 855.DOCK.YRD
+    %h1 Contact
   
     %article
-      %h2 Send us a message:
+      %header
+        %h2 Send us a message.
+        %h3 Call: 855.DOCK.YRD
   
       = simple_form_for Contact.new, :validate => true, :remote => true do |f|
         = f.input :company_name,  :label => 'Company Name'
