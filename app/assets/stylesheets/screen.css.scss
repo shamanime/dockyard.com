@@ -254,12 +254,26 @@ section {
 }
 
 footer {
-  padding: 0 0 240px 0;
+  color: #4A7588;
+  padding: 20px 0;
+  background: rgba(255,255,255,.25);
   section {
-    width: 920px;
-    padding: 20px;
+    width: 960px;
     overflow: hidden;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
+    background: none;
+    p {
+      float: left;
+      margin: 0;
+    }
+    ul {
+      float: right;
+      margin: 0;
+      li {
+        float: left;
+        margin: 0 0 0 20px;
+      }
+    }
   }
 }
 
