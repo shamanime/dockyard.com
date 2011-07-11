@@ -30,16 +30,21 @@ a:hover {
 }
 
 h1, h2 {
-  color: #4A7588;
   font-family: league-gothic,sans-serif;
+  -webkit-mask-image: url(/assets/mask2.png);
+  -o-mask-image: url(/assets/mask2.png);
+  -moz-mask-image: url(/assets/mask2.png);
+  mask-image: url(/assets/mask2.png);
 }
 
 h1 {
+  color: #2A5568;
   font-size: 48px;
   margin: 0 0 20px 0;
 }
 
 h2 {
+  color: #4A7588;
   font-size: 36px;
   margin: 0 0 20px 0;
 }
@@ -67,7 +72,6 @@ header {
     padding: 20px 0;
     overflow: hidden;
     background: none;
-//    background: url(/assets/anchor.png) 210px -175px no-repeat;
   }
   h1 {
     margin: 0;
@@ -130,43 +134,43 @@ section {
       float: right;
     }
     li {
-      display: inline;
+      float: left;
       line-height: 48px;
-      border-right: 1px solid rgba(0,0,0,.1);
+      a {
+        float: left;
+        padding: 0 30px;
+        &:hover {
+          background: #CFE5E4;
+        }
+        &.current {
+          background: #FFF;
+        }
+      }
     }
-    li.last {
-      border-right: none;
-    }
-
     article {
       clear: both;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 20px;
+      background: #FFF;
+      li {
+        float: none;
+      }
     }
-  }
-  #what-we-do {
-    li {
-      padding: 0 40px;
-    }
-  }
-  #how-we-work {
-    li {
-      padding: 0 30px;
-    }
-  }
-  #what-we-do section {
-//    background: url(/assets/anchor.png) 210px -311px no-repeat;
   }
   #who-we-are, #community {
     background: rgba(255,255,255,.25);
     article {
       float: left;
-      width: 440px;
-      padding: 0 20px 0 0;
+      width: 480px;
     }
   }
   #who-we-are {
+    .about-dockyard {
+      width: 460px;
+      padding: 0 20px 0 0;
+    }
     li {
+      padding: 10px;
+      background: #FFF;
       overflow: hidden;
       .photo {
         float: left;
@@ -177,20 +181,22 @@ section {
       }
       .info {
         float: left;
-        width: 358px;
+        width: 338px;
       }
       .links {
         clear: both;
+        margin: -10px;
+        padding: 10px;
+        background: #CFE5E4;
         li {
+          padding: 0;
+          background: none;
           display: inline-block;
         }
       }
     }
   }
   #contact {
-    section {
-      background: url(/assets/anchor.png) 80% -60px no-repeat;
-    }
     .input {
       padding: 14px 0 15px 0;
       border-bottom: 1px dashed rgba(0,0,0,.15);
@@ -266,4 +272,3 @@ div.field_with_errors div.ui-effects-wrapper {
   position: absolute;
   background: url(/assets/anchor.png) 0 0 no-repeat;
 }
-
