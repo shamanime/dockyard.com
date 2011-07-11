@@ -99,6 +99,9 @@ header {
 
 section {
   padding: 0;
+  #who-we-are section {
+    padding: 20px 0 0 0;
+  }
   section {
     margin: 0;
     padding: 0;
@@ -169,9 +172,20 @@ section {
       padding: 0 20px 0 0;
     }
     li {
+      float: left;
+      width: 460px;
       padding: 10px;
-      background: #FFF;
       overflow: hidden;
+      background: #FFF;
+      margin: 0 0 20px 0;
+      &.even {
+        width: 440px;
+        margin: 0 20px 20px 0;
+        .info {
+          width: 358px;
+        }
+        
+      }
       .photo {
         float: left;
         margin: 0 10px 0 0;
@@ -181,7 +195,7 @@ section {
       }
       .info {
         float: left;
-        width: 338px;
+        width: 378px;
       }
       .links {
         clear: both;
@@ -189,7 +203,10 @@ section {
         padding: 10px;
         background: #CFE5E4;
         li {
+          margin: 0;
           padding: 0;
+          float: none;
+          width: auto;
           background: none;
           display: inline-block;
         }
