@@ -241,6 +241,19 @@ section {
       }
     }
   }
+  #how-we-work {
+    article {
+      overflow: hidden;
+      .content {
+        float: left;
+        width: 575px;
+      }
+      img {
+        float: right;
+        margin: 0 0 40px 40px;
+      }
+    }
+  }
   #contact {
     .input {
       padding: 14px 0 15px 0;
