@@ -61,11 +61,11 @@ ul {
 @mixin content-typography {
   ul {
     list-style: square;
-    margin: 0 0 10px 30px;
+    margin: 0 0 20px 30px;
   }
   ol {
     list-style: decimal;
-    margin: 0 0 10px 30px;
+    margin: 0 0 20px 30px;
   }
   li {
     float: none;
