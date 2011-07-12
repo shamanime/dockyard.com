@@ -51,11 +51,35 @@ h2, h3 {
 
 p {
   line-height: 20px;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 ul {
   line-height: 20px;
+}
+
+@mixin content-typography {
+  ul {
+    list-style: square;
+    margin: 0 0 10px 30px;
+  }
+  ol {
+    list-style: decimal;
+    margin: 0 0 10px 30px;
+  }
+  li {
+    float: none;
+    line-height: 20px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  strong {
+    font-weight: bold;
+  }
+  em {
+    font-style: italic;
+  }
 }
 
 header {
@@ -78,8 +102,11 @@ header {
     font-size: 24px;
     line-height: 96px;
     li {
+      margin: 0;
       float: left;
-      margin: 0 0 0 20px;
+      a {
+        padding: 0 0 0 40px;
+      }
     }
     li.last {
       clear: both;
@@ -145,10 +172,9 @@ section {
     article {
       clear: both;
       background: #FFF;
-      padding: 20px 20px 10px 20px;
-      li {
-        float: none;
-      }
+      overflow: hidden;
+      padding: 20px 20px 0 20px;
+      @include content-typography;
     }
   }
   #who-we-are, #community {
@@ -166,17 +192,16 @@ section {
     li {
       float: left;
       width: 460px;
-      padding: 10px;
       overflow: hidden;
       background: #FFF;
       margin: 0 0 20px 0;
+      padding: 10px 10px 0 10px;
       &.even {
         width: 440px;
         margin: 0 20px 20px 0;
         .info {
           width: 358px;
         }
-        
       }
       .photo {
         float: left;
@@ -275,12 +300,12 @@ footer {
     margin: 0 auto;
     background: none;
     p {
-      float: left;
       margin: 0;
+      float: left;
     }
     nav {
-      float: right;
       margin: 0;
+      float: right;
       li {
         float: left;
         margin: 0 0 0 20px;
