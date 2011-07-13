@@ -9,6 +9,11 @@
   font-family: league-gothic,sans-serif;
 */
 
+@font-face {
+  font-family: league-gothic;
+  src: url(/assets/league_gothic.otf);
+}
+
 body {
   color: #2a4954;
   background: #cfe5e4;
