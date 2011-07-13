@@ -40,4 +40,6 @@ end
 group :test do
   gem 'capybara-webkit', '1.0.0.beta4'
   gem 'valid_attribute'
+  gem 'email_spec', '~> 1.1'
+  gem 'bourne'
 end
