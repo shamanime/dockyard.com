@@ -4,6 +4,8 @@ $(function() {
 
   // Only hide if javascript is enabled
   $('ul.hidden-info-list').parents('nav').siblings('article').hide();
+  $('#what section article h2').hide();
+
   $('ul.hidden-info-list li a').click(function () {
     var that = $(this),
         current = that.parents('ul').find('.current'),
