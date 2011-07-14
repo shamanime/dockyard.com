@@ -89,6 +89,11 @@ ul {
   }
 }
 
+@mixin phone($offset) {
+  background: url('/assets/icons/phone.png') no-repeat 0 $offset;
+  padding-left: 15px;
+}
+
 header {
   color: #4A7588;
   background: #FFF;
@@ -121,6 +126,7 @@ header {
       font-size: 16px;
       margin: -24px 0 0 0;
       line-height: 1;
+      @include phone(4px);
     }
   }
 }
@@ -333,6 +339,9 @@ footer {
       li {
         float: left;
         margin: 0 0 0 20px;
+        &.last {
+          @include phone(6px);
+        }
       }
     }
   }
