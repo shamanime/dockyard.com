@@ -292,6 +292,15 @@ section {
     }
     input {
       margin: 14px 0 0 130px;
+      &[type='submit']{
+      background: #2A4954;
+      border: 3px solid #FFF;
+      color: #FFF;
+      font-family: ff-meta-web-pro, sans-serif;
+      font-size: 16px;
+      padding: 5px 10px;
+      
+      }
     }
     div.string {
 //      width: 620px;
@@ -313,7 +322,9 @@ section {
     }
     .error {
       color: #FFF;
+      height: 28px;
       padding: 2px 5px;
+      line-height: 28px;
       background: #BA4F3A;
       vertical-align: middle;
     }
