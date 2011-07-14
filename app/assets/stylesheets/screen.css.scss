@@ -32,7 +32,7 @@ a.current, a.current:hover {
 }
 
 a:hover {
-  color:  #E65C17;
+  color: #E65C17;
   text-decoration: underline;
 }
 
@@ -301,13 +301,21 @@ section {
     input {
       margin: 14px 0 0 130px;
       &[type='submit']{
-      background: #2A4954;
-      border: 3px solid #FFF;
-      color: #FFF;
-      font-family: ff-meta-web-pro, sans-serif;
-      font-size: 16px;
-      padding: 5px 10px;
-      
+        color: #FFF;
+        font-size: 16px;
+        padding: 5px 10px;
+        background: #BA4F3A;
+        letter-spacing: 2px;
+        border: 4px solid #FFF;
+        text-transform: uppercase;
+        font-family: ff-meta-web-pro, sans-serif;
+      }
+      &[type='submit']:hover {
+        cursor: pointer;
+        background: #E65C17;
+      }
+      &[type='submit']:active {
+        background: #BA4F3A;
       }
     }
     div.string {
