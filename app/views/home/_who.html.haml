@@ -11,8 +11,13 @@
       %li.odd
         .photo
           %img{ :src => "/assets/brian.jpg" }
-          = link_to '', 'http://twitter.com/bcardarella', :class => 'twitter social', :title => 'Twitter'
-          = link_to '', 'https://github.com/bcardarella', :class => 'github social', :title => 'Github'
+          = link_to 'http://twitter.com/bcardarella', :class => 'twitter social', :title => 'Twitter', :target => '_blank' do
+            = image_tag 'icons/twitter-24x24-gray.png', :class => 'gray'
+            = image_tag 'icons/twitter-24x24-rust.png', :class => 'rust'
+
+          = link_to 'https://github.com/bcardarella', :class => 'github social', :title => 'Github', :target => '_blank' do
+            = image_tag 'icons/github-24x24-gray.png', :class => 'gray'
+            = image_tag 'icons/github-24x24-rust.png', :class => 'rust'
         .info
           %h3
             Brian Cardarella &ndash; Principal
@@ -20,23 +25,33 @@
             Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
             Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
             Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
-      %li.even
-        .photo
-          %img{ :src => "/assets/brian.jpg" }
-          = link_to '', 'http://twitter.com/bcardarella', :class => 'twitter social', :title => 'Twitter'
-          = link_to '', 'https://github.com/bcardarella',  :class => 'github social', :title => 'Github'
-        .info
-          %h3
-            Brian Cardarella &ndash; Principal
-          %p
-            Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
-            Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
-            Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
-      %li.odd
-        .photo
-          %img{ :src => "/assets/brian.jpg" }
-          = link_to '', 'http://twitter.com/bcardarella', :class => 'twitter social', :title => 'Twitter'
-          = link_to '', 'https://github.com/bcardarella',  :class => 'github social', :title => 'Github'
+      -# %li.even
+      -#   .photo
+      -#     %img{ :src => "/assets/brian.jpg" }
+      -#     = link_to 'http://twitter.com/bcardarella', :class => 'twitter social', :title => 'Twitter' do
+      -#       = image_tag 'icons/twitter-24x24-gray.png', :class => 'gray'
+      -#       = image_tag 'icons/twitter-24x24-rust.png', :class => 'rust'
+
+      -#     = link_to 'https://github.com/bcardarella', :class => 'github social', :title => 'Github' do
+      -#       = image_tag 'icons/github-24x24-gray.png', :class => 'gray'
+      -#       = image_tag 'icons/github-24x24-rust.png', :class => 'rust'
+      -#   .info
+      -#     %h3
+      -#       Brian Cardarella &ndash; Principal
+      -#     %p
+      -#       Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
+      -#       Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
+      -#       Brian loves clean well-tested code. He is resistant to introducing unecessary complexities and
+      -# %li.odd
+      -#   .photo
+      -#     %img{ :src => "/assets/brian.jpg" }
+      -#     = link_to 'http://twitter.com/bcardarella', :class => 'twitter social', :title => 'Twitter' do
+      -#       = image_tag 'icons/twitter-24x24-gray.png', :class => 'gray'
+      -#       = image_tag 'icons/twitter-24x24-rust.png', :class => 'rust'
+
+      -#     = link_to 'https://github.com/bcardarella', :class => 'github social', :title => 'Github' do
+      -#       = image_tag 'icons/github-24x24-gray.png', :class => 'gray'
+      -#       = image_tag 'icons/github-24x24-rust.png', :class => 'rust'
         .info
           %h3
             Brian Cardarella &ndash; Principal

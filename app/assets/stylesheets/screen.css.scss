@@ -1,6 +1,8 @@
 @import "compass/reset";
 @import "compass/utilities";
 @import "compass/css3/box-shadow";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
 @import "blueprint";
 
 /*
@@ -217,21 +219,33 @@ section {
         }
         a.social {
           float: left;
+          display: inline-block;
           width: 24px;
-          height: 32px;
+          height: 24px;
+          img {
+            width: 24px;
+            position: absolute;
+            @include transition-property(opacity);
+            @include transition-duration(.25s);
+            @include transition-timing-function(linear);
+            &.gray {
+              @include opacity(1);
+              &:hover {
+                @include opacity(0);
+              }
+            }
+            &.rust {
+              @include opacity(0);
+              &:hover {
+                @include opacity(1);
+              }
+            }
+          }
           &.github {
             margin: 0 0px 0 6px;
-            background: url('/assets/icons/github24x24.png') no-repeat 0 0;
-            &:hover {
-              background-position: -24px 0;
-            }
           }
           &.twitter {
             margin: 0 3px 0 6px;
-            background: url('/assets/icons/twitter24x24.png') no-repeat 0 0;
-            &:hover {
-              background-position: -24px 0;
-            }
           }
         }
       }
