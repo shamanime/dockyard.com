@@ -1,13 +1,15 @@
 !!! 5
 %html
   %head
-    %title DockYard
+    %title Web and mobile software consultancy for hire specializing in Ruby on Rails ~ DockYard
     = stylesheet_link_tag    'application'
     = javascript_include_tag 'application'
     %script{:src => "http://use.typekit.com/ocs3hao.js"}
     %script try{Typekit.load();}catch(e){}
-
     = csrf_meta_tags
+    %meta{:name => 'description', :content => 'DockYard is a web and mobile software development consultancy for hire based in Boston, MA'}
+    %meta{:name => 'keywords',    :content => 'web development, mobile development, startups, enterprise, ruby on rails, rails, ruby, ruby on rails training, Boston, for hire'}
+    %link{:rel => 'author', :href => '/humans.txt'}
 
   %body
     %header

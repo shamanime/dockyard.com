@@ -1,0 +1,11 @@
+/* TEAM */
+  Principal Developer: Brian Cardarella
+  Contact: brian@dockyard.com
+  Twitter: @bcardarella
+  From: Boston, MA
+
+/* SITE */
+  Last update: July, 2011
+  Language: English
+  Docktype: HTML5
+  IDE: MacVIM
