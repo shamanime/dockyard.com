@@ -3,6 +3,7 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/opacity";
 @import "compass/css3/transition";
+@import "compass/css3/font-face";
 @import "blueprint";
 
 /*
@@ -11,10 +12,7 @@
   font-family: league-gothic,sans-serif;
 */
 
-@font-face {
-  font-family: league-gothic;
-  src: url(/assets/league_gothic.otf);
-}
+@include font-face("league-gothic", font-files("/assets/league_gothic.otf", opentype));
 
 body {
   color: #2a4954;
