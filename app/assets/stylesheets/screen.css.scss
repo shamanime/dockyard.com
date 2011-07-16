@@ -54,12 +54,14 @@ h1 {
   color: #2A5568;
   font-size: 48px;
   margin: 0 0 20px 0;
+  line-height: 1.1em;
 }
 
 h2, h3 {
   color: #4A7588;
   font-size: 36px;
   margin: 0 0 20px 0;
+  line-height: 1.1em;
 }
 
 p {
@@ -165,8 +167,10 @@ section {
       }
     }
   }
-  #what-we-do, #how-we-work {
+  #what-we-do, #who-we-are {
     background: rgba(255,255,255,.5);
+  }
+  #what-we-do, #how-we-work {
     h1 {
       margin: 0;
       float: left;
@@ -196,8 +200,10 @@ section {
       @include content-typography;
     }
   }
-  #who-we-are, #community {
+  #how-we-work, #community {
     background: rgba(255,255,255,.25);
+  }
+  #who-we-are, #community {
     article {
       float: left;
       width: 480px;
