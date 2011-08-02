@@ -38,7 +38,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara-webkit', '1.0.0.beta4'
+  gem 'capybara-webkit', :git => 'https://github.com/thoughtbot/capybara-webkit'
   gem 'valid_attribute'
   gem 'email_spec', '~> 1.1'
   gem 'bourne'

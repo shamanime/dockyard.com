@@ -19,6 +19,13 @@ GIT
       sass (>= 3.1.3)
       sprockets (>= 2.0.0.beta.9)
 
+GIT
+  remote: https://github.com/thoughtbot/capybara-webkit
+  revision: 81ad8fd130437149d843191893550160cd6ec6c3
+  specs:
+    capybara-webkit (0.5.0)
+      capybara (~> 1.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -65,9 +72,7 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 0.2.0)
       xpath (~> 0.1.4)
-    capybara-webkit (1.0.0.beta4)
-      capybara (~> 1.0.0)
-    childprocess (0.1.9)
+    childprocess (0.2.0)
       ffi (~> 1.0.6)
     chunky_png (1.2.0)
     client_side_validations (3.1.0)
@@ -104,14 +109,14 @@ GEM
     nokogiri (1.5.0)
     pg (0.11.0)
     polyglot (0.3.1)
-    rack (1.3.0)
+    rack (1.3.2)
     rack-cache (1.0.2)
       rack (>= 0.4)
     rack-mount (0.8.1)
       rack (>= 1.0.0)
     rack-ssl (1.3.2)
       rack
-    rack-test (0.6.0)
+    rack-test (0.6.1)
       rack (>= 1.0)
     rails (3.1.0.rc4)
       actionmailer (= 3.1.0.rc4)
@@ -192,7 +197,7 @@ PLATFORMS
 DEPENDENCIES
   bourne
   capybara
-  capybara-webkit (= 1.0.0.beta4)
+  capybara-webkit!
   client_side_validations
   compass!
   email_spec (~> 1.1)
