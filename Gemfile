@@ -7,7 +7,7 @@ gem 'rails', '3.1.0.rc5'
 
 # Asset template engines
 gem 'uglifier'
-gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git', :ref => 'eee12e2e0bbfca56d458c82df47213e130ef5830'
+gem 'sass-rails', '~> 3.1.0rc'
 gem 'compass',    :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 gem 'haml'
 gem 'simple_form'
@@ -17,6 +17,7 @@ gem 'jquery-rails'
 
 group :production do
   gem 'pg'
+  gem 'therubyracer'
 end
 
 # Use unicorn as the web server
