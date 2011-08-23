@@ -36,19 +36,19 @@ a:hover {
 
 h1, h2, h3 {
   font-family: league-gothic,sans-serif;
-  background: url(/assets/paint.png) repeat, white;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-animation-name: masked-animation;
-  -webkit-animation-duration: 40s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
+  // background: url(/assets/paint.png) repeat, white;
+  // -webkit-text-fill-color: transparent;
+  // -webkit-background-clip: text;
+  // -webkit-animation-name: masked-animation;
+  // -webkit-animation-duration: 40s;
+  // -webkit-animation-iteration-count: infinite;
+  // -webkit-animation-timing-function: linear;
 }
 
-@-webkit-keyframes masked-animation {
-  0% {background-position: left bottom;}
-  100% {background-position: right bottom;}
-}
+// @-webkit-keyframes masked-animation {
+//   0% {background-position: left bottom;}
+//   100% {background-position: right bottom;}
+// }
 
 h1 {
   color: #2A5568;
