@@ -1,23 +1,25 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc5'
+gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # Asset template engines
-gem 'uglifier'
-gem 'sass-rails', '~> 3.1.0rc'
-gem 'compass',    :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 gem 'haml'
 gem 'simple_form'
 gem 'client_side_validations'
 
 gem 'jquery-rails'
 
+group :assets do
+  gem 'sass-rails', "  ~> 3.1.0"
+  gem 'uglifier'
+  gem 'compass', '~> 0.12.alpha'
+end
+
 group :production do
   gem 'pg'
-  gem 'therubyracer'
 end
 
 # Use unicorn as the web server
@@ -34,7 +36,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'ruby-debug19', :require => 'ruby-debug', :platform => :mri_19
-  gem 'ruby-debug', :platform => :mri_18
 end
 
 group :test do

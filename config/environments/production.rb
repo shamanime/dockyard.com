@@ -11,11 +11,14 @@ Dockyard::Application.configure do
   # Disable Rails's static asset server (Apache or nginx will already do this)
   config.serve_static_assets = false
 
+  # Don't fallback to assets pipeline if a precompiled asset is missed
+  config.assets.compile = false
+
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
   # Specify the default JavaScript compressor
-  config.assets.js_compressor  = :uglifier
+  # config.assets.js_compressor  = :uglifier
 
   # Specifies the header that your server uses for sending files
   # (comment out if your front-end server doesn't support this)
