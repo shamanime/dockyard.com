@@ -1,5 +1,6 @@
 var message = $("<div class='message success' style='display:none'><%= flash[:success] -%></div>"),
     button = $('#new_contact').find('input:submit');
+    button.attr('value', 'Sent!');
 if (button.parent().find('.message')[0] == undefined) {
   button.before(message);
   message.slideDown(600);
