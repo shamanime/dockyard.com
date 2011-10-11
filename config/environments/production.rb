@@ -17,6 +17,9 @@ Dockyard::Application.configure do
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
+  # Generate digests for assets URLs
+  config.assets.digest = true
+
   # Specify the default JavaScript compressor
   # config.assets.js_compressor  = :uglifier
 
