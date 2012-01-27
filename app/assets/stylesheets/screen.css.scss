@@ -142,7 +142,7 @@ header {
 section {
   padding: 0;
   #who-we-are section {
-    padding: 20px 0 0 0;
+    padding: 40px 0 20px 0;
   }
   section {
     margin: 0;
@@ -224,31 +224,28 @@ section {
     }
   }
   #who-we-are {
-    background: rgba(255,255,255,.5);
     .about-dockyard {
+      float: left;
       width: 340px;
       padding: 0 20px 0 0;
     }
-    li {
+    .team {
       float: left;
-      width: 460px;
+      width: 580px;
+      padding: 0 0 0 20px;
+    }
+    li {
       overflow: hidden;
       background: #FFF;
       margin: 0 0 20px 0;
       padding: 10px 10px 0 10px;
-      &.even {
-        width: 440px;
-        margin: 0 20px 20px 0;
-        .info {
-          width: 358px;
-        }
-      }
       .photo {
         float: left;
         width: 72px;
-        margin: 0 10px 0 0;
+        margin: 0 10px 10px 0;
         img {
           width: 72px;
+          display: block;
         }
         a.social {
           float: left;
@@ -284,12 +281,21 @@ section {
       }
       .info {
         float: left;
-        width: 378px;
+        width: 478px;
         h3 {
-          font-size: 16px;
+          float: left;
           font-weight: bold;
           margin: 0 0 10px 0;
-          font-family: ff-meta-web-pro, sans-serif;
+        }
+        .role {
+          float: right;
+          color: #5A95A8;
+          margin: 0 0 20px 0;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        .github {
+          clear: both;
         }
       }
     }
