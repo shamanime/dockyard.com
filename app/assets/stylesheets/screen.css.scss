@@ -150,7 +150,7 @@ section {
     section {
       width: 960px;
       margin: 0 auto;
-      padding: 20px 0;
+      padding: 40px 0;
       overflow: hidden;
       header {
         overflow: hidden;
@@ -167,51 +167,66 @@ section {
       }
     }
   }
-  #what-we-do, #who-we-are {
-    background: rgba(255,255,255,.5);
+  #what-we-do {
+    width: 340px;
+    padding: 0 20px 0 0;
+  }
+  #how-we-work {
+    width: 580px;
+    padding: 0 0 0 20px;
   }
   #what-we-do, #how-we-work {
+    float: left;
     h1 {
-      margin: 0;
-      float: left;
+      color: #E6F1F1;
     }
     nav {
-      float: right;
     }
     li {
       float: left;
-      line-height: 52px;
+      margin: 0 10px 20px 0;
       a {
         float: left;
-        padding: 0 30px;
+        color: #AAD5E8;
+        padding: 5px 10px;
+        background: #3A6578;
+        border-radius: 20px;
+        text-decoration: none;
         &:hover {
-          background: #CFE5E4;
+          background: #4A7588;
         }
         &.current {
-          background: #FFF;
+          color: #FFF;
+          background: #0A3548;
         }
       }
     }
     article {
       clear: both;
-      background: #FFF;
+      color: #E6F1F1;
       overflow: hidden;
+      background: #0A3548;
       padding: 20px 20px 0 20px;
       @include content-typography;
+      border-radius: 5px;
+      h2 {
+        color: #8AB5C8;
+      }
     }
   }
-  #how-we-work, #community {
+  #community {
     background: rgba(255,255,255,.25);
   }
-  #who-we-are, #community {
+  #community {
     article {
       float: left;
       width: 480px;
     }
   }
   #who-we-are {
+    background: rgba(255,255,255,.5);
     .about-dockyard {
-      width: 460px;
+      width: 340px;
       padding: 0 20px 0 0;
     }
     li {
@@ -283,12 +298,11 @@ section {
     article {
       overflow: hidden;
       .content {
-        float: left;
-        width: 575px;
       }
       img {
+        display: none;
         float: right;
-        margin: 0 0 40px 40px;
+        margin: 0 0 20px 20px;
       }
     }
   }
@@ -403,4 +417,14 @@ div.field_with_errors div.ui-effects-wrapper {
   height: 356px;
   position: absolute;
   background: url(/assets/anchor.png) 0 0 no-repeat;
+}
+
+.two {
+  overflow: hidden;
+  min-height: 441px;
+  background: #2A5568;
+  section {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
