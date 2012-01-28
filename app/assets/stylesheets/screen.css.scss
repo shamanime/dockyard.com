@@ -57,9 +57,16 @@ h1 {
   line-height: 1.1em;
 }
 
-h2, h3 {
+h2 {
   color: #4A7588;
   font-size: 36px;
+  margin: 0 0 20px 0;
+  line-height: 1.1em;
+}
+
+h3 {
+  color: #6A95A8;
+  font-size: 28px;
   margin: 0 0 20px 0;
   line-height: 1.1em;
 }
@@ -142,13 +149,13 @@ header {
 section {
   padding: 0;
   #who-we-are section {
-    padding: 40px 0 20px 0;
+    padding: 40px 10px 20px 10px;
   }
   section {
     margin: 0;
     padding: 0;
     section {
-      width: 960px;
+      width: 980px;
       margin: 0 auto;
       padding: 40px 0;
       overflow: hidden;
@@ -224,58 +231,76 @@ section {
     }
   }
   #who-we-are {
+    background: rgba(255,255,255,.25);
     .about-dockyard {
       float: left;
       width: 340px;
       padding: 0 20px 0 0;
+      h3 {
+        margin: 0;
+      }
+      ul {
+        margin: 1em 0;
+        a {
+          display: block;
+          padding: 5px 10px;
+          background: #BBD3D3;
+          margin: 0 0 10px -10px;
+          -webkit-border-radius: 20px;
+          &:hover {
+            cursor: pointer;
+            background: #C5DDDD;
+          }
+        }
+      }
     }
     .team {
       float: left;
       width: 580px;
       padding: 0 0 0 20px;
-    }
-    li {
-      overflow: hidden;
-      background: #FFF;
-      margin: 0 0 20px 0;
-      padding: 10px 10px 0 10px;
-      .photo {
-        float: left;
-        width: 72px;
-        margin: 0 10px 10px 0;
-        img {
-          width: 72px;
-          display: block;
-        }
-        a.social {
+      li {
+        overflow: hidden;
+        background: #FFF;
+        margin: 0 0 20px 0;
+        padding: 10px 10px 0 10px;
+        .photo {
           float: left;
-          display: inline-block;
-          width: 24px;
-          height: 24px;
+          width: 72px;
+          margin: 0 10px 10px 0;
           img {
+            width: 72px;
+            display: block;
+          }
+          a.social {
+            float: left;
+            display: inline-block;
             width: 24px;
-            position: absolute;
-            @include transition-property(opacity);
-            @include transition-duration(.25s);
-            @include transition-timing-function(linear);
-            &.gray {
-              @include opacity(1);
-              &:hover {
-                @include opacity(0);
-              }
-            }
-            &.rust {
-              @include opacity(0);
-              &:hover {
+            height: 24px;
+            img {
+              width: 24px;
+              position: absolute;
+              @include transition-property(opacity);
+              @include transition-duration(.25s);
+              @include transition-timing-function(linear);
+              &.gray {
                 @include opacity(1);
+                &:hover {
+                  @include opacity(0);
+                }
+              }
+              &.rust {
+                @include opacity(0);
+                &:hover {
+                  @include opacity(1);
+                }
               }
             }
-          }
-          &.github {
-            margin: 0 0px 0 6px;
-          }
-          &.twitter {
-            margin: 0 3px 0 6px;
+            &.github {
+              margin: 0 0px 0 6px;
+            }
+            &.twitter {
+              margin: 0 3px 0 6px;
+            }
           }
         }
       }
@@ -284,15 +309,15 @@ section {
         width: 478px;
         h3 {
           float: left;
+          color: #2A5568;
+          margin: 0 0 0 0;
           font-weight: bold;
-          margin: 0 0 10px 0;
         }
         .role {
           float: right;
           color: #5A95A8;
-          margin: 0 0 20px 0;
-          text-transform: uppercase;
           letter-spacing: 2px;
+          text-transform: uppercase;
         }
         .github {
           clear: both;
