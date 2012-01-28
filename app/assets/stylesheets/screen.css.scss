@@ -146,15 +146,15 @@ header {
   }
 }
 
-section {
+section#content {
   padding: 0;
   #who-we-are section {
     padding: 40px 10px 20px 10px;
   }
-  section {
+  &>section {
     margin: 0;
     padding: 0;
-    section {
+    section.wrapper {
       width: 980px;
       margin: 0 auto;
       padding: 40px 0;
@@ -208,16 +208,19 @@ section {
         }
       }
     }
-    article {
-      clear: both;
-      color: #E6F1F1;
-      overflow: hidden;
+    section.sub {
       background: #0A3548;
       padding: 20px 20px 0 20px;
-      @include content-typography;
       border-radius: 5px;
-      h2 {
-        color: #8AB5C8;
+      clear: both;
+
+      article {
+        color: #E6F1F1;
+        overflow: hidden;
+        @include content-typography;
+        h2 {
+          color: #8AB5C8;
+        }
       }
     }
   }
@@ -452,9 +455,9 @@ div.field_with_errors div.ui-effects-wrapper {
 
 .two {
   overflow: hidden;
-  min-height: 441px;
+  min-height: 401px;
   background: #2A5568;
-  section {
+  section:first-child {
     width: 960px;
     margin: 0 auto;
   }

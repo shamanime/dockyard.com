@@ -1,29 +1,31 @@
-$('body>header nav ul, body>footer ul').localScroll({margin: true})
+$ ->
 
-# Only hide if javascript is enabled
-# $('ul.hidden-info-list').parents('nav').siblings('article:not(:first)').hide()
-# $('#what section article h2').hide()
+  # $('body>header nav ul, body>footer ul').localScroll({margin: true})
 
-# $('ul.hidden-info-list li a').click(->
-  # that = $(@)
-  # current = that.parents('ul').find('.current')
-  # target = $(convertTextToId(@.text))
+  # Only hide if javascript is enabled
+  $('section.sub article:not(:first-child)').hide()
+  # $('#what section article h2').hide()
 
-  # if current[0] == undefined
-    # target.slideDown();
-    # that.addClass('current');
-  # else if @ != current[0]
-    # that.parents('nav').siblings('article').hide()
-    # target.show()
-    # that.parents('ul').find('.current').removeClass('current')
-    # that.addClass('current')
-  # else if @ == current[0]
-    # target.slideUp()
-    # that.removeClass('current')
+  $('ul.hidden-info-list li a').click(->
+    that = $(@)
+    current = that.parents('ul').find('.current')
+    target = $(convertTextToId(@.text))
 
-  # return false;
-# )
+    if current[0] == undefined
+      target.slideDown();
+      that.addClass('current');
+    else if @ != current[0]
+      that.parents('nav').siblings().find('article').hide()
+      target.show()
+      that.parents('ul').find('.current').removeClass('current')
+      that.addClass('current')
+    else if @ == current[0]
+      target.slideUp()
+      that.removeClass('current')
 
-# convertTextToId = (text) ->
-  # return '#' + text.toLowerCase().replace(/\s/g, '-');
+    return false;
+  )
+
+  convertTextToId = (text) ->
+    return '#' + text.toLowerCase().replace(/\s/g, '-');
 
