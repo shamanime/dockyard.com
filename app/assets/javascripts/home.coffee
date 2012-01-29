@@ -23,4 +23,7 @@ $ ->
   convertTextToId = (text) ->
     return '#' + text.toLowerCase().replace(/\s/g, '-');
 
-
+  konami = new Konami()
+  konami.code = ->
+    $('.socko').slideToggle()
+  konami.load()
