@@ -1,6 +1,6 @@
 $ ->
 
-  # $('body>header nav ul, body>footer ul').localScroll({margin: true})
+  $('body>header nav ul, body>footer ul').localScroll({margin: true})
 
   # Only hide if javascript is enabled
   $('section.sub article:not(:first-child)').hide()

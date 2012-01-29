@@ -322,6 +322,19 @@ section#content {
           letter-spacing: 2px;
           text-transform: uppercase;
         }
+        ul.skills {
+          margin-top: -25px;
+          clear: both;
+          display: block;
+          float: right;
+          color: #5A95A8;
+          text-transform: lowercase;
+          li {
+            padding: 0px;
+            margin: 0px;
+            text-align: right;
+          }
+        }
         .github {
           clear: both;
         }
