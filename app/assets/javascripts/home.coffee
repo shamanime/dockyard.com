@@ -10,19 +10,13 @@ $ ->
     that = $(@)
     current = that.parents('ul').find('.current')
     target = $(convertTextToId(@.text))
-
-    if current[0] == undefined
-      target.slideDown();
-      that.addClass('current');
-    else if @ != current[0]
-      that.parents('nav').siblings().find('article').hide()
-      target.show()
-      that.parents('ul').find('.current').removeClass('current')
-      that.addClass('current')
-    else if @ == current[0]
-      target.slideUp()
-      that.removeClass('current')
-
+    that.
+      parents('nav').siblings().find('article').hide().
+      end().end().end().
+      parents('ul').find('.current').removeClass('current').
+      end().end().
+      addClass('current')
+    target.show()
     return false;
   )
 
