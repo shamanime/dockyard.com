@@ -25,5 +25,5 @@ $ ->
 
   konami = new Konami()
   konami.code = ->
-    $('.socko').slideToggle()
+    $('.socko').fadeToggle()
   konami.load()
