@@ -26,4 +26,12 @@ $ ->
   konami = new Konami()
   konami.code = ->
     $('.socko').fadeToggle()
+    video = $('<embed />', {
+      src: 'http://youtube.com/v/n6hOBVaMGFI&autoplay=1',
+      type: 'application/x-shockwave-flash',
+      wmode: 'transparent',
+      width: 0,
+      height: 0
+    })
+    $('body').append(video);
   konami.load()
