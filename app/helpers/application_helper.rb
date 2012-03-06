@@ -7,4 +7,15 @@ module ApplicationHelper
       content_tag(:div, :class => [:message, :error])   { flash.now[:error]   }
     end
   end
+
+  def source
+    case params[:action]
+    when /new/
+      'blog'
+    when /index/
+      'dockyard'
+    else
+      'other'
+    end
+  end
 end

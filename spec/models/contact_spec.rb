@@ -10,7 +10,7 @@ describe Contact do
 
   describe '.new' do
     it 'assigns paramaters' do
-      contact = Contact.new(:company_name => 'Test Company', :contact_name => 'Test Contact', :contact_email => 'test@test.com', :message => 'Test Message')
+      contact = Contact.new(:company_name => 'Test Company', :contact_name => 'Test Contact', :contact_email => 'test@test.com', :message => 'Test Message', :source => 'test')
       contact.company_name.should eql "Test Company"
       contact.contact_name.should eql"Test Contact"
       contact.contact_email.should eql "test@test.com"
@@ -23,6 +23,7 @@ describe Contact do
 From: Test Contact
 Company: Test Company
 Email: test@test.com
+Source: test
 Message: Test Message
 }
       email = mock('Email')

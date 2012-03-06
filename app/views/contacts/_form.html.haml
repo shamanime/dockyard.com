@@ -3,5 +3,6 @@
   = f.input :contact_name,  :label => 'Contact Name'
   = f.input :contact_email, :label => 'Contact Email'
   = f.input :message, :as => :text
+  = f.input :source, :as => :hidden, :input_html => { :value => source }
   = render_flash
   = f.submit 'Send Message'
