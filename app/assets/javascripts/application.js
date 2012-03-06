@@ -7,4 +7,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require rails.validations
-//= require_tree .
+//= require rails.validations.callbacks
+//= require jquery.localscroll
+//= require jquery.nivo.slider
+//= require jquery.scrollTo
+//= require home

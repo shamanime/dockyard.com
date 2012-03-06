@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %title Web and mobile consultancy specializing in Ruby on Rails ~ DockYard
+    = stylesheet_link_tag    'contact_inquiery'
+    = javascript_include_tag 'contact_inquiery'
+    /[if lt IE 9]
+      %script{:src => "//html5shim.googlecode.com/svn/trunk/html5.js"}
+    %script{:src => "http://use.typekit.com/ocs3hao.js"}
+    %script try{Typekit.load();}catch(e){}
+
+    = csrf_meta_tags
+
+  %body#contact_inquiery
+    %section#content
+      = yield

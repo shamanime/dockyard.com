@@ -1,0 +1,7 @@
+= simple_form_for @contact, :url => '/#contact', :validate => true, :remote => true do |f|
+  = f.input :company_name,  :label => 'Company Name'
+  = f.input :contact_name,  :label => 'Contact Name'
+  = f.input :contact_email, :label => 'Contact Email'
+  = f.input :message, :as => :text
+  = render_flash
+  = f.submit 'Send Message'

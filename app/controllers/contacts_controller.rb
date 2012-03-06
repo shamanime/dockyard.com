@@ -1,4 +1,9 @@
 class ContactsController < ApplicationController
+  def new
+    @contact = Contact.new
+    render :layout => 'contact_inquiery'
+  end
+
   def create
     @contact = Contact.new(params[:contact])
 
