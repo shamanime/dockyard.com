@@ -223,6 +223,18 @@ section#content {
       }
     }
   }
+  #projects {
+    overflow: auto;
+  }
+  #projects article {
+    float: left; 
+    width: 360px;
+  }
+  #projects img {
+    float: right;
+    width: 600px;  
+  }
+
   #community {
     article {
       float: left;
