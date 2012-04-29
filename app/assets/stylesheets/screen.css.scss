@@ -266,8 +266,8 @@ section#content {
       }
     }
     .team {
-      float: left;
-      width: 580px;
+      float: right;
+      width: 600px;
       padding: 0 0 0 20px;
       li {
         overflow: hidden;
@@ -315,35 +315,28 @@ section#content {
           }
         }
       }
+      .role {
+        float: right;
+        color: #5A95A8;
+        text-align: right;
+        .title {
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+        .skills li {
+          margin: 0;
+          padding: 0;
+        }
+      }
       .info {
         float: left;
-        width: 478px;
         h3 {
           float: left;
           color: #2A5568;
           margin: 0 0 0 0;
           font-weight: bold;
         }
-        .role {
-          float: right;
-          color: #5A95A8;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-        }
-        ul.skills {
-          margin-top: -25px;
-          clear: both;
-          display: block;
-          float: right;
-          color: #5A95A8;
-          text-transform: lowercase;
-          li {
-            padding: 0px;
-            margin: 0px;
-            text-align: right;
-          }
-        }
-        .github {
+        .github, .dribbble {
           clear: both;
         }
       }
@@ -507,24 +500,52 @@ and (max-width : 480px) {
     background: none;
   }
   
+  header section {
+    padding: 20px;
+    
+  }
+
+  header section:before {
+    float: right;
+    margin: 10px 0;
+    padding: 0 10px;
+    content: "······";
+    border-radius: 5px;
+    background: rgba(0,0,0,.1);
+    line-height: 28px;
+  }
+
   header h1 {
+    float: left;
     font-size: 48px;
-    text-align: center;
+  }
+  header h1:after {
+    content: "(855) DOCK-YRD";
+    font-size: .6em;
+    line-height: 48px;
+    float: right;
+    margin: 0 0 0 20px;
+    color: #6A95A8;
   }
   
   header ul {
+    clear: both;
+    display: none;
     padding: 0 10px;
-    text-align: center;
   }
 
   header ul li {
     line-height: 1.5;
-    display: inline;
     margin: 0 20px 0 0;
+    display: block;
   }
   
   section#content > section section.wrapper {
-    padding: 20px 0 10px 0;
+    padding: 20px;
+  }
+  
+  section#content #who-we-are section {
+    padding: 20px 20px 0 20px;
   }
   
   section#content #what-we-do,
@@ -533,17 +554,67 @@ and (max-width : 480px) {
     padding: 0;
     width: auto;
     float: none;
-    margin: 0 10px 20px 10px;
-  }
-
-  h1 {
-    margin: 0 10px;
+    margin: 0 0 20px 0;
   }
 
   section#content #projects img {
-    width: 90%;
+    width: 100%;
     float: none;
-    margin: 0 5%;
+  }
+  section#content #who-we-are .about-dockyard ul a {
+    margin: 0 0 10px 0;
+  }
+
+  section#content #who-we-are .about-dockyard,
+  section#content #who-we-are .team {
+    margin: 0;
+    padding: 0;
+    float: none;
+    width: auto;
+  }
+
+  section#content #who-we-are .team .info {
+    width: auto;  
   }
   
+  section#contact h2 {
+    font-size: 28px;
+  }
+
+  section#content #contact div.string label {
+    width: auto;
+    display: block;
+    padding: 0 0 5px 0;  
+  }
+
+  section#content #contact div.string input,
+  section#content #contact textarea {
+    width: 96%;
+    padding: 2%;
+  }
+  
+  section#content #contact textarea {
+    height: 160px;
+  }
+
+  section#content #contact input[type="submit"] {
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  footer ul li {
+    display: none;
+  }
+
+  footer ul li.last {
+    display: block;
+  }
+
 }
