@@ -112,6 +112,9 @@ ul {
 header {
   color: #4A7588;
   background: #FFF;
+  .mobile-nav {
+    display: none;
+  }
   section {
     width: 960px;
     margin: 0 auto;
@@ -502,23 +505,23 @@ and (max-width : 480px) {
   
   header section {
     padding: 20px;
-    
   }
 
-  header section:before {
+  header .mobile-nav {
     float: right;
+    display: block;
     margin: 10px 0;
     padding: 0 10px;
-    content: "······";
+    line-height: 28px;
     border-radius: 5px;
     background: rgba(0,0,0,.1);
-    line-height: 28px;
   }
 
   header h1 {
     float: left;
     font-size: 48px;
   }
+  
   header h1:after {
     content: "(855) DOCK-YRD";
     font-size: .6em;
@@ -530,14 +533,32 @@ and (max-width : 480px) {
   
   header ul {
     clear: both;
-    display: none;
     padding: 0 10px;
+    margin: 0 -20px;
+    background: #EEE;
+    position: relative;
+    top: 20px;
+    overflow: auto;
+    display: none;
   }
 
   header ul li {
-    line-height: 1.5;
-    margin: 0 20px 0 0;
+    margin: 10px 0;
     display: block;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  header ul li.last {
+    display: none;
+  }
+
+  header ul li a {
+    padding: 10px;
+    display: block;
+    background: #DDD;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1) inset;
   }
   
   section#content > section section.wrapper {

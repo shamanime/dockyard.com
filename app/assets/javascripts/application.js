@@ -12,3 +12,13 @@
 //= require jquery.nivo.slider
 //= require jquery.scrollTo
 //= require home
+
+$(function(){
+  $('.mobile-nav').toggle(function(){
+    $('header ul').slideDown();
+    return false;
+  }, function(){
+    $('header ul').slideUp();
+    return false;
+  });
+});
