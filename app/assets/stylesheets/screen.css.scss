@@ -226,14 +226,14 @@ section#content {
       }
     }
   }
-  #projects {
+  #clients {
     overflow: auto;
   }
-  #projects article {
+  #clients article {
     float: left; 
     width: 360px;
   }
-  #projects img {
+  #clients img {
     float: right;
     width: 600px;  
   }
@@ -571,14 +571,14 @@ and (max-width : 480px) {
   
   section#content #what-we-do,
   section#content #how-we-work,
-  section#content #projects article {
+  section#content #clients article {
     padding: 0;
     width: auto;
     float: none;
     margin: 0 0 20px 0;
   }
 
-  section#content #projects img {
+  section#content #clients img {
     width: 100%;
     float: none;
   }
