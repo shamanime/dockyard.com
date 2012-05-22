@@ -35,3 +35,7 @@ $ ->
     })
     $('body').append(video);
   konami.load()
+
+  spam_filter = $('<input type="hidden" name="contact[js_check]" />')
+  spam_filter.val('true')
+  $('form#new_contact').append(spam_filter);

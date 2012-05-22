@@ -23,7 +23,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'ruby-debug19', :require => 'ruby-debug', :platform => :mri_19
+  gem 'debugger'
 end
 
 group :test do

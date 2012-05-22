@@ -8,9 +8,27 @@ describe Contact do
   it { should_not have_valid(:message).when(nil, '') }
   its(:persisted?) { should be_false }
 
+  describe 'spam validation' do
+    context 'name is present and js_check is blank'  do
+      subject { Contact.new(:name => 'test') }
+      it { should_not have_valid(:spam) }
+    end
+    context 'name is present and js_check is present' do
+      subject { Contact.new(:name => 'test', :js_check => true) }
+      it { should_not have_valid(:spam) }
+    end
+    context 'name is blank and js_check is blank' do
+      it { should_not have_valid(:spam) }
+    end
+    context 'name is blank and js_check is present' do
+      subject { Contact.new(:js_check => true) }
+      it { should have_valid(:spam) }
+    end
+  end
+
   describe '.new' do
     it 'assigns paramaters' do
-      contact = Contact.new(:company_name => 'Test Company', :contact_name => 'Test Contact', :contact_email => 'test@test.com', :message => 'Test Message', :source => 'test')
+      contact = Contact.new(:company_name => 'Test Company', :contact_name => 'Test Contact', :contact_email => 'test@test.com', :message => 'Test Message', :source => 'test', :js_check => true)
       contact.company_name.should eql "Test Company"
       contact.contact_name.should eql"Test Contact"
       contact.contact_email.should eql "test@test.com"
@@ -32,7 +50,7 @@ Message: Test Message
     end
 
     it 'sends and delivers the email' do
-      contact = Contact.new(:company_name => 'Test Company', :contact_name => 'Test Contact', :contact_email => 'test@test.com', :message => 'Test Message')
+      contact = Contact.new(:company_name => 'Test Company', :contact_name => 'Test Contact', :contact_email => 'test@test.com', :message => 'Test Message', :js_check => true)
       contact.send_email
     end
   end

@@ -4,10 +4,11 @@ class Contact
   include ActiveModel::Validations
   include ActiveModel::Conversion
 
-  attr_accessor :company_name, :contact_name, :contact_email, :message, :source
+  attr_accessor :company_name, :contact_name, :contact_email, :message, :source, :name, :js_check, :spam
 
   validates_presence_of :company_name, :contact_name, :contact_email, :message, :message => %{can’t be blank}
   validates :contact_email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :message => 'invalid email format' }
+  validate :spam_check
 
   def initialize(attributes = {})
     attributes.each do |key, value|
@@ -24,6 +25,12 @@ class Contact
   end
 
   private
+
+  def spam_check
+    if name.present? || js_check.blank?
+      errors.add(:spam, 'SPAM')
+    end
+  end
 
   def build_email_from
     "#{contact_name} <#{contact_email}>"
