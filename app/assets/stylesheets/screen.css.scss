@@ -200,6 +200,10 @@ section#content {
         color: #AAD5E8;
         padding: 5px 10px;
         background: #3A6578;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
         border-radius: 20px;
         text-decoration: none;
         &:hover {
@@ -214,6 +218,10 @@ section#content {
     section.sub {
       background: #0A3548;
       padding: 20px 20px 0 20px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -o-border-radius: 5px;
+      -ms-border-radius: 5px;
       border-radius: 5px;
       clear: both;
       article {
@@ -261,6 +269,10 @@ section#content {
           background: #BBD3D3;
           margin: 0 0 10px -10px;
           -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -o-border-radius: 20px;
+          -ms-border-radius: 20px;
+          border-radius: 20px;
           &:hover {
             cursor: pointer;
             background: #C5DDDD;
@@ -502,7 +514,7 @@ and (max-width : 480px) {
     line-height: 1;
     background: none;
   }
-  
+
   header section {
     padding: 20px;
   }
@@ -513,6 +525,10 @@ and (max-width : 480px) {
     margin: 10px 0;
     padding: 0 10px;
     line-height: 28px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
     border-radius: 5px;
     background: rgba(0,0,0,.1);
   }
@@ -521,7 +537,7 @@ and (max-width : 480px) {
     float: left;
     font-size: 48px;
   }
-  
+
   header h1:after {
     content: "(855) DOCK-YRD";
     font-size: .6em;
@@ -530,7 +546,7 @@ and (max-width : 480px) {
     margin: 0 0 0 20px;
     color: #6A95A8;
   }
-  
+
   header ul {
     clear: both;
     padding: 0 10px;
@@ -557,18 +573,26 @@ and (max-width : 480px) {
     padding: 10px;
     display: block;
     background: #DDD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
     border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.1) inset;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.1) inset;
+    -o-box-shadow: 0 0 10px rgba(0,0,0,.1) inset;
+    -ms-box-shadow: 0 0 10px rgba(0,0,0,.1) inset;
     box-shadow: 0 0 10px rgba(0,0,0,.1) inset;
   }
-  
+
   section#content > section section.wrapper {
     padding: 20px;
   }
-  
+
   section#content #who-we-are section {
     padding: 20px 20px 0 20px;
   }
-  
+
   section#content #what-we-do,
   section#content #how-we-work,
   section#content #clients article {
@@ -597,7 +621,7 @@ and (max-width : 480px) {
   section#content #who-we-are .team .info {
     width: auto;  
   }
-  
+
   section#contact h2 {
     font-size: 28px;
   }
@@ -613,7 +637,7 @@ and (max-width : 480px) {
     width: 96%;
     padding: 2%;
   }
-  
+
   section#content #contact textarea {
     height: 160px;
   }
