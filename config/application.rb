@@ -1,6 +1,9 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+require 'rails'
+require 'action_controller/railtie'
+require 'action_mailer/railtie'
+require 'sprockets/railtie'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -51,12 +54,16 @@ module Dockyard
     # This will create an empty whitelist of attributes available for mass-assignment for all models
     # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
     # parameters by using an attr_accessible or attr_protected declaration.
-    config.active_record.whitelist_attributes = true
+    # config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    # Set Haml to be the default template type
+    config.generators do |generator|
+      generator.template_engine :haml
+    end
   end
 end
