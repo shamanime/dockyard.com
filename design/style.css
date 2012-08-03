@@ -1,0 +1,217 @@
+/* Home Page */
+.intro {
+	margin: 0 auto -1em;
+	padding-top: 1em;
+	width: 27em;
+} 
+.narwin {
+	width:135px;
+	height:125px;
+	margin-top:.25em;
+	background-image: url(images/narwin.png);
+	background-repeat: no-repeat;
+	position: relative;
+	float: left;
+	padding-top: 12px;
+}
+.narwin:hover {
+	background-image: url(images/narwin2.png);
+	background-repeat: no-repeat;
+}
+
+.circle {
+	z-index: -5;
+	width: 46em;
+	height: 46em;
+	background: #FFF;
+	position: relative;
+	top: -23em;
+	border-radius: 23em;
+	margin: 0 auto -46em auto;
+}
+
+#home .about {
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1em;
+	color: #2a5567;
+	text-align: center;
+}
+
+.gallery {
+	margin-top: 1em;
+	padding-bottom: 2em;
+}
+
+#home p {
+	color:#ffffff;
+}
+#home h2 {
+	color: #ffffff;
+	margin-top: 1em;
+}
+
+.blog {
+	float: left;
+	width: 600px;
+}
+.events {
+	float: right;
+	width: 300px;
+}
+
+#home {
+	background-image: url(images/wave.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+#tide {
+	background-image: url(images/ocean.png);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+}
+
+.gradient {
+	background-color: #2a5567;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a5567', endColorstr='#204653'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#2a5567), to(#204653)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #2a5567,  #204653); /* for firefox 3.6+ */
+}
+/* End of Home Page */
+
+/* Work Page */
+#work {
+	background-image: url(images/wave.png);
+	background-repeat: repeat;
+}
+
+#work h2 {
+	color: #2a5567;
+	z-index: -5;
+}
+
+#work p {
+	color: #2a5567;
+}
+
+#work .content {
+	position: relative;
+	top: -7.15em;
+	background-color: #e6e7e8;
+	padding-top: 2em;
+}
+
+.description {
+	width: 300px;
+	float: left;
+}
+
+.screenshots {
+	width: 650px;
+	float: right;
+}
+
+#work p {
+	margin-bottom: 1em;
+	text-shadow: 0 1px 0 #FCFCFC
+}
+
+.description a {
+	color: #f05051;
+}
+
+.screenshots ul {
+	margin-top: 16px;
+	float: left;
+}
+
+#work .screenshots article {
+	height: 525px;
+	width: 650px;
+}
+#work .screenshots .openbay.landing {
+	background-image: url(images/openbay-main.png);
+}
+#work .screenshots .openbay.shot2 {
+	background-image: url(images/openbay2.png);
+}
+#work .screenshots .openbay.shot3 {
+	background-image: url(images/openbay3.png);
+}
+#work .screenshots .openbay.shot4 {
+	background-image: url(images/openbay4.png);
+}
+
+
+.main {
+	width: 650px;
+	height: 525px;
+	margin-bottom: 0;
+}
+
+.screenshots li {
+	float: left;
+	margin-right: 16px;
+}
+
+.screenshots li:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+.work-nav {
+	clear: both;
+}
+
+.work-nav h1 {
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #2a5567;
+	margin-bottom: 1em;
+}
+
+.work-nav li {
+	float: left;
+	text-align: center;
+	margin-right: 1em;
+}
+
+.work-nav a {
+	font-family: Cubano;
+	font-weight: normal;
+	color: #2a5567;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 20px 0;
+	background-image: url(images/wave.png);
+	background-repeat: repeat;
+	width: 316px;
+	display: block;
+}
+
+.work-nav a:hover {
+	color: #ffffff;
+	background-color: #c8dee7;
+	background-image: none;
+}
+
+.work-nav li:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+#work .work-nav li.openbay a {
+	color: #ffffff;
+	background-color: #abd4e7;
+	background-image: none;
+}
+#work .work-nav li.repurpose a {
+	color: #ffffff;
+	background-color: #abd4e7;
+	background-image: none;
+}
+/* End of Work Page */

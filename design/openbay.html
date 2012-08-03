@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+  <title>DockYard ~ Ruby on Rails Development | Boston-based Web &amp; Mobile Software Consultancy</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="Description" content="#">
+	<meta name="Keywords" content="#">
+	<meta name="robots" content="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="basestyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="work">
+
+<header>
+  <div class="wrap">
+    <a href="index.html" class="logo">DockYard</a>
+  <ul class="nav">
+    <li class="work"><a href="work.html">Work</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="people.html">People</a></li>
+    <li><a href="community.html">Community</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+</header>
+
+<div class="title">
+  <div class="wrap">
+  <h4>Work</h4>
+  </div>
+</div>
+
+
+<div class="content">
+<div class="wrap">
+<div class="work">
+  <div class="description">
+    <h2>Openbay</h2>
+    <p>Openbay aims to revolutionize the vehicle service industry. They provide an innovative way for consumers to match up services with nearby providers. This drives competition and helps consumers make informed purchasing decisions.</p>
+    <p>DockYard worked with Openbay to plan, build &amp; launch the first version of their product. In addition to building the Openbay application, we built a custom invitation system to help get early users involved with the service.</p>
+    <a href="http://openbay.com/">Visit Openbay</a>
+  </div>
+  
+  <div class="screenshots">
+    <article class='openbay landing'></article>
+    <ul>
+      <li><img src="images/openbay2-thumb.png" alt="Gallery" data-id="2"></li>
+      <li><img src="images/openbay3-thumb.png" alt="Gallery" data-id="3"></li>
+      <li><img src="images/openbay4-thumb.png" alt="Gallery" data-id="4"></li>
+    </ul>
+    <script type="text/javascript">
+      $(function() {
+        $('.screenshots ul li').mouseover(function(event)
+        {
+          var $target = $(event.target);
+          $('.work article.openbay').addClass('shot' + $target.data('id'));
+        }).mouseout(function() {
+          $('.work article.openbay').removeClass('shot2');
+          $('.work article.openbay').removeClass('shot3');
+          $('.work article.openbay').removeClass('shot4');
+        })
+      })
+    </script>
+  </div>
+</div>
+
+<div class="work-nav">
+  <h1>Client Work</h1>
+  <ul>
+    <li class="openbay"><a href="openbay.html">Openbay</a></li>
+    <li><a href="repurpose.html">Repurpose</a></li>
+    <li><a href="tip.html">Tip</a></li>
+  </ul>
+</div>
+</div>
+
+<footer>
+  <ul>
+    <li><a href="https://github.com/dockyard/" target="_blank" class="social-icons"><span>G</span></a></li>
+    <li><p>&copy; 2012 DockYard, LLC. All Rights Reserved.</p></li>
+    <li><a href="https://twitter.com/dockyard" target="_blank" class="social-icons">t</a></li>
+  </ul>
+</footer>
+
+</div>
+</body>
+</html>

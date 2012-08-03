@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'League_Gothic';
+    src: url('fonts/league_gothic.eot');
+    src: url('fonts/league_gothic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/league_gothic.woff') format('woff'),
+         url('fonts/league_gothic.ttf') format('truetype'),
+         url('fonts/league_gothic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cubano';
+    src: url('fonts/cubano.eot');
+    src: url('fonts/cubano.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cubano.woff') format('woff'),
+         url('fonts/cubano.ttf') format('truetype'),
+         url('fonts/cubano.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JustVector';
+    src: url('fonts/justvector.eot');
+    src: url('fonts/justvector.eot?#iefix') format('embedded-opentype'),
+         url('fonts/justvector.woff') format('woff'),
+         url('fonts/justvector.ttf') format('truetype'),
+         url('fonts/justvector.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+	background-color: #f05051;
+	height:50px;
+  z-index: 10;
+}
+
+.logo {
+	font-family: 'League_Gothic';
+	font-size: 2.15em;
+	color: #ffffff;
+	position: absolute;
+	font-weight: normal;
+	text-decoration: none;
+	z-index: 15;
+}
+
+.nav {	
+	float: right;
+	padding-top: 20px;
+}
+.nav li {
+	float: left;
+}
+.nav li a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 24px 15px 10px;
+	font-size: .8em;
+}
+.nav li a:hover {
+	background-color: #f28074;
+}
+
+#work .nav li.work a {
+	background-color: #f28074;;
+}
+
+h1 {
+	font-family: 'League_Gothic';
+	font-size: 7em;
+	color: #2a5567;
+}
+
+h2 {
+	font-family: Cubano;
+	font-size: 2.5em;
+}
+
+h4 {
+	font-family: Cubano;
+	font-size: 8em;
+	color: #efefef;
+	position: relative;
+	top: -.5em;
+	z-index: -10;
+}
+
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #abd4e7;
+	font-size: 1em;
+}
+
+li {
+	padding-bottom: 1em;
+}
+
+.wrap {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	clear: both;
+	padding: 3em 0 7em 0;
+	width: 485px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social-icons {
+	font-family: 'JustVector';
+	text-decoration: none;
+	font-size: 2em;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: -.25em;
+	background-color: #2a5567;
+	color: #e6e7e8;
+}
+
+.social-icons:hover {
+	background-color: #5a95a8;
+}
+
+#home .social-icons {
+	background-color: #abd4e7;
+	color: #2a5567;
+}
+
+#home .social-icons:hover {
+	background-color: #ffffff;
+}
+
+footer li {
+	float: left;
+	margin: 0 1em;
+}
+
+footer span {
+	position: relative;
+	top: -.1em;
+}
