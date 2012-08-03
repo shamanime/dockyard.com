@@ -1,0 +1,10 @@
+/* TEAM */
+  Principal Developer: DockYard
+  Contact: contact@dockyard.com
+  Twitter: @DockYard
+  From: Boston, MA
+
+/* SITE */
+  Language: English
+  Docktype: HTML5
+  Frameworks: Ruby on Rails, jQuery, Compass
