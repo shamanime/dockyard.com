@@ -10,8 +10,8 @@ Our awesome website!
 
 ## Authors ##
 
-Amanda Cheung
-[Brian Cardarella](http://twitter.com/bcardarella)
+* Amanda Cheung
+* [Brian Cardarella](http://twitter.com/bcardarella)
 
 ## Contributing? ##
 
