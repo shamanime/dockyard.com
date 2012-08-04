@@ -17,8 +17,7 @@ Our awesome website!
 
 Sure, why not. If you want to help make our website better by all mean!
 
-Unles Rails drops support for Ruby 1.8.7 we will continue to use the
-hash-rocket syntax. Please respect this.
+We use use the hash-rocket syntax for all hashes. Please respect this.
 
 Don't use tabs to indent, two spaces are the standard.
 
