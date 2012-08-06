@@ -56,10 +56,37 @@ $white: #FFFFFF
     margin: 0 auto -46em
     z-index: -5
   .gradient
+    height: 450px
     background-color: $blue
     @include gradient
-  .tide
+    color: $white
+    line-height: 1.5
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+    a
+      color: #ABD4E7
+      font-weight: bold
+    .full
+      margin: 1em 0
+      padding: 2em 4em
+      border:
+        bottom-style: solid
+        color: #ABD4E7
+        width: 1px
+      p
+        text-align: center
+        font:
+          family: Georgia
+          weight: bold
+          size: 1.25em
+    h2
+      font-family: cubano
+      font-size: 2.5em
+    li
+      margin-bottom: 1em
+/*
+ .tide
     background:
       image: url(/assets/ocean.png)
       repeat: repeat-x
       attachment: fixed
+
