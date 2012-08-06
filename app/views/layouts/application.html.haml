@@ -1,7 +1,7 @@
 !!!5
 %html
   %head
-    %title Re Purpose
+    %title DockYard ~ Ruby on Rails Development | Boston-based Web & Mobile Software Consultancy
     = stylesheet_link_tag :application, :media => :all
     = stylesheet_link_tag :print, :media => :print
     = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js'
@@ -13,7 +13,7 @@
   %body{:class => body_classes}
     %header
       = render :partial => 'shared/header'
-    %section#main
+    %section
       = yield
     %footer
       = render :partial => 'shared/footer'

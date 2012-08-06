@@ -1,0 +1,60 @@
+$red: #F05051
+$blue: #2A5567
+$gray: #E6E7E8
+$white: #FFFFFF
+
+@import compass/reset, compass/utilities, compass/css3, compass/css3/font-face, compass/typography/lists/horizontal-list
+
+@mixin gradient
+  +background-image(linear-gradient($blue, #204653))
+
+#home 
+  background:
+    image: url(/assets/wave.png)
+    repeat: repeat
+    attachment: fixed
+  .about 
+    div
+      width: 28em
+      margin: 0 auto
+      padding-top: 1em
+      .narwin
+        width: 135px
+        height: 125px
+        margin: 1em 0
+        float: left
+        background:
+          image: url(/assets/narwin.png)
+          repeat: no-repeat
+          size: 135px 125px
+        &:hover
+          background-image: url(/assets/narwin2.png)
+      h1
+        color: $blue
+        margin-top: 0.325em
+        font:
+          family: leaguegothic
+          size: 7.25em
+    p
+      color: $blue
+      text-align: center
+      clear: both
+      margin: 0 0 1em
+      line-height: 1.5
+      font:
+        family: Georgia
+        style: italic
+        weight: bold
+        size: 1em
+  .circle 
+    width: 46em
+    height: 46em
+    background: $white
+    position: relative
+    top: -23em
+    border-radius: 23em
+    margin: 0 auto -46em
+    z-index: -5
+  .gradient
+    background-color: $blue
+    @include gradient
