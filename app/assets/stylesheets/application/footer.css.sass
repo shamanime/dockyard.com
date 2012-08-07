@@ -2,12 +2,14 @@
 
 $blue: #2A5567
 $white: #FFFFFF
+$gray: #E6E7E8
+$red: #F05051
 
 footer
   clear: both
   text-align: center
   ul
-    padding: 40px 0
+    padding: 70px 0
     li
       position: relative
       display: inline-block
@@ -39,3 +41,12 @@ footer
       background-color: $white
   p
     color: $white
+#work footer
+  background-color: $gray
+  a
+    background-color: $blue
+    color: $gray
+    &:hover
+      background-color: $red
+  p
+    color: $blue

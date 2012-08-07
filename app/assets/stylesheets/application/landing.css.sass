@@ -43,20 +43,24 @@ $white: #FFFFFF
       line-height: 1.5
       font:
         family: Georgia
-        style: italic
         weight: bold
-        size: 1em
+        size: 1.1em
   .circle 
-    width: 46em
-    height: 46em
+    width: 50em
+    height: 50em
     background: $white
     position: relative
     top: -23em
-    border-radius: 23em
-    margin: 0 auto -46em
+    border-radius: 25em
+    margin: 0 auto -50em
     z-index: -5
+  .tide
+    background:
+      image: url(/assets/ocean.png)
+      repeat: repeat-x
+      attachment: fixed
   .gradient
-    height: 450px
+    height: 465px
     background-color: $blue
     @include gradient
     color: $white
@@ -65,28 +69,8 @@ $white: #FFFFFF
     a
       color: #ABD4E7
       font-weight: bold
-    .full
-      margin: 1em 0
-      padding: 2em 4em
-      border:
-        bottom-style: solid
-        color: #ABD4E7
-        width: 1px
-      p
-        text-align: center
-        font:
-          family: Georgia
-          weight: bold
-          size: 1.25em
     h2
       font-family: cubano
       font-size: 2.5em
     li
       margin-bottom: 1em
-/*
- .tide
-    background:
-      image: url(/assets/ocean.png)
-      repeat: repeat-x
-      attachment: fixed
-

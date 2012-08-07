@@ -6,7 +6,7 @@ $ ->
     tide = $(".tide")
     tideparallax = calcParallax(550, .5, posY)
     new_pos = posY - 600
-    tide.style.backgroundPosition = new_pos + "px " + tideparallax + "px"
+    tide.css('background-position', "#{new_pos}px #{tideparallax}px")
 
-  window.onscroll = waveScroller
+  window.onscroll = tideScroller
   tideScroller()
