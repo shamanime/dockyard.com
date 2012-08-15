@@ -1,9 +1,12 @@
 @import compass/css3
 
 $blue: #2A5567
+$l-blue: #ABD4E7
 $white: #FFFFFF
 $gray: #E6E7E8
 $red: #F05051
+
+$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
 footer
   clear: both
@@ -31,11 +34,11 @@ footer
       p
         position: relative
         top: -.25em
-        font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+        font-family: $helvetica
 #home footer
   background-color: #204653
   a
-    background-color: #ABD4E7
+    background-color: $l-blue
     color: $blue
     &:hover
       background-color: $white

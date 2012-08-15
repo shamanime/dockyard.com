@@ -1,9 +1,12 @@
-$red: #F05051
-$blue: #2A5567
-$gray: #E6E7E8
-$white: #FFFFFF
+@import compass/css3
 
-@import compass/reset, compass/utilities, compass/css3, compass/css3/font-face, compass/typography/lists/horizontal-list
+$blue: #2A5567
+$l-blue: #ABD4E7
+$white: #FFFFFF
+$gray: #E6E7E8
+$red: #F05051
+
+$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
 #work
   background:
@@ -13,27 +16,87 @@ $white: #FFFFFF
     color: $gray
     font:
       family: cubano
-      color: $gray
       size: 8em
-    position: relative
-    top: -.25em
-    left: -.715em
     z-index: -5
+    position: absolute
+    top: .15em
   .content
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
-    background-color: $gray
     position: relative
-    top: -3em
-    height: 25em
+    top: 5em
+    padding: 2em 0
+    font-family: $helvetica
+    background-color: $gray
     p
       line-height: 1.5
       color: $blue
       a
+        color: $red      
+    a 
+      text-decoration: none
+      &:hover
         color: $red
-    .portfolio
-      margin-top: 2em
+      h1
+      color: $blue
+      font:
+        family: cubano
+        size: 2.5em
+    .details
+      margin-top: 1em
+      p
+        margin-bottom: 1em
+      .testimonial
+        margin-bottom: 3em
+        background-color: rgba(255,255,255,.5)
+        padding: 1.5em
+        border-radius: 5px
+        font:
+          size: .8em
+          family: georgia
+          weight: bold
+          style: italic
+        color: $gray
+        .author
+          font:
+            family: $helvetica
+            weight: normal
+            style: normal
+          margin-bottom: 0
+    .work-nav
+      margin: 2em 0
       h1
         font:
-          family: cubano
-          size: 2.5em
+          family: georgia
+          weight: bold
+          style: italic
+          size: 1.5em
+        border-bottom:
+          style: solid
+          width: 1px
+          color: $blue
         color: $blue
+        margin-bottom: 1em
+      ul
+        display: inline-block
+        li
+          float: left
+          text-align: center
+          margin: 0 1em 1em 0
+          a
+            color: $blue
+            font:
+              size: 1.5em
+              family: cubano
+            text-decoration: none
+            padding: 20px 0
+            background:
+              image: url(/assets/wave.png)
+              repeat: repeat
+            display: block
+            width: 316px
+            &:hover
+              color: $white
+              background:
+                color: $l-blue
+                image: none
+          &:nth-child(3n+3)
+            margin-right: 0

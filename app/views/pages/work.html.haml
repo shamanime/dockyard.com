@@ -1,31 +1,41 @@
 %body#work
   .title
-    %h1 Work
+    .wrap
+      %h1 Work
   .content
     .wrap
-      .full
-        %p
-          Here is some of our latest work. Click a project below to view it in detail. We have worked on applications from start to launch as well as lorem ipsum dolor sit amet consectetur adipisicing elit. Need help on your project?
-          %a{:href => '#'} Contact Us.
-      .portfolio
-        .col1
-          %h1 Openbay
-          %img{:alt => "Openbay", :src => "assets/openbay/thumb.png"}
-          %p Matches consumers in the vehicle service industry with nearby providers.
-          %ul
-            %li Built first version of their product
-            %li Custom invitation system
-        .col2
-          %h1 RePurpose
-          %img{:alt => "RePurpose", :src => "assets/repurpose/thumb.png"}
-          %p Matches consumers in the vehicle service industry with nearby providers.
-          %ul
-            %li Built first version of their product
-            %li Custom invitation system
+      %a{:href => 'http://openbay.com/', :target => 'blank'}
+        %h1 Openbay
+      .details
+        .col-span
+          %p
+            %span.bold Openbay 
+            aims to revolutionize the vehicle service industry. They provide an innovative way for consumers to match up services with nearby providers. This drives competition and helps consumers make informed purchasing decisions.
+          %p
+            Dockyard worked with 
+            %span.bold Openbay 
+            to plan, build & launch the first version of their product. In addition to building the 
+            %span.bold Openbay 
+            application, we built a custom invitation system to help get early users involved with the service.
         .col3
-          %h1 Tip
-          %img{:alt => "RePurpose", :src => "assets/repurpose/thumb.png"}
-          %p Matches consumers in the vehicle service industry with nearby providers.
-          %ul
-            %li Built first version of their product
-            %li Custom invitation system
+          .testimonial
+            %p "Efficient approach to problem solving, fast development cycles, high quality workmanship and are very attentive to the customer."
+            %p.author Robert Infantino 
+            %p.author Founder and CEO at Openbay, Inc.
+      .work-slider
+        %img{:alt => "Openbay", :src => "assets/openbay/main.png"}
+      .work-nav
+        %h1 Client List
+        %ul
+          %li.button
+            %a{:href => '#'} Openbay
+          %li.button
+            %a{:href => '#'} Tip
+          %li.button
+            %a{:href => '#'} RePurpose
+          %li
+            %a{:href => '#'} RePurpose
+          %li
+            %a{:href => '#'} Openbay
+          %li
+            %a{:href => '#'} Tip
