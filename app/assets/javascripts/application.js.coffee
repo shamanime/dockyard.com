@@ -12,4 +12,5 @@
 #
 #= require jquery
 #= require jquery_ujs
+#= require jquery.cycle.all.min.js
 #= require_tree .
