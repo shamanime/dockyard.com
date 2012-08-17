@@ -1,4 +1,12 @@
 @import compass/reset
+@import compass/css3
+
+$red: #F05051
+$blue: #2A5567
+$gray: #E6E7E8
+$white: #FFFFFF
+
+$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
 @font-face
   font-family: cubano
@@ -18,9 +26,11 @@
   src: url('/assets/justvector.eot?#iefix') format('embedded-opentype'), url('/assets/justvector.woff') format('woff'), url('/assets/justvector.svg') format('svg')
   font-weight: normal
 
-$red: #F05051
-$blue: #2A5567
-$gray: #E6E7E8
+body
+  background:
+    image: url(/assets/wave.png)
+    repeat: repeat
+  line-height: 1.5
 
 .wrap
   width: 980px
@@ -55,3 +65,22 @@ $gray: #E6E7E8
 
 .bold
   font-weight: bold
+  
+.title h1
+  color: $gray
+  font:
+    family: cubano
+    size: 8em
+  z-index: -5
+  position: absolute
+  top: .15em
+  
+.content
+  position: relative
+  top: 5em
+  padding: 2em 0
+  font-family: $helvetica
+  background-color: $gray
+
+.clear
+  clear: both
