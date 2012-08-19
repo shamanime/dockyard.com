@@ -8,6 +8,17 @@ $red: #F05051
 
 $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
+@mixin social($color)
+  font:
+    family: justvector
+    size: 2em
+  text-decoration: none
+  position:relative
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  display: block
+
 footer
   clear: both
   text-align: center
@@ -26,15 +37,7 @@ footer
       display: inline-block
       margin: 0 10px
       a
-        font:
-          family: justvector
-          size: 2em
-        text-decoration: none
-        position:relative
-        width: 40px
-        height: 40px
-        border-radius: 50%
-        display: block
+        @include social($blue)
       .twitter
         line-height: 45px
       .github

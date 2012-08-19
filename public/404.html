@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
+  <title>DockYard ~ Error 404</title>
   <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
-    }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
+    body {background-color: #E6E7E8;}
+    h1 {font-family: cubano; font-size: 100px; color: #2A5567; padding-top: .5em; margin-top: 1.5em;}
+    img {float: left; width: 200px;}
+    div {margin: 0 auto; width: 775px;}
+    .spotlight {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #000;
+      pointer-events: none;
+      /* this is the sweet spot */
+      background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)), color-stop(0, rgba(0,0,0,0.25)));
+      background-image: -moz-radial-gradient(50% 50% 45deg,circle closest-side,transparent 0,transparent 350px,rgba(0, 0, 0, 1) 120px);}
   </style>
 </head>
 
 <body>
   <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <h1>The page you were looking for doesn't exist.</h1>
-    <p>You may have mistyped the address or the page may have moved.</p>
+  <div>
+    <img src="/assets/narwin.png" alt="DockYard Narwin" />
+    <h1>404 ERROR</h1>
   </div>
+  
+  <span id="spot" class="spotlight"></span>
+
+  <script type="text/javascript">
+  var spot = document.getElementById('spot');
+  var width = document.documentElement.clientWidth;
+  var height = document.documentElement.clientHeight;
+
+  /* A bit of JS to respond to mouse events */
+  function moveSpot(e){
+      var x = 0;
+      var y = 0;
+
+      if (!e) var e = window.event;
+      if (e.pageX || e.pageY)
+      {
+          x = e.pageX;
+          y = e.pageY;
+      }
+      else if (e.clientX || e.clientY)
+      {
+          x = e.clientX + document.body.scrollLeft;
+          y = e.clientY + document.body.scrollTop;
+      }
+
+      if (navigator.userAgent.match('AppleWebKit')) {
+          var style = '-webkit-gradient(radial, '+x+' '+y+', 0, '+x+' '+y+', 350, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)), color-stop(0, rgba(0,0,0,0.25)))';
+      } else {
+          var style = '-moz-radial-gradient('+x+'px '+y+'px 45deg,circle closest-side,transparent 0,transparent 350px,rgba(0, 0, 0, 1) 120px)';
+      }
+      spot.style.backgroundImage = style;
+  }
+
+  window.onload = function() {
+      window.onmousemove = moveSpot;
+  }
+  </script>
+
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-572751-1");
+  pageTracker._setDomainName(".svay.com");
+  pageTracker._trackPageview();
+  } catch(err) {}
+  </script>
+
 </body>
 </html>

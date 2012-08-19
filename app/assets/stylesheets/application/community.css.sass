@@ -3,13 +3,49 @@ $blue: #2A5567
 $gray: #E6E7E8
 $white: #FFFFFF
 
+@mixin social
+  font:
+    family: justvector
+    size: 2em
+  text-decoration: none
+  position:relative
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  display: block
+
 #community
   .content
+    color: $blue
     h2
-      color: $blue
       font:
         family: cubano
         size: 2.5em
+    a
+      font-weight: bold
+      color: $blue
+      &:hover
+        color: $red
+    p
+      margin-bottom: 1em
     .open-source
       float: left
+    .os-project-header 
+      a
+        @include social
+        background-color: $blue
+        color: $gray
+        line-height: 40px
+        text-align: center
+        float: left
+        &:hover
+          background-color: $red
+      h1
+        font:
+          family: georgia
+          weight: bold
+          style: italic
+          size: 1.5em
+      
+      
 
