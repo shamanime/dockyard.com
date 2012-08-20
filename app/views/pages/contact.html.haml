@@ -4,32 +4,39 @@
       %h1 Contact
   .content
     .wrap
+      %h1 Send Us A Message
       .col-span
-        %h1 Send Us A Message
+        %p 
+          %span.bold Want to hire us?
+          We are looking for projects in designing and developing web applications using Ruby on Rails. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        %p
+          %span.bold Interested in joining our team?
+          We are looking for business development, designers &amp; developers. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         %form{ :action => '', :method => 'post'}
           %fieldset
             %ul
               %li
-                %label{ :for => 'company'} Company Name:
+                %label{ :for => 'company'} Company Name
                 %input{ :type => 'text', :name => 'company', :class => 'text'}
               %li
-                %label{ :for => 'name'} Contact Name:
+                %label{ :for => 'name'} Contact Name &ast;
                 %input{ :type => 'text', :name => 'name', :class => 'text'}
               %li
-                %label{ :for => 'email'} Contact Email:
+                %label{ :for => 'email'} Contact Email &ast;
                 %input{ :type => 'text', :name => 'email', :class => 'text'}
               %li
-                %label{ :for => 'message'} Message:
+                %label{ :for => 'message'} Message &ast;
                 %textarea{ :name => 'message'}
-              %input{ :type => 'submit', :value => 'Send', :class => 'buton'}
+              %input.submit{ :type => 'submit', :value => 'Submit', :class => 'button'}
       .col3.contact
-        %h2 Call Us: 
-        %h3 (855)DOCK-YRD
-        %h3 (855)362-5973
-        %h2 Address:
-        %h3 100 Tremont Street, Suite 100
-        %h3 Boston, Massachusetts 02108
-        %a{ :href => 'http://goo.gl/maps/tSbmu'} Google Maps
-      
+        .phone
+          %h2 Call Us: 
+          %h3 (855) DOCK &ndash; YRD
+          %h3 (855) 362 &ndash; 5973
+        .address
+          %h2 Address:
+          %h3 100 Tremont Street, Suite 100
+          %h3 Boston, Massachusetts 02108
+        <iframe width="300" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=100+Tremont+St,+Boston,+MA&amp;aq=0&amp;oq=100+t&amp;sll=42.325373,-71.213678&amp;sspn=0.139352,0.271568&amp;ie=UTF8&amp;hq=&amp;hnear=100+Tremont+St,+Boston,+Massachusetts+02108&amp;ll=42.3573,-71.060962&amp;spn=0.002176,0.004243&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=100+Tremont+St,+Boston,+MA&amp;aq=0&amp;oq=100+t&amp;sll=42.325373,-71.213678&amp;sspn=0.139352,0.271568&amp;ie=UTF8&amp;hq=&amp;hnear=100+Tremont+St,+Boston,+Massachusetts+02108&amp;ll=42.3573,-71.060962&amp;spn=0.002176,0.004243&amp;t=m&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
       .clear
               
