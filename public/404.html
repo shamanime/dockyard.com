@@ -3,10 +3,11 @@
 <head>
   <title>DockYard ~ Error 404</title>
   <style type="text/css">
-    body {background-color: #E6E7E8;}
-    h1 {font-family: cubano; font-size: 100px; color: #2A5567; padding-top: .5em; margin-top: 1.5em;}
-    img {float: left; width: 200px;}
-    div {margin: 0 auto; width: 775px;}
+    body {background-color: #E6E7E8; overflow: hidden;}
+    h1 {font-family: cubano; font-size: 100px; color: #2A5567; padding-top: .5em; margin-top: 8%;}
+    h2 {color: #2A5567; font-family: cubano; font-size: 48px; text-align: center; margin-top: -1em;}
+    .narwin {float: left; width: 195px;}
+    .everythang {margin: 0 auto; width: 775px;}
     .spotlight {
       display: block;
       position: absolute;
@@ -17,17 +18,22 @@
       border: 1px solid #000;
       pointer-events: none;
       /* this is the sweet spot */
-      background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)), color-stop(0, rgba(0,0,0,0.25)));
+      background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(rgba(0,0,0,.935)), to(rgba(0,0,0,.935)), color-stop(0, rgba(0,0,0,0.25)));
       background-image: -moz-radial-gradient(50% 50% 45deg,circle closest-side,transparent 0,transparent 350px,rgba(0, 0, 0, 1) 120px);}
+    .tide {background-image: url(/assets/ocean.png); background-repeat: repeat-x; height: 20em; position: relative; bottom: -2em; left: -2em; right: -2em; width: 110%;}
   </style>
 </head>
 
 <body>
   <!-- This file lives in public/404.html -->
-  <div>
-    <img src="/assets/narwin.png" alt="DockYard Narwin" />
-    <h1>404 ERROR</h1>
+  <div class="everythang">
+    <img class="narwin" src="/assets/narwin.png" alt="DockYard Narwin" />
+    <div class="error-text">
+      <h1>404 ERROR</h1>
+      <h2>Page not found.</h2>
+    </div>
   </div>
+  <div class="tide"></div>
   
   <span id="spot" class="spotlight"></span>
 
@@ -54,7 +60,7 @@
       }
 
       if (navigator.userAgent.match('AppleWebKit')) {
-          var style = '-webkit-gradient(radial, '+x+' '+y+', 0, '+x+' '+y+', 350, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)), color-stop(0, rgba(0,0,0,0.25)))';
+          var style = '-webkit-gradient(radial, '+x+' '+y+', 0, '+x+' '+y+', 300, from(rgba(0,0,0,.935)), to(rgba(0,0,0,.935)), color-stop(0, rgba(0,0,0,0.25)))';
       } else {
           var style = '-moz-radial-gradient('+x+'px '+y+'px 45deg,circle closest-side,transparent 0,transparent 350px,rgba(0, 0, 0, 1) 120px)';
       }

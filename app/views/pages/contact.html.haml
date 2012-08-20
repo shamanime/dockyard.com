@@ -4,3 +4,32 @@
       %h1 Contact
   .content
     .wrap
+      .col-span
+        %h1 Send Us A Message
+        %form{ :action => '', :method => 'post'}
+          %fieldset
+            %ul
+              %li
+                %label{ :for => 'company'} Company Name:
+                %input{ :type => 'text', :name => 'company', :class => 'text'}
+              %li
+                %label{ :for => 'name'} Contact Name:
+                %input{ :type => 'text', :name => 'name', :class => 'text'}
+              %li
+                %label{ :for => 'email'} Contact Email:
+                %input{ :type => 'text', :name => 'email', :class => 'text'}
+              %li
+                %label{ :for => 'message'} Message:
+                %textarea{ :name => 'message'}
+              %input{ :type => 'submit', :value => 'Send', :class => 'buton'}
+      .col3.contact
+        %h2 Call Us: 
+        %h3 (855)DOCK-YRD
+        %h3 (855)362-5973
+        %h2 Address:
+        %h3 100 Tremont Street, Suite 100
+        %h3 Boston, Massachusetts 02108
+        %a{ :href => 'http://goo.gl/maps/tSbmu'} Google Maps
+      
+      .clear
+              
