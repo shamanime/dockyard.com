@@ -20,32 +20,31 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
   display: block
 
 footer
+  margin-top: 8em
+  height: 6em
   clear: both
   text-align: center
-  background-color: $gray
   a
     background-color: $blue
-    color: $gray
+    color: $white
     &:hover
       background-color: $red
   p
     color: $blue
-  ul
-    padding: 70px 0
-    li
+  ul li
+    position: relative
+    display: inline-block
+    margin: 0 10px
+    a
+      @include social($blue)
+    .twitter
+      line-height: 45px
+    .github
+      line-height: 40px
+    p
       position: relative
-      display: inline-block
-      margin: 0 10px
-      a
-        @include social($blue)
-      .twitter
-        line-height: 45px
-      .github
-        line-height: 40px
-      p
-        position: relative
-        top: -.25em
-        font-family: $helvetica
+      top: -.25em
+      font-family: $helvetica
 #home footer
   background-color: #204653
   a
