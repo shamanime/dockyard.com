@@ -4,6 +4,7 @@ $gray: #E6E7E8
 $white: #FFFFFF
 
 @import compass/css3
+@import compass/utilities/sprites/sprite-img
 
 @mixin gradient
   +background-image(linear-gradient($blue, #204653))
@@ -29,6 +30,7 @@ $white: #FFFFFF
           size: 135px 125px
         &:hover
           background-image: url(/assets/narwin2.png)
+          repeat: no-repeat
       h1
         color: $blue
         font:
