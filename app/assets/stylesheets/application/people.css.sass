@@ -5,6 +5,17 @@ $white: #FFFFFF
 
 @import compass/css3
 
+@mixin social
+  font:
+    family: justvector
+    size: 2em
+  text-decoration: none
+  position:relative
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  display: block
+
 #people
   .content
     padding-top: 2em
@@ -22,4 +33,28 @@ $white: #FFFFFF
       color: $blue
       font:
         weight: bold
-    
+    .twitter
+      line-height: 45px
+    .github
+      line-height: 40px
+      margin: 0 .25em
+    a
+      @include social
+      background-color: $blue
+      color: $gray
+      text-align: center
+      float: left
+      &:hover
+        background-color: $red
+    .share-wrap
+      float: right
+      display: block
+      width: 215px
+      margin-bottom: 2em
+    .share
+      float: left
+      margin: 1em 0
+    ul li ul
+      margin-top: .65em
+
+        
