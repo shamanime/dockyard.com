@@ -6,21 +6,8 @@ $white: #FFFFFF
 $gray: #E6E7E8
 $red: #F05051
 
-$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
-
-@mixin social($color)
-  font:
-    family: justvector
-    size: 2em
-  text-decoration: none
-  position:relative
-  width: 40px
-  height: 40px
-  border-radius: 50%
-  display: block
-
 footer
-  margin-top: 8em
+  padding-top: 8em
   height: 6em
   clear: both
   text-align: center
@@ -29,27 +16,19 @@ footer
     color: $white
     &:hover
       background-color: $red
-  p
-    color: $blue
   ul li
     position: relative
     display: inline-block
     margin: 0 10px
-    a
-      @include social($blue)
-    .twitter
-      line-height: 45px
-    .github
-      line-height: 40px
     p
       position: relative
-      top: -.25em
-      font-family: $helvetica
+      top: -1em
 #home footer
-  background-color: #204653
+  padding-top: 2em
+  background-color: darken($blue, 5%)
   a
     background-color: $l-blue
-    color: $blue
+    color: darken($blue, 5%)
     &:hover
       background-color: $white
   p
