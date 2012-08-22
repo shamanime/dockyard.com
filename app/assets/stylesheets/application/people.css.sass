@@ -1,44 +1,44 @@
 $blue: #2A5567
 $gray: #E6E7E8
+$white: #FFFFFF
 
 #people
   .content
     padding-top: 2em
     .team-names
-      position: fixed
-      top: 10em
-      li a
+      a
         color: $blue
         font:
           weight: bold
     .scroll-to
       position: relative
-      top: 3em
+      top: 4em
     #brian
       position: relative
       top: -1.75em
     .job-title
-      color: darken($gray, 15%)
+      color: darken($gray, 18%)
+      text-shadow: $white .5px 1px 0px
       font:
         family: poly, serif
         size: .75em
         style: italic
     .follow
-      margin: .5em 0 2em
+      color: darken($gray, 20%)
+      margin: .5em 0 3em
       float: right
       li
         float: left
         p
-          margin: .35em .5em 0 0
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+          margin: .25em .5em 0 0
+          font:
+            family: poly, serif
+            style: italic
+            size: 1.25em
+          text-shadow: $white .5px 1px 0px
+    .social a
+      background-color: darken($gray, 12%)
+      box-shadow: $white .5px 1px 0px
+      &:hover
+        background-color: darken($gray, 9%)
+            
