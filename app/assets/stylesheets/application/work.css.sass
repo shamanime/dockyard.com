@@ -10,74 +10,48 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
 
 #work
   .content
-    .details
-      p
-        margin-bottom: 1em
-      .testimonial
-        margin-bottom: 3em
-        border-radius: 5px
+    .site-link
+      color: darken($gray, 20%)
+      text-shadow: $white .5px 1px 0px
+      font:
+        family: poly, serif
+        style: italic
+        size: 20px
+    .details p
+      margin-bottom: 1em
+    #project-nav
+      div
+        background-color: $l-blue
+        text-align: center
+        width: 300px
+        padding: .25em 0
         font:
-          size: 1em
-          family: poly, serif
-          style: italic
+          family: cubano
+          size: 1.5em
+        &:hover
+          background-color: lighten($l-blue, 5%)
+        a
+          color: $white
+      h1
+        margin: .35em 0
         color: darken($gray, 20%)
         text-shadow: $white .5px 1px 0px
-        .author
-          font:
-            family: $helvetica
-            weight: normal
-            style: normal
-          margin-bottom: 0
-    .site-link
-      font:
-        family: georgia
-        weight: bold
-        style: italic
-      color: $blue
-      font-weight: bold
-      padding-bottom: .2em
-      border-bottom:
-        style: solid
-        color: $white
-        width: 1px
-      &:hover
-        border-bottom-color: $blue
-    .work-nav
-      margin: 2em 0
-      h1
         font:
-          family: georgia
-          weight: bold
+          family: poly, serif
           style: italic
-          size: 1.5em
+          size: 20px
         border-bottom:
           style: solid
+          color: darken($gray, 10%)
           width: 1px
-          color: $blue
-        margin-bottom: 1em
-      ul
-        display: inline-block
-        li
-          float: left
-          text-align: center
-          margin: 0 1em 1em 0
-          a
-            color: $blue
-            font:
-              size: 1.5em
-              family: cubano
-            padding: 10px 0
-            background:
-              image: url(/assets/wave.png)
-              repeat: repeat
-            display: block
-            width: 316px
-            &:hover
-              color: $white
-              background:
-                color: $l-blue
-                image: none
-          &:nth-child(3n+3)
-            margin-right: 0
+      ul li a
+        color: darken($gray, 35%)
+        text-shadow: $white .5px 1px 0px
+        font:
+          weight: bold
+        
+        
+        
+        
 
-
+ 

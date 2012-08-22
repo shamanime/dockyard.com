@@ -4,7 +4,10 @@
       %h1 Work
   .content
     .wrap
-      %h1.headline Openbay
+      %h1.headline
+        Openbay
+        %span
+          %a.site-link{:href => 'http://openbay.com/', :target => 'blank'} Visit full site &gt;
       .details
         .col-span
           %p
@@ -16,12 +19,17 @@
             to plan, build & launch the first version of their product. In addition to building the 
             %span.bold Openbay 
             application, we built a custom invitation system to help get early users involved with the service.
-          %a.site-link{:href => 'http://openbay.com/', :target => 'blank'} Visit Openbay
-        .col3
-          .testimonial
-            %p "Efficient approach to problem solving, fast development cycles, high quality workmanship and very attentive to the customer."
-            %p.author Robert Infantino 
-            %p.author Founder and CEO at Openbay, Inc.
+        .col3#project-nav
+          %div
+            %a{:href => '#'} Next project
+          %h1 Clients
+          %ul
+            %li
+              %a{:href => '/work/openbay'} Openbay
+            %li
+              %a{:href => '/work/tip'} Global Matters
+            %li
+              %a{:href => '/work/repurpose'} RePurpose
       .clear
       .slider
         %ul.slider-nav
@@ -36,12 +44,3 @@
             %img{:alt => "Openbay", :src => "/assets/openbay/openbay2.png"}
           %li
             %img{:alt => "Openbay", :src => "/assets/openbay/openbay3.png"}
-      .work-nav
-        %h1 Clients
-        %ul
-          %li.button
-            %a{:href => '/work/openbay'} Openbay
-          %li.button
-            %a{:href => '/work/tip'} Tip
-          %li.button
-            %a{:href => '/work/repurpose'} RePurpose
