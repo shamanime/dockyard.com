@@ -8,11 +8,14 @@ $red: #F05051
 
 $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
+@mixin engrave
+  color: darken($gray, 20%)
+  text-shadow: $white .5px 1px 0px
+
 #work
   .content
     .site-link
-      color: darken($gray, 20%)
-      text-shadow: $white .5px 1px 0px
+      @include engrave
       font:
         family: poly, serif
         style: italic
@@ -34,24 +37,74 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
           color: $white
       h1
         margin: .35em 0
-        color: darken($gray, 20%)
-        text-shadow: $white .5px 1px 0px
+        @include engrave
         font:
           family: poly, serif
           style: italic
-          size: 20px
+          size: 24px
         border-bottom:
           style: solid
           color: darken($gray, 10%)
           width: 1px
       ul li a
-        color: darken($gray, 35%)
-        text-shadow: $white .5px 1px 0px
+        @include engrave
         font:
           weight: bold
-        
-        
-        
-        
+    .callout
+      border-bottom:
+        style: solid
+        width: 1px
+        color: darken($gray, 10%)
+    .portfolio
+      margin: 2em 0
+      li
+        float: left
+        margin: 0 16px 16px 0
+        position: relative
+        -moz-box-shadow: 0px 0px 5px 3px rgba(204,204,204,1)
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(204,204,204,1)
+        box-shadow: 0px 0px 5px 3px rgba(204,204,204,1)
+        width: 316px
+        height: 255px
+        &:hover
+          -moz-transform: scale(1.01)
+          -webkit-transform: scale(1.01)
+      .coming
+        background-color: $blue
+        &:hover
+          -moz-transform: scale(1)
+          -webkit-transform: scale(1)
+        h1
+          color: $white
+          text-align: center
+          padding: 2.75em 0
+          text-shadow: darken($blue, 15%) 1px 3px 0px
+          font:
+            family: poly
+            style: italic
+            size: 2em
+          
+      li:nth-child(3n+3)
+        margin-right: 0
+    .clear
+      padding-bottom: 1em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  

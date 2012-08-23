@@ -9,11 +9,11 @@ $white: #FFFFFF
 @mixin gradient
   +background-image(linear-gradient($blue, darken($blue, 5%)))
 
-#home 
-  .about 
-    div
+#home
+  .about
+    .dockyard
       width: 28em
-      margin: 0 auto
+      margin: 0 auto -2.5em
       padding-top: 1em
       .narwin
         width: 135px
@@ -29,26 +29,9 @@ $white: #FFFFFF
           background-position: 100% 0
           repeat: no-repeat
       h1.logo-big
-        color: $blue
         font:
           family: leaguegothic
           size: 7.25em
-      p
-        text-align: center
-        font:
-          family: georgia
-          weight: bold
-          size: 1.1em
-    p
-      color: $blue
-      text-align: center
-      clear: both
-      margin: -1em 0 1em
-      line-height: 1.5
-      font:
-        family: Georgia
-        weight: bold
-        size: 1.1em
   .circle 
     width: 50em
     height: 50em
@@ -72,6 +55,7 @@ $white: #FFFFFF
     a
       color: #ABD4E7
       font-weight: bold
+      text-decoration: underline
     h2
       font-family: cubano
       font-size: 2.5em
