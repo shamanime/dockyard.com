@@ -8,10 +8,10 @@ $white: #FFFFFF
 
 $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
-@mixin social
+@mixin icon
   font:
-    family: justvector
-    size: 2em
+    family: fontello
+    size: 1.35em
   position:relative
   width: 40px
   height: 40px
@@ -36,6 +36,12 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
   font-family: justvector
   src: url('/assets/justvector.eot')
   src: url('/assets/justvector.eot?#iefix') format('embedded-opentype'), url('/assets/justvector.woff') format('woff'), url('/assets/justvector.svg') format('svg')
+  font-weight: normal
+
+@font-face
+  font-family: fontello
+  src: url('/assets/fontello.eot')
+  src: url('/assets/fontello.eot?#iefix') format("embedded-opentype"), url('/assets/fontello.woff') format("woff"), url('/assets/fontello.svg') format('svg')
   font-weight: normal
 
 body
@@ -104,28 +110,21 @@ a
     family: cubano
     size: 2.5em
 
-.social a
-  @include social
+.icon a
+  @include icon
   background-color: $blue
   color: $white
   margin: 0 .1em
   &:hover
     background-color: $red
 .twitter
-  line-height: 45px
-.github
   line-height: 40px
-.dribbble
-  line-height: 41px
+.github
+  line-height: 42px
 
 #fixed-nav
   position: fixed
   top: 10em
-  .narwin-bw
-    position: fixed
-    bottom: 2.75em
-    min-height: 300px
-    width: 300px
 
 .callout
   text-align: center

@@ -9,6 +9,16 @@ $red: #F05051
 #contact
   .content
     margin-bottom: 1em
+    .col1
+      margin-top: 4em
+      .contact-icon
+        font:
+          family: fontello
+          size: 1.35em
+        color: $blue
+        float: left
+        margin-top: -.2em
+        width: 30px
     p
       margin-bottom: 1em
     h2
@@ -31,6 +41,10 @@ $red: #F05051
       float: right
       margin-right: 18%
       padding: 10px
+      border:
+        style: solid
+        color: darken($gray, 15%)
+        width: 1px
     textarea
       border-style: none
       width: 350px
@@ -39,8 +53,13 @@ $red: #F05051
       padding: 10px
       float: right
       resize: none
+      border:
+        style: solid
+        color: darken($gray, 15%)
+        width: 1px
     .submit
       background-color: $l-blue
+      border-style: none
       margin-top: 1em
       color: $white
       margin-right: 18%
