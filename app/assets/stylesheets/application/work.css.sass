@@ -14,82 +14,32 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
 
 #work
   .content
-    .site-link
-      @include engrave
+    #fixed-nav
+      top: 15em
+    .contact-icon
       font:
-        family: poly, serif
-        style: italic
-        size: 20px
-    .details p
-      margin-bottom: 1em
-    #project-nav
-      div
-        background-color: $l-blue
-        text-align: center
-        width: 300px
-        padding: .25em 0
-        font:
-          family: cubano
-          size: 1.5em
+        family: fontello
+        size: 1.35em
+      color: $blue
+      width: 20px
+      position: absolute
+      margin-left: -1.5em
+      margin-top: -.25em
+    .project-names
+      a
+        color: $blue
         &:hover
-          background-color: lighten($l-blue, 5%)
-        a
-          color: $white
-      h1
-        margin: .35em 0
-        @include engrave
-        font:
-          family: poly, serif
-          style: italic
-          size: 24px
-        border-bottom:
-          style: solid
-          color: darken($gray, 10%)
-          width: 1px
-      ul li a
-        @include engrave
-        font:
-          weight: bold
+          text-decoration: underline
+      li
+        margin-bottom: 0
+    li
+      margin-bottom: 2em
     .callout
+      margin-bottom: .5em
       border-bottom:
         style: solid
         width: 1px
         color: darken($gray, 10%)
-    .portfolio
-      margin: 2em 0
-      li
-        float: left
-        margin: 0 16px 16px 0
-        position: relative
-        -moz-box-shadow: 0px 0px 5px 3px rgba(204,204,204,1)
-        -webkit-box-shadow: 0px 0px 5px 3px rgba(204,204,204,1)
-        box-shadow: 0px 0px 5px 3px rgba(204,204,204,1)
-        width: 314px
-        height: 254px
-        border:
-          style: solid
-          color: darken($gray, 15%)
-          width: 1px
-        &:hover
-          -moz-transform: scale(1.02)
-          -webkit-transform: scale(1.02)
-      .coming
-        background-color: $blue
-        &:hover
-          -moz-transform: scale(1)
-          -webkit-transform: scale(1)
-        h1
-          color: $white
-          text-align: center
-          padding: 2.75em 0
-          text-shadow: darken($blue, 15%) 1px 3px 0px
-          font:
-            family: poly
-            style: italic
-            size: 2em
-          
-      li:nth-child(3n+3)
-        margin-right: 0
     .clear
       padding-bottom: 1em
 

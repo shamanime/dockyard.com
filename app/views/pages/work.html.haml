@@ -6,24 +6,46 @@
     .wrap
       .callout
         %p We develop applications for clients that range from startups to established enterprises using Ruby on Rails and agile development. Take a look at our client work lorem ipsum  officia authentic vice.
-      %ul.portfolio
-        %li
-          %a{:href => '/work/openbay'}
-            %img{:alt => 'Openbay', :src => '/assets/openbay/openbay-thumb.png'}
-        %li
-          %a{:href => '/work/tip'}
-            %img{:alt => 'Tip', :src => '/assets/tip/tip-thumb.png'}
-        %li
-          %a{:href => '/work/repurpose'}
-            %img{:alt => 'RePurpose', :src => '/assets/repurpose/repurpose-thumb.png'}
-        %li
-          %a{:href => '#'}
-            %img{:alt => 'Power Careers', :src => '/assets/powercareers/powercareers-thumb.png'}
-        %li
-          %a{:href => '#'}
-            %img{:alt => 'Provider Tool', :src => '/assets/openbay/openbay-thumb.png'}
-        %li.coming
-          %a
-            %div
-              %h1 Coming Soon!
+      .col1#fixed-nav
+        .contact-icon s
+        %h1.bold Clients
+        %ul.project-names
+          %li
+            %a.scroll{:href => '#openbay'} Openbay
+          %li
+            %a.scroll{:href => '#careers'} Power Careers
+          %li
+            %a.scroll{:href => '#provider'} Provider Tool
+          %li
+            %a.scroll{:href => '#repurpose'} RePurpose
+          %li
+            %a.scroll{:href => '#tip'} Tip of the Iceberg
+      .col-span2
+        %ul
+          %li
+            #openbay
+            %h1.headline Openbay            
+            %img{:alt => 'Openbay', :src => 'assets/openbay/openbay1.jpg'}
+            %p
+              Openbay provides an innovative way for consumers to match up services with nearby providers, which helps consumers make informed purchasing decisions. Dockyard worked with Openbay to plan, build &amp; launch the first version of their product.
+          %li
+            #careers.scroll-to
+            %h1.headline Power Careers
+            %img{:alt => 'Power Careers', :src => 'assets/powercareers/careers1.jpg'}
+            %p Wolf delectus fugiat, next level american apparel kogi lorem ipsum tempor twee jean shorts, locavore vero irony craft beer adipisicing you probably haven't heard of them. +1 direct trade high life sint vero, typewriter chambray mcsweeney's hoodie minim accusamus master.
+          %li
+            #provider.scroll-to
+            %h1.headline Provider Tool
+            %img{:alt => 'Provider Tool', :src => 'assets/openbay/openbay3.jpg'}
+            %p Wolf delectus fugiat, next level american apparel kogi lorem ipsum tempor twee jean shorts, locavore vero irony craft beer adipisicing you probably haven't heard of them. +1 direct trade high life sint vero, typewriter chambray mcsweeney's hoodie minim accusamus master.
+          %li
+            #repurpose.scroll-to
+            %h1.headline RePurpose
+            %img{:alt => 'RePurpose', :src => 'assets/openbay/openbay2.jpg'}
+            %p Brian Cardarella, one of DockYard's partners, lorem ipsum tempor twee jean shorts, locavore vero irony craft beer adipisicing you probably haven't heard of them. +1 direct trade high life sint vero, typewriter chambray mcsweeney's hoodie minim accusamus master.
+          %li
+            #tip.scroll-to
+            %h1.headline Tip of the Iceberg
+            %img{:alt => 'Tip of the Iceberg', :src => 'assets/tip/tip1.jpg'}
+            %p Wolf delectus fugiat, next level american apparel kogi lorem ipsum tempor twee jean shorts, locavore vero irony craft beer adipisicing you probably haven't heard of them. +1 direct trade high life sint vero, typewriter chambray mcsweeney's hoodie minim accusamus master.
       .clear
