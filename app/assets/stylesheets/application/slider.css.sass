@@ -1,15 +1,15 @@
-$red: #F05051
-$blue: #2A5567
+$gray: #E6E7E8
 
 .slider
-  -moz-box-shadow: 0px 0px 5px 3px #ccc
-  -webkit-box-shadow: 0px 0px 5px 3px #ccc
-  box-shadow: 0px 0px 5px 3px #ccc
+  border:
+    color: darken($gray, 15%)
+    width: 1px
+    style: solid
   clear: both
-  width: 980px
-  height: 640px
+  width: 720px
+  height: 470px
   position: relative
-  margin: 2em 0
+  margin: .25em 0 .75em
   z-index: 5
   .slider-nav
     display: none
@@ -18,18 +18,18 @@ $blue: #2A5567
     z-index: 10
     .prev
       float: left
-      margin: 0
+      margin: 0 0 0 -.25px
       opacity: .2
       a
         background: url(/assets/prev.png)
     .next
       float: right
-      margin: 0
+      margin: 0 -.25px 0 0
       opacity: .2
       a
         background: url(/assets/next.png)
     a
       display: block
-      width: 50px
-      height: 980px
+      width: 37px
+      height: 470px
       text-indent: -9999px

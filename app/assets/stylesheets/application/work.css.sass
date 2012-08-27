@@ -1,64 +1,23 @@
 @import compass/css3
 
-$blue: #2A5567
-$l-blue: #ABD4E7
-$white: #FFFFFF
 $gray: #E6E7E8
-$red: #F05051
-
-$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
-
-@mixin engrave
-  color: darken($gray, 20%)
-  text-shadow: $white .5px 1px 0px
 
 #work
   .content
-    #fixed-nav
-      top: 15em
-    .contact-icon
-      font:
-        family: fontello
-        size: 1.35em
-      color: $blue
-      width: 20px
-      position: absolute
-      margin-left: -1.5em
-      margin-top: -.25em
-    .project-names
-      a
-        color: $blue
-        &:hover
-          text-decoration: underline
-      li
-        margin-bottom: 0
-    li
-      margin-bottom: 2em
     .callout
+      padding-bottom: 0
       margin-bottom: .5em
       border-bottom:
         style: solid
         width: 1px
         color: darken($gray, 10%)
+    .col1
+      top: 16.25em
+      li a
+        &:hover
+          text-decoration: underline
+    .colspan2
+      li
+        margin-bottom: 2em
     .clear
       padding-bottom: 1em
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

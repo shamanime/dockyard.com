@@ -5,49 +5,28 @@ $white: #FFFFFF
 #people
   .content
     padding-top: 2em
-    .contact-icon
-      font:
-        family: fontello
-        size: 1.35em
-      color: $blue
-      width: 20px
-      position: absolute
-      margin-left: -1.5em
-      margin-top: -.25em
-    .team-names
-      a
-        color: $blue
+    .col1
+      li a
         &:hover
           text-decoration: underline
-    .scroll-to
-      position: relative
-      top: 4em
-    #brian
-      position: relative
-      top: -1.75em
-    .job-title
-      color: darken($gray, 18%)
-      text-shadow: $white .5px 1px 0px
-      font:
-        family: poly, serif
-        size: .75em
-        style: italic
-    .follow
-      color: darken($gray, 20%)
-      margin: .5em 0 3em
-      float: right
-      li
-        float: left
-        p
-          margin: .25em .5em 0 0
-          font:
-            family: poly, serif
-            style: italic
-            size: 1.25em
-          text-shadow: $white .5px 1px 0px
-    .icon a
-      background-color: darken($gray, 12%)
-      box-shadow: $white .5px 1px 0px
-      &:hover
-        background-color: darken($gray, 9%)
-            
+    #team
+      span
+        color: darken($gray, 18%)
+        text-shadow: $white .5px 1px 0px
+        font:
+          family: poly, serif
+          size: .75em
+          style: italic
+      ul
+        color: darken($gray, 20%)
+        margin: .5em 0 3em
+        float: right
+        li
+          float: left
+          .italic
+            margin: .25em .5em 0 0
+      .social-icon a
+        background-color: darken($gray, 12%)
+        box-shadow: $white .5px 1px 0px
+        &:hover
+          background-color: darken($gray, 9%)  
