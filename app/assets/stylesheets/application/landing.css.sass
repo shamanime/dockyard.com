@@ -6,8 +6,6 @@ $l-blue: #ABD4E7
 
 @import compass/css3
 
-$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
-
 #home
   .about
     .dockyard
@@ -40,35 +38,6 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
     border-radius: 25em
     margin: 0 auto -50em
     z-index: -5
-  .landing-gallery
-    height: 435px
-    width: 600px
-    margin: 0 auto
-    position: relative
-    .feature
-      position: absolute
-      z-index: 30
-      &:hover
-        -moz-transform: scale(1.01)
-        -webkit-transform: scale(1.01)
-    .feature-left
-      -moz-transform: scale(.85)
-      -webkit-transform: scale(.85)
-      position: absolute
-      left: -12em
-      z-index: 20
-      &:hover
-        -moz-transform: scale(.87)
-        -webkit-transform: scale(.87)
-    .feature-right
-      -moz-transform: scale(.85)
-      -webkit-transform: scale(.85)
-      position: absolute
-      right: -12em
-      z-index: 10
-      &:hover
-        -moz-transform: scale(.87)
-        -webkit-transform: scale(.87)
   #tide
     height: 100%
     width: 100%
@@ -76,18 +45,46 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
       image: url(/assets/ocean.png)
       repeat: repeat-x
       attachment: fixed
+    .landing-gallery
+      height: 435px
+      width: 600px
+      margin: 0 auto
+      position: relative
+      .feature
+        position: absolute
+        z-index: 30
+        &:hover
+          -moz-transform: scale(1.01)
+          -webkit-transform: scale(1.01)
+      .feature-left
+        -moz-transform: scale(.85)
+        -webkit-transform: scale(.85)
+        position: absolute
+        left: -12em
+        z-index: 20
+        &:hover
+          -moz-transform: scale(.87)
+          -webkit-transform: scale(.87)
+      .feature-right
+        -moz-transform: scale(.85)
+        -webkit-transform: scale(.85)
+        position: absolute
+        right: -12em
+        z-index: 10
+        &:hover
+          -moz-transform: scale(.87)
+          -webkit-transform: scale(.87)
   .gradient
+    color: $white
     background-color: $blue
     +background-image(linear-gradient($blue, darken($blue, 5%)))
-    color: $white
-    line-height: 1.5
-    font-family: $helvetica
-    a
-      color: $l-blue
-      font-weight: bold
-      text-decoration: underline
     h2
       font-family: cubano
       font-size: 2.5em
     li
       margin-bottom: 1em
+      a
+        color: $l-blue
+        font-weight: bold
+        text-decoration: underline
+    
