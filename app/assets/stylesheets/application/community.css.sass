@@ -2,25 +2,47 @@ $red: #F05051
 $blue: #2A5567
 $gray: #E6E7E8
 $white: #FFFFFF
+$l-blue: #ABD4E7
 
 #community
   .content
-    a
-      font-weight: bold
-      color: $blue
-      &:hover
-        color: $red
-    p
-      margin-bottom: 1em
-    .open-source
+    .col3
+      a
+        color: $blue
+        &:hover
+          color: $red
+    .colspan
+      width: 680px
       float: left
-    .os-project-header
-      h1
-        font:
-          family: georgia
-          weight: bold
-          style: italic
-          size: 1.5em
-      
-      
-
+      ul
+        text-align: center
+        li a
+          float: left
+          width: 324px
+          height: 124px
+          padding: 1em 0
+          margin: 0 16px 16px 0
+          background-color: darken($gray, 8%)
+          &:hover
+            background-color: darken($gray, 5%)
+          .os-icon
+            font:
+              family: fontello
+              size: 1.35em
+            position:relative
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            display: inline-block
+            text-align: center
+            background-color: $blue
+            color: $white
+            line-height: 39px
+          h1
+            font:
+              family: georgia
+              weight: bold
+              style: italic
+              size: 1.25em
+          p
+            padding: 0 1em
