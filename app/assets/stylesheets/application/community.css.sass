@@ -17,10 +17,20 @@ $l-blue: #ABD4E7
       float: left
       ul
         text-align: center
+        .os-icon
+          font:
+            family: fontello
+            size: 4.6em
+          position: absolute
+          line-height: 110px
+          text-align: center
+          color: $blue
+          opacity: .15
+          margin-left: -.55em
         li a
           float: left
           width: 316px
-          height: 90px
+          height: 110px
           padding: 1em 0
           margin: 0 16px 16px 0
           background-color: rgba(171, 212, 231,.2)
@@ -30,11 +40,13 @@ $l-blue: #ABD4E7
             style: solid
           &:hover
             background-color: rgba(171, 212, 231,.4)
-          h1
-            font:
-              family: georgia
-              weight: bold
-              style: italic
-              size: 1.25em
-          p
-            padding: 0 1em
+          div
+            width: 200px
+            float: right
+            margin-right: 8px
+            h1
+              font:
+                family: georgia
+                weight: bold
+                style: italic
+                size: 1.25em
