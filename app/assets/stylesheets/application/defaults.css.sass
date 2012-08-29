@@ -133,23 +133,33 @@ p
   font:
     family: fontello
     size: 1.35em
-  color: $blue
+  color: $red
   position: absolute
   margin-top: -.25em
   margin-left: -1.25em
 
 .os-icon
-  @include icon
-  display: inline-block
-  background-color: darken($gray, 12%)
-  color: $white
-  line-height: 39px
-  float: none
-  box-shadow: $white .5px 1px 0px
+  font:
+    family: fontello
+    size: 6.5em
+  position: absolute
+  line-height: 90px
+  text-align: center
+  color: $blue
+  opacity: .06
+  margin-left: .25em
 
 #fixed-nav
   position: fixed
   top: 10em
+  li
+    margin-right: 1.5em
+    border-bottom:
+      style: solid
+      color: darken($gray, 10%)
+      width: 1px
+  li:last-child
+    border-bottom-style: none
 
 .callout
   text-align: center
