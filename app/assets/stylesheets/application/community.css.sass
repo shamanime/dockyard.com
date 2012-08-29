@@ -9,6 +9,7 @@ $l-blue: #ABD4E7
     .col3
       a
         color: $blue
+        text-decoration: underline
         &:hover
           color: $red
     .colspan
@@ -18,26 +19,19 @@ $l-blue: #ABD4E7
         text-align: center
         li a
           float: left
-          width: 324px
+          width: 316px
           height: 124px
           padding: 1em 0
           margin: 0 16px 16px 0
-          background-color: darken($gray, 8%)
+          background-color: darken($gray, 3%)
+          border:
+            color: darken($gray, 15%)
+            width: 1px
+            style: solid
           &:hover
             background-color: darken($gray, 5%)
-          .os-icon
-            font:
-              family: fontello
-              size: 1.35em
-            position:relative
-            width: 40px
-            height: 40px
-            border-radius: 50%
-            display: inline-block
-            text-align: center
-            background-color: $blue
-            color: $white
-            line-height: 39px
+          .easy-auth
+            font-size: 1.3em
           h1
             font:
               family: georgia
