@@ -6,7 +6,7 @@ window.Scroller =
   onScroll: ->
     window.Scroller.LocationsNumber = []
     for id of window.Scroller.Ids
-      location = $("##{id}").offset().top - 135
+      location = $("##{id}").offset().top - 350
       window.Scroller.Locations[location.toString()] = id 
       window.Scroller.LocationsNumber.push location
       
