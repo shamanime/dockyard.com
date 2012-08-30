@@ -17,7 +17,7 @@ window.Scroller =
         if window.scrollY > location
           id = window.Scroller.Locations[location]
           $('.active').removeClass('active')
-          window.Scroller.Ids[id].addClass('active')
+          window.Scroller.Ids[id].parent().addClass('active')
           break
 
 $ ->
@@ -28,11 +28,11 @@ $ ->
     elementName = link.hash.substring(1)
     window.Scroller.Ids[elementName] = $(link)
     if first
-      $(link).addClass('active')
+      $(link).parent().addClass('active')
       first = false
     $(link).click (event) ->
       $target = $(event.currentTarget)
       $('.active').removeClass('active')
-      $target.addClass 'active'
+      $target.parent().addClass 'active'
     
   $(window).scroll window.Scroller.onScroll
