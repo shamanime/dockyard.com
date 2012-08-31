@@ -22,18 +22,21 @@
           %fieldset
             %ul
               %li
-                %label{ :for => 'company'} Company Name
-                %input{ :type => 'text', :name => 'company', :class => 'text'}
+                %label{ :for => 'name'} Name
+                %input{ :type => 'text', :name => 'name', :class => 'text', :placeholder => 'Enter your full name'}
               %li
-                %label{ :for => 'name'} Contact Name
-                %input{ :type => 'text', :name => 'name', :class => 'text'}
+                %label{ :for => 'email'} Email
+                %input{ :type => 'text', :name => 'email', :class => 'text', :placeholder => 'Enter your email address'}
               %li
-                %label{ :for => 'email'} Contact Email
-                %input{ :type => 'text', :name => 'email', :class => 'text'}
+                %label{ :for => 'company'} Company
+                %input{ :type => 'text', :name => 'company', :class => 'text', :placeholder => 'Enter your company name'}
               %li
                 %label{ :for => 'message'} Message
-                %textarea{ :name => 'message'}
-              %input.submit{ :type => 'submit', :value => 'Submit', :class => 'button'}
-
+                %textarea{ :name => 'message', :placeholder => 'Leave us a message'}
+              %li
+                %label.find{ :for => 'find'} How did you find us?
+                %input{ :type => 'text', :name => 'find', :class => 'text', :placeholder => 'LinkedIn, Google, etc.'}
+              %li
+                %input.submit{ :type => 'submit', :value => 'Submit', :class => 'button'}
       .clear
               
