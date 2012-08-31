@@ -2,76 +2,29 @@
 <html>
 <head>
   <title>DockYard ~ Error 404</title>
-  
+
   <style type='text/css'>
-    body {background-color: #2A5567; overflow: hidden;}
-    .sky {background-color: #E6E7E8; height: 3em; margin: -1em -1em 0; padding-top: 3em;}
+    html {height: 100%;}
+    body {overflow: hidden;
+          height: 100%;
+          background: #2a5567;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a5567', endColorstr='#173c49'); /* for IE */
+          background: -webkit-gradient(linear, left top, left bottom, from(#2a5567), to(#173c49)); /* for webkit browsers */
+          background: -moz-linear-gradient(top,  #2a5567,  #173c49); /* for firefox 3.6+ */}
+    .sky {background-color: #E6E7E8; height: 5em; margin: -1em -1em 0; padding-top: 5%;}
     .tide {background-image: url(/assets/ocean-sm.png); background-repeat: repeat-x; width: 110%; height: 172px; position: relative; top: -1em; left: -1em;}
-    h1 {font-size: 100px; margin-top: -.25em; padding: 0 .5em;}
+    .wrapper {text-align: center; font-family: cubano; color: #FFFFFF; text-shadow: #173C49 1.5px 3px 0px;}
+    h1 {font-size: 100px; margin-top: -.5em; padding: 0 .5em;}
     h2 {font-size: 48px; margin-top: -1em; padding: 0 .5em;}
-    p {font-family: fontello; position: absolute; top: 1em; right: 1em; color: #2A5567;}
-    .wrapper {text-align: center; font-family: cubano; color: #FFFFFF; text-shadow: #173C49 1.5px 3px 0px; min-height: 10em;}
-    .spotlight {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 1px solid #000;
-      pointer-events: none;
-      /* this is the sweet spot */
-      background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(rgba(0,0,0,.935)), to(rgba(0,0,0,.935)), color-stop(0, rgba(0,0,0,0.25)));
-      background-image: -moz-radial-gradient(50% 50% 45deg,circle closest-side,transparent 0,transparent 350px,rgba(0, 0, 0, 1) 120px);}
   </style>
 </head>
 
 <body>
   <div class='sky'></div>
-  <a href='#'>
-    <p>l</p>
-  </a>
   <div class='tide'></div>
   <div class='wrapper'>
     <h1>404 ERROR</h1>
     <h2>Page not found</h2>
   </div>
-  <span id='spot' class='spotlight'></span>
-
-  <script type='text/javascript'>
-  var spot = document.getElementById('spot');
-  var width = document.documentElement.clientWidth;
-  var height = document.documentElement.clientHeight;
-
-  /* Moves Spotlight */
-  function moveSpot(e){
-      var x = 0;
-      var y = 0;
-
-      if (!e) var e = window.event;
-      if (e.pageX || e.pageY)
-      {
-          x = e.pageX;
-          y = e.pageY;
-      }
-      else if (e.clientX || e.clientY)
-      {
-          x = e.clientX + document.body.scrollLeft;
-          y = e.clientY + document.body.scrollTop;
-      }
-
-      if (navigator.userAgent.match('AppleWebKit')) {
-          var style = '-webkit-gradient(radial, '+x+' '+y+', 0, '+x+' '+y+', 300, from(rgba(0,0,0,.935)), to(rgba(0,0,0,.935)), color-stop(0, rgba(0,0,0,0.25)))';
-      } else {
-          var style = '-moz-radial-gradient('+x+'px '+y+'px 45deg,circle closest-side,transparent 0,transparent 350px,rgba(0, 0, 0, 1) 120px)';
-      }
-      spot.style.backgroundImage = style;
-  }
-
-  window.onload = function() {
-      window.onmousemove = moveSpot;
-  }
-  </script>
-
 </body>
 </html>
