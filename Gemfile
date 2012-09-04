@@ -7,6 +7,7 @@ gem 'sqlite3'
 gem 'haml'
 gem 'compass-rails'
 gem 'jquery-rails'
+gem 'client_side_validations-simple_form', :git => 'git://github.com/dockyard/client_side_validations-simple_form.git'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

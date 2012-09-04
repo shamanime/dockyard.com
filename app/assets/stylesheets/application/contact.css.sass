@@ -4,6 +4,7 @@ $l-blue: #ABD4E7
 $white: #FFFFFF
 $gray: #E6E7E8
 $blue: #2A5567
+$red: #F05051
 
 #contact
   .content
@@ -12,40 +13,52 @@ $blue: #2A5567
       .icon:first-child
         margin-left: -1em
     form
-      li
+      div
         margin: 0 0 1em
+        &.text span.error
+          top: .3em
+      label
+        width: 180px
         text-align: right
-        label
-          position: relative
-          top: .25em
-          color: darken($gray, 20%)
-          text-shadow: $white .5px 1px 0px
-          margin-right: 1.5em
-          font:
-            family: poly
-            style: italic
-            size: 1.25em
-        .find
-          position: relative
-          top: 9.65em
-        textarea
-          border-style: none
-          width: 350px
-          height: 200px
-          margin: 0 20% 1em 0
-          padding: 10px
-          float: right
-          resize: none
-          border:
-            style: solid
-            color: darken($gray, 15%)
-            width: 1px
+        position: relative
+        float: left
+        top: .25em
+        color: darken($gray, 20%)
+        text-shadow: $white .5px 1px 0px
+        margin-right: 1.5em
+        font:
+          family: poly
+          style: italic
+          size: 1.25em
+      textarea, input
+        width: 300px
+        font:
+          family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+          size: .75em
+        border:
+          style: solid
+          color: darken($gray, 15%)
+          width: 1px
+      textarea
+        height: 200px
+        margin: 0 20% 1em 0
+        padding: 10px
+        float: left
+        resize: none
       input
         border-style: none
-        width: 350px
-        float: right
         margin-right: 20%
         padding: 10px
+      textarea:focus, input:focus
+        outline: none
+        border: 1px solid $blue
+      .error
+        background-color: $red
+        position: relative
+        top: .08em
+        color: $white
+        padding: 8px 10px 9px
+        margin-left: -9.0625em
         border:
           style: solid
           color: darken($gray, 15%)
@@ -53,10 +66,11 @@ $blue: #2A5567
       .submit
         background-color: $l-blue
         border-style: none
-        margin: 16px 0
+        margin: 16px 0 16px 212px
         color: $white
         margin-right: 20%
-        width: 370px
+        width: 320px
+        cursor: pointer
         font:
           family: cubano
           size: 1.5em
