@@ -30,28 +30,32 @@ $red: #F05051
           family: poly
           style: italic
           size: 1.25em
+      textarea:focus, input:focus
+        outline: none
+        border: 1px solid $blue
       textarea, input
         width: 300px
         font:
           family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
           size: .75em
-        border:
-          style: solid
-          color: darken($gray, 15%)
-          width: 1px
       textarea
         height: 200px
         margin: 0 20% 1em 0
         padding: 10px
         float: left
         resize: none
+        border:
+          style: solid
+          color: darken($gray, 15%)
+          width: 1px
       input
         border-style: none
         margin-right: 20%
         padding: 10px
-      textarea:focus, input:focus
-        outline: none
-        border: 1px solid $blue
+        border:
+          style: solid
+          color: darken($gray, 15%)
+          width: 1px
       .error
         background-color: $red
         position: relative
