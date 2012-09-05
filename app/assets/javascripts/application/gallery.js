@@ -2,8 +2,6 @@ $(function() {
 	$('#home-container').gallery();
 });
 
-
-
 /**
  * jquery.gallery.js
  * http://www.codrops.com
@@ -104,19 +102,19 @@ $(function() {
 			if( this.support3d && this.supportTrans ) {
 			
 				leftCSS 	= {
-					'-webkit-transform'	: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
-					'-moz-transform'	: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
-					'-o-transform'		: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
-					'-ms-transform'		: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
-					'transform'			: 'translateX(-350px) translateZ(-300px) rotateY(45deg)'
+					'-webkit-transform'	: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+					'-moz-transform'	: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+					'-o-transform'		: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+					'-ms-transform'		: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+					'transform'			: 'translateX(-250px) translateZ(-250px) rotateY(25deg)'
 				};
 				
 				rightCSS	= {
-					'-webkit-transform'	: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
-					'-moz-transform'	: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
-					'-o-transform'		: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
-					'-ms-transform'		: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
-					'transform'			: 'translateX(350px) translateZ(-300px) rotateY(-45deg)'
+					'-webkit-transform'	: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+					'-moz-transform'	: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+					'-o-transform'		: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+					'-ms-transform'		: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+					'transform'			: 'translateX(250px) translateZ(-250px) rotateY(-25deg)'
 				};
 				
 				leftCSS.opacity		= 1;
@@ -128,19 +126,19 @@ $(function() {
 			else if( this.support2d && this.supportTrans ) {
 				
 				leftCSS 	= {
-					'-webkit-transform'	: 'translate(-350px) scale(0.8)',
-					'-moz-transform'	: 'translate(-350px) scale(0.8)',
-					'-o-transform'		: 'translate(-350px) scale(0.8)',
-					'-ms-transform'		: 'translate(-350px) scale(0.8)',
-					'transform'			: 'translate(-350px) scale(0.8)'
+					'-webkit-transform'	: 'translate(-250px) scale(0.8)',
+					'-moz-transform'	: 'translate(-250px) scale(0.8)',
+					'-o-transform'		: 'translate(-250px) scale(0.8)',
+					'-ms-transform'		: 'translate(-250px) scale(0.8)',
+					'transform'			: 'translate(-250px) scale(0.8)'
 				};
 				
 				rightCSS	= {
-					'-webkit-transform'	: 'translate(350px) scale(0.8)',
-					'-moz-transform'	: 'translate(350px) scale(0.8)',
-					'-o-transform'		: 'translate(350px) scale(0.8)',
-					'-ms-transform'		: 'translate(350px) scale(0.8)',
-					'transform'			: 'translate(350px) scale(0.8)'
+					'-webkit-transform'	: 'translate(250px) scale(0.8)',
+					'-moz-transform'	: 'translate(250px) scale(0.8)',
+					'-o-transform'		: 'translate(250px) scale(0.8)',
+					'-ms-transform'		: 'translate(250px) scale(0.8)',
+					'transform'			: 'translate(250px) scale(0.8)'
 				};
 				
 				currentCSS	= {
@@ -240,44 +238,44 @@ $(function() {
 				switch( position ) {
 					case 'outleft':
 						return {
-							'-webkit-transform'	: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
-							'-moz-transform'	: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
-							'-o-transform'		: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
-							'-ms-transform'		: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
-							'transform'			: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
+							'-webkit-transform'	: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+							'-moz-transform'	: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+							'-o-transform'		: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+							'-ms-transform'		: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+							'transform'			: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
 							'opacity'			: 0,
 							'visibility'		: 'hidden'
 						};
 						break;
 					case 'outright':
 						return {
-							'-webkit-transform'	: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
-							'-moz-transform'	: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
-							'-o-transform'		: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
-							'-ms-transform'		: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
-							'transform'			: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
+							'-webkit-transform'	: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+							'-moz-transform'	: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+							'-o-transform'		: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+							'-ms-transform'		: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+							'transform'			: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
 							'opacity'			: 0,
 							'visibility'		: 'hidden'
 						};
 						break;
 					case 'left':
 						return {
-							'-webkit-transform'	: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
-							'-moz-transform'	: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
-							'-o-transform'		: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
-							'-ms-transform'		: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
-							'transform'			: 'translateX(-350px) translateZ(-300px) rotateY(45deg)',
+							'-webkit-transform'	: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
+							'-moz-transform'	: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
+							'-o-transform'		: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
+							'-ms-transform'		: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
+							'transform'			: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
 							'opacity'			: 1,
 							'visibility'		: 'visible'
 						};
 						break;
 					case 'right':
 						return {
-							'-webkit-transform'	: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
-							'-moz-transform'	: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
-							'-o-transform'		: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
-							'-ms-transform'		: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
-							'transform'			: 'translateX(350px) translateZ(-300px) rotateY(-45deg)',
+							'-webkit-transform'	: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+							'-moz-transform'	: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+							'-o-transform'		: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+							'-ms-transform'		: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
+							'transform'			: 'translateX(250px) translateZ(-250px) rotateY(-25deg)',
 							'opacity'			: 1,
 							'visibility'		: 'visible'
 						};
@@ -301,44 +299,44 @@ $(function() {
 				switch( position ) {
 					case 'outleft':
 						return {
-							'-webkit-transform'	: 'translate(-450px) scale(0.7)',
-							'-moz-transform'	: 'translate(-450px) scale(0.7)',
-							'-o-transform'		: 'translate(-450px) scale(0.7)',
-							'-ms-transform'		: 'translate(-450px) scale(0.7)',
-							'transform'			: 'translate(-450px) scale(0.7)',
+							'-webkit-transform'	: 'translate(-250px) scale(0.7)',
+							'-moz-transform'	: 'translate(-250px) scale(0.7)',
+							'-o-transform'		: 'translate(-250px) scale(0.7)',
+							'-ms-transform'		: 'translate(-250px) scale(0.7)',
+							'transform'			: 'translate(-250px) scale(0.7)',
 							'opacity'			: 0,
 							'visibility'		: 'hidden'
 						};
 						break;
 					case 'outright':
 						return {
-							'-webkit-transform'	: 'translate(450px) scale(0.7)',
-							'-moz-transform'	: 'translate(450px) scale(0.7)',
-							'-o-transform'		: 'translate(450px) scale(0.7)',
-							'-ms-transform'		: 'translate(450px) scale(0.7)',
-							'transform'			: 'translate(450px) scale(0.7)',
+							'-webkit-transform'	: 'translate(250px) scale(0.7)',
+							'-moz-transform'	: 'translate(250px) scale(0.7)',
+							'-o-transform'		: 'translate(250px) scale(0.7)',
+							'-ms-transform'		: 'translate(250px) scale(0.7)',
+							'transform'			: 'translate(250px) scale(0.7)',
 							'opacity'			: 0,
 							'visibility'		: 'hidden'
 						};
 						break;
 					case 'left':
 						return {
-							'-webkit-transform'	: 'translate(-350px) scale(0.8)',
-							'-moz-transform'	: 'translate(-350px) scale(0.8)',
-							'-o-transform'		: 'translate(-350px) scale(0.8)',
-							'-ms-transform'		: 'translate(-350px) scale(0.8)',
-							'transform'			: 'translate(-350px) scale(0.8)',
+							'-webkit-transform'	: 'translate(-250px) scale(0.8)',
+							'-moz-transform'	: 'translate(-250px) scale(0.8)',
+							'-o-transform'		: 'translate(-250px) scale(0.8)',
+							'-ms-transform'		: 'translate(-250px) scale(0.8)',
+							'transform'			: 'translate(-250px) scale(0.8)',
 							'opacity'			: 1,
 							'visibility'		: 'visible'
 						};
 						break;
 					case 'right':
 						return {
-							'-webkit-transform'	: 'translate(350px) scale(0.8)',
-							'-moz-transform'	: 'translate(350px) scale(0.8)',
-							'-o-transform'		: 'translate(350px) scale(0.8)',
-							'-ms-transform'		: 'translate(350px) scale(0.8)',
-							'transform'			: 'translate(350px) scale(0.8)',
+							'-webkit-transform'	: 'translate(250px) scale(0.8)',
+							'-moz-transform'	: 'translate(250px) scale(0.8)',
+							'-o-transform'		: 'translate(250px) scale(0.8)',
+							'-ms-transform'		: 'translate(250px) scale(0.8)',
+							'transform'			: 'translate(250px) scale(0.8)',
 							'opacity'			: 1,
 							'visibility'		: 'visible'
 						};
