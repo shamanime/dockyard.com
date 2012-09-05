@@ -260,11 +260,11 @@ $(function() {
 						break;
 					case 'left':
 						return {
-							'-webkit-transform'	: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
-							'-moz-transform'	: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
-							'-o-transform'		: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
-							'-ms-transform'		: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
-							'transform'			: 'translateX(-250px) translateZ(-300px) rotateY(25deg)',
+							'-webkit-transform'	: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+							'-moz-transform'	: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+							'-o-transform'		: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+							'-ms-transform'		: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
+							'transform'			: 'translateX(-250px) translateZ(-250px) rotateY(25deg)',
 							'opacity'			: 1,
 							'visibility'		: 'visible'
 						};
