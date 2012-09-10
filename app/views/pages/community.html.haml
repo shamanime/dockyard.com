@@ -51,15 +51,5 @@
                   %h1 Valid Attribute
                   %p Valid Attribute is a minimalist matcher for validation BDD
         .col3.events
-          %h1.headline Events
-          %ul
-            %li
-              %a.bold{:href => "http://bostonrb.org/", :target => "_blank"} Boston Ruby Group
-              %p Boston Ruby is a local community of Rubyists and enthusiasts of open source software. The main event is the second Tuesday of every month.
-            %li
-              %a.bold{:href => "http://railscamps.com/", :target => "_blank"} RailsCamp New England
-              %p Imagine yourself and a posse of like-minded ruby hackers on a country retreat with zero internet for a weekend of fun. You'll laugh, hack, learn, cry (well, you probably won’t cry… but you know… it felt poetic) and most likely play a crap-load of Werewolf.
-            %li
-              %a.bold{:href => "http://startupsailing.com/", :target => "_blank"} Startup Sailing
-              %p We're going to start in Boston Harbor and sail up to Marblehead. We'll stay for the night and sail back the next day. Get to know many of the other startup folks in Boston and participate in the best damn startup event you'll ever go to.
+          = render :partial => 'shared/events'
         .clear
