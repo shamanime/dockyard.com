@@ -1,6 +1,6 @@
 $red: #F05051
 $blue: #2A5567
-$gray: #E6E7E8
+$gray: #E8E8E8
 $white: #FFFFFF
 $l-blue: #ABD4E7
 
@@ -38,6 +38,15 @@ $l-blue: #ABD4E7
     border-radius: 25em
     margin: 0 auto -50em
     z-index: -5
+  .callout
+    text-align: center
+    clear: both
+    padding: 1em 5em
+    font:
+      family: Georgia
+      weight: bold
+    p
+      margin-bottom: 0
   #tide
     height: 100%
     width: 100%
@@ -51,9 +60,12 @@ $l-blue: #ABD4E7
       padding-bottom: 2em
       position: relative
   .gradient
+    padding-bottom: 2em
     color: $white
     background-color: $blue
     +background-image(linear-gradient($blue, darken($blue, 5%)))
+    .headline
+      color: $white
     h2
       font-family: cubano
       font-size: 2.5em

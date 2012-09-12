@@ -3,8 +3,9 @@
 $blue: #2A5567
 $l-blue: #ABD4E7
 $white: #FFFFFF
-$gray: #E6E7E8
 $red: #F05051
+
+$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
 @-moz-document url-prefix()
   footer .copyright
@@ -27,16 +28,29 @@ footer
     margin: 0 10px
     p
       position: relative
-      top: -1em
+      top: -1.25em
+  .copyright
+    line-height: .35
+    p
+      margin-bottom: 0
+    a
+      background-color: transparent
+      color: $blue
+      font-weight: bold
+      &:hover
+        color: $red
+        text-decoration: underline
 #home footer
-  padding-top: 2em
-  background-color: darken($blue, 5%)
+  padding-top: 3em
+  background-color: darken($blue, 9%)
   a
     background-color: $l-blue
-    color: darken($blue, 5%)
+    color: darken($blue, 9%)
     &:hover
       background-color: $white
   p
     color: $white
-
-  
+  .copyright
+    a
+      background-color: transparent
+      color: $white
