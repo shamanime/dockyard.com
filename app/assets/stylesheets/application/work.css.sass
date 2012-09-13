@@ -1,8 +1,43 @@
 @import compass/css3
 
+$red: #F05051
+$blue: #2A5567
+$gray: #E8E8E8
+$white: #FFFFFF
+$l-blue: #ABD4E7
+
+$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+
 #work
+  .work-nav
+    background-color: darken($gray, 5%)
+    height: 6.85em
+    position: relative
+    top: 5em
+    ul li a
+      float: left
+      font:
+        family: georgia
+        style: italic
+        weight: bold
+        size: 1.25em
+      margin: 1em 10px 2.5em 0
+      width: 23.5%
+      text-align: center
+      padding: 1em 0
+      background-color: lighten(#d5e1e7, 1%)
+      border:
+        color: darken($l-blue, 5%)
+        width: 1px
+        style: solid
+      &:hover
+        background-color: #c9dee7
   .content
-    #fixed-nav
-      margin-top: 10%
-    .col1
-      top: 15.25em
+    .portfolio
+      clear: both
+      .headline
+        padding-top: .25em
+      .proj-description
+        width: 600px
+        margin-top: 1em
+        margin-bottom: 6em
