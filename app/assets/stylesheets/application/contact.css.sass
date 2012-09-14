@@ -6,6 +6,8 @@ $gray: #E8E8E8
 $blue: #2A5567
 $red: #F05051
 
+
+    
 #contact
   .content
     .col1
@@ -76,14 +78,24 @@ $red: #F05051
       div.text span.error
         top: -9.05em
       .submit
-        background-color: $l-blue
+        background-color: $blue
         border-style: none
-        margin: 1.5em 0
+        border-radius: 8px
+        margin: .5em 0 1.5em
         color: $white
         width: 370px
         cursor: pointer
         font:
-          family: cubano
+          family: georgia
           size: 1.5em
+          style: italic
+          weight: bold
         &:hover
-          background-color: lighten($l-blue, 3%)
+          background-color: lighten($blue, 8%)
+
+
+@-moz-document url-prefix()
+  #contact .content form div.text span.error
+    top: -8.8em
+  #contact .col1
+    width: 200px
