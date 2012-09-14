@@ -7,10 +7,10 @@ $red: #F05051
   .content
     padding-top: 2em
     #fixed-nav
-      margin-top: 28%
+      margin-top: 18%
     #team
       span
-        color: darken($gray, 28%)
+        color: darken($gray, 20%)
         text-shadow: $white .5px 1px 0px
         font:
           family: poly, serif
@@ -18,8 +18,10 @@ $red: #F05051
           style: italic
       ul
         color: darken($gray, 20%)
-        margin: .5em 0 3em
+        margin: .5em 0 1em
         float: right
+        position: relative
+        top: -3.25em
         li
           float: left
           .italic
@@ -30,4 +32,8 @@ $red: #F05051
         &:hover
           background-color: darken($gray, 10%)
   .scroll-to
-    top: 4em
+    top: 2em
+
+@-moz-document url-prefix()
+  #people div.content #fixed-nav
+    margin-top: 4%
