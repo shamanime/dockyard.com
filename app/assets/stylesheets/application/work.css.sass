@@ -18,24 +18,30 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
     height: 6.85em
     position: relative
     top: 5em
-    ul li a
-      float: left
-      font:
-        family: georgia
-        style: italic
-        weight: bold
-        size: 1.25em
-      margin: 1em 10px 2.5em 0
-      width: 23.5%
-      text-align: center
-      padding: 1em 0
-      background-color: lighten(#d5e1e7, 1%)
-      border:
-        color: darken($l-blue, 5%)
-        width: 1px
-        style: solid
-      &:hover
-        background-color: #c9dee7
+    ul li
+      position: relative
+      top: 1.25em
+      &:last-child
+        a
+          margin-right: 0
+      a
+        float: left
+        font:
+          family: georgia
+          style: italic
+          weight: bold
+          size: 1.25em
+        margin-right: 10px
+        width: 318px
+        text-align: center
+        padding: 1em 0
+        background-color: lighten(#d5e1e7, 1%)
+        border:
+          color: darken($l-blue, 5%)
+          width: 1px
+          style: solid
+        &:hover
+          background-color: #c9dee7
   .content
     .portfolio
       clear: both
