@@ -6,6 +6,28 @@ $l-blue: #ABD4E7
 
 @import compass/css3
 
+.csstransforms
+  #tide
+    background:
+      image: url(/assets/ocean.png)
+      attachment: fixed
+
+.no-csstransforms
+  #home .about .dockyard .narwin
+    background:
+      image: url(/assets/narwin-ie.png)
+  #tide
+    background:
+      image: url(/assets/ocean-ie.png)
+  .landing-gallery
+    height: 23em
+    background:
+      image: url(/assets/gallery-landing-ie.png)
+      repeat: no-repeat
+      position: center
+  #home-container
+    display: none
+
 #home
   .about
     .dockyard
@@ -13,15 +35,15 @@ $l-blue: #ABD4E7
       margin: 0 auto -2.5em
       padding-top: 1em
       .narwin
-        width: 135px
-        height: 125px
-        margin: .5em 0
-        float: left
         background:
           image: url(/assets/narwin-sprite.png)
           repeat: no-repeat
           size: 270px 125px
           position: 0 0
+        width: 135px
+        height: 125px
+        margin: .5em 0
+        float: left
         &:hover
           background-position: 100% 0
           repeat: no-repeat
@@ -52,9 +74,7 @@ $l-blue: #ABD4E7
     width: 100%
     position: relative
     background:
-      image: url(/assets/ocean.png)
       repeat: repeat-x
-      attachment: fixed
     .landing-gallery
       margin: 1em auto 0
       padding-bottom: 2em
