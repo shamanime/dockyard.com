@@ -23,3 +23,7 @@
         %a.address{:href => 'http://goo.gl/maps/G4pnP', :target => '_blank'} 101 Tremont Street, Suite 200 Boston, MA 02108
       .clear
 
+:javascript
+$(function(){
+  $(':text, [type="email"], [type="password"], textarea').inFieldLabel();
+})
