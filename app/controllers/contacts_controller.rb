@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
         unless Email.contact(contact).deliver
           raise 'NoEmail'
         end
-        format.json { head :ok }
+        format.json { render :json => {} }
       rescue
         format.json { head 422 }
       end
