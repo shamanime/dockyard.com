@@ -1,15 +1,51 @@
-.wrap
-  .nav
-    %h1
-      %a{:href => '/'} DockYard
-    %ul
-      %li.nav-work
-        %a{:href => '/work'} Work
-      %li.nav-people
-        %a{:href => '/people'} People
-      %li.nav-community
-        %a{:href => '/community'} Community
-      %li.nav-blog
-        %a{:href => 'http://reefpoints.dockyard.com'} Blog
-      %li.nav-contact
-        %a{:href => '/contact'} Contact
+%header#mobile-header
+  %div
+    %a{:href => 'http://dockyard.com'}
+      %h1 DockYard
+    .mobile-button n
+  %nav
+    %ul#mobile-nav
+      %li
+        %a{:href => 'http://dockyard.com'}
+          %span h
+          %br Home
+      %li
+        %a{:href => 'http://dockyard.com/work'}
+          %span w
+          %br Work
+      %li
+        %a{:href => 'http://dockyard.com/people'}
+          %span p
+          %br People
+      %li
+        %a{:href => 'http://dockyard.com/community'}
+          %span c
+          %br Community
+      %li
+        %a{:href => 'http://reefpoints.dockyard.com/'}
+          %span b
+          %br Blog
+      %li
+        %a{:href => 'http://dockyard.com/contact'}
+          %span m
+          %br Contact
+
+%header#site-header
+  .wrap
+    .nav
+      %h1
+        %a{:href => 'http://dockyard.com/'} DockYard
+      %ul
+        %li
+          %a{:href => 'http://dockyard.com/work'} Work
+        %li
+          %a{:href => 'http://dockyard.com/people'} People
+        %li
+          %a{:href => 'http://dockyard.com/community'} Community
+        %li.nav-blog
+          %a{:href => 'http://reefpoints.dockyard.com/'} Blog
+        %li
+          %a{:href => 'http://dockyard.com/contact'} Contact
+
+:javascript
+  $("[id='mobile-nav']").flexNav();

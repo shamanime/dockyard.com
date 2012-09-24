@@ -1,0 +1,84 @@
+@import compass/css3
+
+$red: #F05051
+$blue: #2A5567
+$gray: #E8E8E8
+$white: #FFFFFF
+$l-blue: #ABD4E7
+
+$helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+
+#mobile-header
+  display: none
+
+@media only screen and (max-width: 480px)
+  body
+    min-width: 320px
+  #mobile-header
+    display: block
+    background-color: $red
+    div
+      display: block
+      width: 80%
+      margin: 0 auto
+      color: $white
+      h1
+        font-family: leaguegothic
+        font-size: 2em
+        color: $white
+      .mobile-button
+        font-family: fontello
+        font-size: 1.5em
+        text-align: right
+        display: block
+        position: absolute
+        top: .25em
+        right: 10%
+        cursor: pointer
+        padding-left: 2em
+    ul
+      width: 100%
+      display: none
+      text-align: center
+      li
+        position: relative
+        display: inline-block
+        width: 32%
+        margin: 0 auto .35em
+        a
+          display: block
+          color: $white
+          position: relative
+          background-color: lighten($red, 4%)
+          padding: 1em
+          text-align: center
+          font-weight: bold
+          &:active
+            background-color: lighten($red, 7%)
+          span
+            font-family: fontello
+            font-size: 2em
+  #site-header
+    display: none
+
+  .wrap
+    width: 90%
+  footer
+    margin-top: 3em
+  .footer-text
+    width: 180px
+  footer ul .footer-text
+    line-height: 1.5
+    a
+      width: 180px
+      margin-top: -1em
+  .landing-gallery
+    display: none
+  .circle
+    display: none
+  .dockyard
+    display: none
+
+@media only screen and (max-width: 320px)
+  footer ul li
+    margin: 0
