@@ -30,16 +30,12 @@
     .wrap
       .col-span
         %h2 Blog
+        - articles = RecentArticles::Article.retrieve_articles
         %ul
-          %li
-            %a{:href => 'http://reefpoints.dockyard.com/ruby/2012/09/21/querying-postgresql-datatypes-in-active-record-with-postgres_ext.html', :target => '_blank'} Querying PostgreSQL datatypes in ActiveRecord with postgres_ext
-            %p Returning records based on array elements and network subnets
-          %li
-            %a{:href => 'http://reefpoints.dockyard.com/design/2012/09/20/making-of-the-dockyard-narwin.html', :target => '_blank'} Making of the DockYard Narwin
-            %p Animated gif of the evolution of the narwin
-          %li
-            %a{:href => 'http://reefpoints.dockyard.com/ruby/2012/09/18/rails-4-sneak-peek-postgresql-array-support.html', :target => '_blank'} Rails 4.0 Sneak Peek: PostgreSQL array support
-            %p Storing arrays natively in PostgreSQL is now supported by Rails
+          - articles.each do |article|
+            %li
+              = link_to article.title, article.link, :target => '_blank'
+              %p= article.summary
       .col3
         = render :partial => 'shared/events'
       .clear

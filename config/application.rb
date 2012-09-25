@@ -1,9 +1,11 @@
+$:.unshift(File.expand_path('../../lib', __FILE__))
 require File.expand_path('../boot', __FILE__)
 
 require 'rails'
 require 'action_controller/railtie'
 require 'action_mailer/railtie'
 require 'sprockets/railtie'
+require 'recent_articles'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
