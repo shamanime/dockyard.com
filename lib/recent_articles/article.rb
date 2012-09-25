@@ -25,6 +25,7 @@ module RecentArticles
     end
 
     def self.retrieve_articles()
+      return []
       begin
         REDIS.lrange('articles', 0, 2).map{|hash| self.new(JSON.parse(hash))}
       rescue Redis::CannotConnectError
