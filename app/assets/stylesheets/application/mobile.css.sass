@@ -10,6 +10,8 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
 
 #mobile-header
   display: none
+#home #swipe
+  display: none
 
 @media only screen and (max-width: 480px)
   body
@@ -92,6 +94,33 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
     .callout
       padding: 1em 3em 2em
       font-size: .85em
+    #swipe
+      display: block
+      padding-top: .5em
+      img
+        width: 100%
+      .swipe-nav
+        float: left
+        display: block
+        left: 50%
+        ul
+          position: relative
+          float: left
+          display: inline-block
+          right: 50%
+        a
+          padding: 2px 10px
+          border-radius: 5px
+          background-color: $l-blue
+          text-transform: uppercase
+          font:
+            weight: bold
+          margin-bottom: 2em
+          &:first-child
+            margin-right: .5em
+
+            
+            
     .gradient
       clear: both
       .col-span
@@ -174,6 +203,10 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
           display: none
         .address
           margin: 0 0 2em 0
+  #work
+    .work-nav
+      display: none
+  
   footer
     margin-top: 0em
     .social-icon

@@ -26,7 +26,24 @@
             %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5@2X.jpg', :width => '570px', :height => '392.5px'}
         %nav
           %span.home-next &gt;
+  
   .gradient
+    #swipe.swipe
+      %div
+        %div{:style => "display:block"}
+          %img{:src => "/assets/openbay/openbay.jpg"}/
+        %div{:style => "display:none"}
+          %img{:src => "/assets/repurpose/repurpose.jpg"}/
+        %div{:style => "display:none"}
+          %img{:src => "/assets/provider/provider.jpg"}/
+        %div{:style => "display:none"}
+          %img{:src => "/assets/tip/tip.jpg"}/
+      .swipe-nav
+        %ul
+          %li
+            %a{:href => "#", :onclick => "swipe.prev();return false;"} prev
+          %li
+            %a{:href => "#", :onclick => "swipe.next();return false;"} next
     .wrap
       .col-span
         %h2 Blog
@@ -44,6 +61,5 @@
         = render :partial => 'shared/events'
       .clear
 
-%script{:src => "swipe.js"}
 :javascript
   var swipe = new Swipe(document.getElementById('swipe'));
