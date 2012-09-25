@@ -14,6 +14,18 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
 @media only screen and (max-width: 480px)
   body
     min-width: 320px
+  .col-span
+    width: 90%
+    margin: 0 auto
+    float: none
+  .col3
+    width: 90%
+    margin: 0 auto
+    float: none
+  .col-span2
+    width: 90%
+    margin: 0 auto
+    float: none
   #mobile-header
     display: block
     background-color: $red
@@ -60,25 +72,103 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
             font-size: 2em
   #site-header
     display: none
-
   .wrap
     width: 90%
+  .title h1
+    font-size: 5em
+    top: .28em
+    position: relative
+    line-height: 0
+  .content
+    top: 3.25em
+  
+  
+  
+  #home
+    .landing-gallery
+      display: none
+    .circle
+      display: none
+    #tide
+      display: none
+    .about
+      .dockyard
+        width: 274px
+        margin-bottom: -1.5em
+        .narwin
+          background:
+            size: 172.8px 80px
+          width: 86.4px
+          height: 80px
+          margin-top: .25em
+        h1.logo-big
+          font-size: 4.5em
+    .callout
+      padding: 1em 3em 2em
+      font-size: .85em
+    .gradient
+      clear: both
+      .col-span
+        padding-top: 1em
+        margin-bottom: 2em
+
+  #people
+    #fixed-nav
+      display: none
+    .headline
+      font-size: 1.75em
+    .content ul#team 
+      ul
+        float: none
+        top: 0
+        margin-top: 0
+        margin-bottom: 5em
+      img
+        width: 100%
+        height: auto
+
+
+
   footer
-    margin-top: 3em
+    margin-top: 0em
+    .social-icon
+      position: relative
+      top: -1.75em
   .footer-text
     width: 180px
+    line-height: 1.5
+    a
+      width: 180px
+      position: relative
+      top: -1em
   footer ul .footer-text
     line-height: 1.5
     a
       width: 180px
       margin-top: -1em
-  .landing-gallery
-    display: none
-  .circle
-    display: none
-  .dockyard
-    display: none
+
+
 
 @media only screen and (max-width: 320px)
+  #people .content ul#team
+    position: relative
+    .headline
+      text-align: center
+    span
+      text-align: center
+      position: relative
+      top: -.2em
+      clear: both
+      display: block
+    ul
+      float: left
+      display: block
+      left: 50%
+      margin-bottom: 2em
+      li
+        position: relative
+        float: left
+        display: block
+        right: 50%
   footer ul li
     margin: 0

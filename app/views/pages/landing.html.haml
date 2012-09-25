@@ -43,3 +43,7 @@
       .col3
         = render :partial => 'shared/events'
       .clear
+
+%script{:src => "swipe.js"}
+:javascript
+  var swipe = new Swipe(document.getElementById('swipe'));
