@@ -14,18 +14,6 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
 @media only screen and (max-width: 480px)
   body
     min-width: 320px
-  .col-span
-    width: 90%
-    margin: 0 auto
-    float: none
-  .col3
-    width: 90%
-    margin: 0 auto
-    float: none
-  .col-span2
-    width: 90%
-    margin: 0 auto
-    float: none
   #mobile-header
     display: block
     background-color: $red
@@ -81,9 +69,7 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
     line-height: 0
   .content
     top: 3.25em
-  
-  
-  
+
   #home
     .landing-gallery
       display: none
@@ -109,8 +95,14 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
     .gradient
       clear: both
       .col-span
+        width: 90%
+        margin: 0 auto 2em
+        float: none
         padding-top: 1em
-        margin-bottom: 2em
+      .col3
+        width: 90%
+        margin: 0 auto
+        float: none
 
   #people
     #fixed-nav
@@ -126,8 +118,25 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
       img
         width: 100%
         height: auto
-
-
+    .col-span2
+      width: 90%
+      margin: 0 auto
+      float: none
+  #community
+    .content .colspan
+      width: 90%
+      margin: 0 auto 2em
+      float: none
+      ul 
+        li a
+          width: 100%
+          margin: 0 0 12px 0
+        .os-icon
+          margin-left: -.4em
+    .col3
+      width: 90%
+      margin: 0 auto
+      float: none
 
   footer
     margin-top: 0em
@@ -147,9 +156,10 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
       width: 180px
       margin-top: -1em
 
-
-
 @media only screen and (max-width: 320px)
+  .title h1
+    width: 90%
+    margin: 0 auto
   #people .content ul#team
     position: relative
     .headline
@@ -170,5 +180,12 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
         float: left
         display: block
         right: 50%
+  #community
+    .content .colspan
+      ul
+        .os-icon
+          display: none
+        li a div
+          margin-right: 35px
   footer ul li
     margin: 0
