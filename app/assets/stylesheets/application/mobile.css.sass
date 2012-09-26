@@ -77,6 +77,8 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
         float: none
 
   #home
+    background-color: $white
+    background-image: none
     .landing-gallery, .circle, #tide
       display: none
     .about
@@ -94,38 +96,11 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
     .callout
       padding: 1em 3em 2em
       font-size: .85em
-    #swipe
-      display: block
-      img
-        width: 100%
-        border:
-          color: $l-blue
-          top-style: solid
-          bottom-style: solid
-          width: 3px
-      .swipe-nav
-        position: relative
-        ul
-          display: block
-          right: 33%
-          clear: both
-          margin-top: 2em
-          li
-            position: relative
-            display: block
-            left: 33%
-            float: left
-            a
-              padding: 2px 10px
-              border-radius: 5px
-              background-color: $l-blue
-              color: $blue
-              text-decoration: none
-              text-transform: uppercase
-              font:
-                weight: bold
-              &:first-child
-                margin-right: 1em
+    #mobile-tide
+      height: 30px
+      background:
+        image: url(/assets/mobile-tide.png)
+        repeat: repeat-x
     .gradient
       clear: both
       .col-span
@@ -182,8 +157,20 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
           -webkit-border-radius: 8px
           -webkit-appearance: none
   #work
-    .work-nav
+    .work-nav, .slider-nav
       display: none
+    .italic
+      clear: both
+      display: block
+    .portfolio
+      .slider, .slides
+        width: 100%
+        height: 70%
+        img
+          width: 100%
+          height: 100%
+      .slider
+        margin-bottom: 2em
   
   footer
     margin-top: 0em
