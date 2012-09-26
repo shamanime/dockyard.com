@@ -20,7 +20,7 @@ $red: #F05051
           style: solid
           color: darken($gray, 15%)
           width: 1px
-      .address
+      a
         margin-top: 1em
         width: 240px
         display: block
@@ -32,8 +32,6 @@ $red: #F05051
     form
       div
         margin: 0 0 .5em
-        &.text span.error
-          top: .3em
       label
         margin-right: 1.5em
         font-weight: bold
@@ -46,22 +44,15 @@ $red: #F05051
         font:
           family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
           size: .75em
+        border:
+          style: solid
+          color: darken($gray, 15%)
+          width: 1px
+        padding: 10px
       textarea
         height: 150px
         margin: 2px 0 -.25em 0
-        padding: 10px
         resize: none
-        border:
-          style: solid
-          color: darken($gray, 15%)
-          width: 1px
-      input
-        border-style: none
-        padding: 10px
-        border:
-          style: solid
-          color: darken($gray, 15%)
-          width: 1px
       .error
         z-index: 5000
         background-color: $red

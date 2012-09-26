@@ -8,9 +8,7 @@ $l-blue: #ABD4E7
 
 $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
-#mobile-header
-  display: none
-#home #swipe
+#mobile-header, #home #swipe
   display: none
 
 @media only screen and (max-width: 480px)
@@ -71,13 +69,15 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
     line-height: 0
   .content
     top: 3.25em
+  #home, #work, #people, #community, #contact  
+    .content, .gradient
+      .col1, .col2, .col3, .col-span, .col-span2
+        width: 90%
+        margin: 0 auto
+        float: none
 
   #home
-    .landing-gallery
-      display: none
-    .circle
-      display: none
-    #tide
+    .landing-gallery, .circle, #tide
       display: none
     .about
       .dockyard
@@ -96,22 +96,21 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
       font-size: .85em
     #swipe
       display: block
-      padding-top: .5em
       img
         width: 100%
+        border:
+          color: $l-blue
+          top-style: solid
+          bottom-style: solid
+          width: 3px
       .swipe-nav
-        float: left
-        display: block
-        left: 50%
-        ul
-          position: relative
-          float: left
-          display: inline-block
-          right: 50%
-        a
+        ul li a
           padding: 2px 10px
           border-radius: 5px
           background-color: $l-blue
+          color: $blue
+          text-decoration: none
+          float: left
           text-transform: uppercase
           font:
             weight: bold
@@ -119,19 +118,11 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
           &:first-child
             margin-right: .5em
 
-            
-            
     .gradient
       clear: both
       .col-span
-        width: 90%
-        margin: 0 auto 2em
-        float: none
+        margin-bottom: 2em
         padding-top: 1em
-      .col3
-        width: 90%
-        margin: 0 auto
-        float: none
 
   #people
     #fixed-nav
@@ -147,10 +138,7 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
       img
         width: 100%
         height: auto
-    .col-span2
-      width: 90%
-      margin: 0 auto
-      float: none
+
   #community
     .content .colspan
       width: 90%
@@ -162,23 +150,16 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
           margin: 0 0 12px 0
         .os-icon
           margin-left: -.4em
-    .col3
-      width: 90%
-      margin: 0 auto
-      float: none
   #contact
-    .content 
-      .col1
-        width: 90%
-        margin: 0 auto
-        float: none
-        padding: 0
-      .col2
-        width: 90%
-        margin: 0 auto
-        float: none
+    .content
+      .col3
+        left: 0
+        iframe
+          display: none
+        a
+          margin: 0 0 2em 0
       form 
-        input
+        input, textarea
           width: 93%
         .error
           color: $red
@@ -186,44 +167,29 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
           border-style: none
           padding: 8px 0 15px 0
           font-weight: bold
-        textarea
-          width: 93%
         div.text span.error
           top: 0
         .submit
           width: 100%
           -webkit-border-radius: 8px
           -webkit-appearance: none
-      .col3
-        width: 90%
-        margin: 0 auto
-        float: none
-        left: 0
-        iframe
-          display: none
-        .address
-          margin: 0 0 2em 0
   #work
     .work-nav
       display: none
   
   footer
     margin-top: 0em
-    .social-icon
-      position: relative
-      top: -1.75em
-  .footer-text
-    width: 180px
-    line-height: 1.5
-    a
-      width: 180px
-      position: relative
-      top: -1em
-  footer ul .footer-text
-    line-height: 1.5
-    a
-      width: 180px
-      margin-top: -1em
+    ul
+      .social-icon
+        position: relative
+        top: -1.75em
+      .footer-text
+        width: 180px
+        line-height: 1.5
+        a
+          width: 180px
+          position: relative
+          top: -1em
 
 @media only screen and (max-width: 320px)
   .title h1
