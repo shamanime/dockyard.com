@@ -8,7 +8,7 @@ $l-blue: #ABD4E7
 
 $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
-#mobile-header, #home #swipe
+#mobile-header
   display: none
 
 @media only screen and (max-width: 480px)
@@ -79,7 +79,7 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
   #home
     background-color: $white
     background-image: none
-    .landing-gallery, .circle, #tide
+    .circle
       display: none
     .about
       .dockyard
@@ -101,6 +101,9 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
       background:
         image: url(/assets/mobile-tide.png)
         repeat: repeat-x
+    #tide
+      .landing-gallery
+        margin-top: 0
     .gradient
       clear: both
       .col-span
