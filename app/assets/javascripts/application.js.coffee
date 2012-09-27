@@ -12,7 +12,7 @@
 #
 #= require jquery
 #= require jquery_ujs
-#= require jquery.cycle.all.min.js
+#= require jquery.cycle.all.js
 #= require rails.validations
 #= require rails.validations.simple_form
 #= require_tree .
