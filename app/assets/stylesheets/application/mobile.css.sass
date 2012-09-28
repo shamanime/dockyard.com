@@ -70,7 +70,8 @@ $l-blue: #ABD4E7
     line-height: 0
   .content
     top: 3.25em
-  #home, #work, #people, #community, #contact  
+  
+  #home, #work, #people, #community, #contact
     .content, .gradient
       .col1, .col2, .col3, .col-span, .col-span2
         width: 90%
@@ -117,7 +118,20 @@ $l-blue: #ABD4E7
       .col-span
         margin-bottom: 2em
         padding-top: 1em
-
+  
+  #work
+    .work-nav, .slider-nav
+      display: none
+    .italic
+      clear: both
+      display: block
+    .portfolio
+      .slider, .slides, .slides img
+        width: 100%
+        height: auto
+      .slider
+        margin: .25em 0 2em
+  
   #people
     #fixed-nav
       display: none
@@ -144,6 +158,7 @@ $l-blue: #ABD4E7
           margin: 0 0 12px 0
         .os-icon
           margin-left: -.4em
+  
   #contact
     .content
       .col3
@@ -167,18 +182,6 @@ $l-blue: #ABD4E7
           width: 100%
           -webkit-border-radius: 8px
           -webkit-appearance: none
-  #work
-    .work-nav, .slider-nav
-      display: none
-    .italic
-      clear: both
-      display: block
-    .portfolio
-      .slider, .slides img
-        width: 100%
-        height: auto
-      .slider
-        margin-bottom: 2em
   
   footer
     margin-top: 0em
