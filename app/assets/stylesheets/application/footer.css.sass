@@ -13,33 +13,26 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
 
 footer
   padding-top: 7.5em
-  height: 6em
+  height: 8em
   clear: both
   text-align: center
+  p
+    margin-top: .25em
   a
     background-color: $blue
     color: $white
     &:hover
       background-color: $red
-      
-  ul li
+  .rss
+    line-height: 38px
+    font-size: 1.65em
+  .email
+    line-height: 40px
+    font-size: 1.5em
+  .social-icon
     position: relative
     display: inline-block
     margin: 0 10px
-    p
-      position: relative
-      top: -1.25em
-  .copyright
-    line-height: .35
-    p
-      margin-bottom: 0
-    a
-      background-color: transparent
-      color: $blue
-      font-weight: bold
-      &:hover
-        color: $red
-        text-decoration: underline
 #home footer
   padding-top: 3em
   background-color: darken($blue, 9%)
@@ -50,7 +43,3 @@ footer
       background-color: $white
   p
     color: $white
-  .copyright
-    a
-      background-color: transparent
-      color: $white

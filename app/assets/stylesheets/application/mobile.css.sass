@@ -1,0 +1,227 @@
+@import compass/css3
+
+$red: #F05051
+$blue: #2A5567
+$gray: #E8E8E8
+$white: #FFFFFF
+$l-blue: #ABD4E7
+
+#mobile-header, #mobile-landing-gallery
+  display: none
+
+.touch
+  footer .footer-text a, #home .gradient li a, #community .content .col3 a, #contact .content .col1 .bold, #contact .content .col3 a
+    font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+
+@media only screen and (max-width: 480px)
+  body
+    min-width: 320px
+  #mobile-header
+    display: block
+    background-color: $red
+    div
+      display: block
+      width: 80%
+      margin: 0 auto
+      color: $white
+      h1
+        font-family: leaguegothic
+        font-size: 2em
+        color: $white
+      .mobile-button
+        font-family: fontello
+        font-size: 1.5em
+        text-align: right
+        display: block
+        position: absolute
+        top: .25em
+        right: 10%
+        cursor: pointer
+        padding-left: 2em
+    ul
+      width: 100%
+      display: none
+      text-align: center
+      li
+        position: relative
+        display: inline-block
+        width: 32%
+        margin: 0 auto .35em
+        a
+          display: block
+          color: $white
+          position: relative
+          background-color: lighten($red, 4%)
+          padding: 1em
+          text-align: center
+          font-weight: bold
+          &:active
+            background-color: lighten($red, 7%)
+          span
+            font-family: fontello
+            font-size: 2em
+  #site-header
+    display: none
+  .wrap
+    width: 90%
+  .title h1
+    font-size: 5em
+    top: .28em
+    position: relative
+    line-height: 0
+  .content
+    top: 3.25em
+  
+  #home, #work, #people, #community, #contact
+    .content, .gradient
+      .col1, .col2, .col3, .col-span, .col-span2
+        width: 90%
+        margin: 0 auto
+        float: none
+
+  #home
+    background-color: $white
+    background-image: none
+    .circle, #tide
+      display: none
+    .about
+      .dockyard
+        width: 274px
+        margin-bottom: -1.5em
+        .narwin
+          background:
+            size: 172.8px 80px
+          width: 86.4px
+          height: 80px
+          margin-top: .25em
+        h1.logo-big
+          font-size: 4.5em
+    .callout
+      padding: 1em 3em 2em
+      font-size: .85em
+      width: auto
+    #mobile-tide
+      height: 30px
+      background:
+        image: url(/assets/mobile-tide.png)
+        repeat: repeat-x
+    #mobile-landing-gallery
+      position: relative
+      top: 2em
+      height: 20em
+      display: block
+      img
+        width: 100%
+        position: relative
+        background-color: white
+    .gradient
+      clear: both
+      .col-span
+        margin-bottom: 2em
+        padding-top: 1em
+  
+  #work
+    .work-nav, .slider-nav
+      display: none
+    .italic
+      clear: both
+      display: block
+    .portfolio
+      .slider, .slides, .slides img
+        width: 100%
+        height: auto
+      .slider
+        margin: .25em 0 2em
+  
+  #people
+    #fixed-nav
+      display: none
+    .headline
+      font-size: 1.75em
+    .content ul#team 
+      ul
+        float: none
+        top: 0
+        margin-top: 0
+        margin-bottom: 5em
+      img
+        width: 100%
+        height: auto
+
+  #community
+    .content .colspan
+      width: 90%
+      margin: 0 auto 2em
+      float: none
+      ul 
+        li a
+          width: 100%
+          margin: 0 0 12px 0
+        .os-icon
+          margin-left: -.4em
+  
+  #contact
+    .content
+      .col3
+        left: 0
+        iframe
+          display: none
+        a
+          margin: 0 0 2em 0
+      form 
+        input, textarea
+          width: 93%
+        .error
+          color: $red
+          background-color: transparent
+          border-style: none
+          padding: 8px 0 15px 0
+          font-weight: bold
+        div.text span.error
+          top: 0
+        .submit
+          width: 100%
+          -webkit-border-radius: 8px
+          -webkit-appearance: none
+  
+  footer
+    padding-top: 5em
+    p
+      width: 250px
+      margin: 0 auto
+
+@media only screen and (max-width: 320px)
+  #home #mobile-landing-gallery
+    height: 15em
+  .title h1
+    width: 90%
+    margin: 0 auto
+  #people .content ul#team
+    position: relative
+    .headline
+      text-align: center
+    span
+      text-align: center
+      position: relative
+      top: -.2em
+      clear: both
+      display: block
+    ul
+      float: left
+      display: block
+      left: 50%
+      margin-bottom: 2em
+      li
+        position: relative
+        float: left
+        display: block
+        right: 50%
+  #community
+    .content .colspan
+      ul
+        .os-icon
+          display: none
+        li a div
+          margin-right: 35px
+  footer ul li
+    margin: 0

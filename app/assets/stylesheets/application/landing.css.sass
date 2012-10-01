@@ -6,19 +6,20 @@ $l-blue: #ABD4E7
 
 @import compass/css3
 
-.csstransforms
+.csstransforms, .cssanimations
   #tide
     background:
       image: url(/assets/ocean.png)
       attachment: fixed
 
-.no-csstransforms
+.no-csstransforms, .no-cssanimations
   #home .about .dockyard .narwin
     background:
       image: url(/assets/narwin-ie.png)
   #tide
     background:
       image: url(/assets/ocean-ie.png)
+      attachment: scroll
   .landing-gallery
     height: 23em
     background:
@@ -47,7 +48,7 @@ $l-blue: #ABD4E7
         &:hover
           background-position: 100% 0
           repeat: no-repeat
-      h1.logo-big
+      h1
         font:
           family: leaguegothic
           size: 7.25em
@@ -61,6 +62,8 @@ $l-blue: #ABD4E7
     margin: 0 auto -50em
     z-index: -5
   .callout
+    width: 580px
+    margin: 0 auto
     text-align: center
     clear: both
     padding: 1em 5em
@@ -79,6 +82,9 @@ $l-blue: #ABD4E7
       margin: 1em auto 0
       padding-bottom: 2em
       position: relative
+      .home-wrapper img
+        width: 570px
+        height: 392.5px
   .gradient
     padding-bottom: 2em
     color: $white

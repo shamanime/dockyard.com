@@ -5,10 +5,9 @@
       %h1.logo-big DockYard
     .callout
       %p
-        We are a web &amp; mobile software consultancy based in Boston, MA
-        %br
-        that specializes in Ruby on Rails, PostgreSQL, and mobile development.
+        We are a web &amp; mobile software consultancy based in Boston, MA that specializes in Ruby on Rails, PostgreSQL, and mobile development.
   .circle
+  #mobile-tide
   #tide
     .landing-gallery
       #home-container
@@ -17,17 +16,22 @@
           %span.home-prev &lt;
         .home-wrapper
           %a{:href => '#'}
-            %img{:alt => 'Openbay', :src => '/assets/landing/1@2X.jpg', :width => '570px', :height => '392.5px'}
+            %img{:alt => 'Openbay', :src => '/assets/landing/1@2X.jpg'}
           %a{:href => '#'}
-            %img{:alt => 'rePurpose', :src => '/assets/landing/2@2X.jpg', :width => '570px', :height => '392.5px'}
+            %img{:alt => 'rePurpose', :src => '/assets/landing/2@2X.jpg'}
           %a{:href => '#'}
-            %img{:alt => 'Provider Tool', :src => '/assets/landing/4@2X.jpg', :width => '570px', :height => '392.5px'}
+            %img{:alt => 'Provider Tool', :src => '/assets/landing/4@2X.jpg'}
           %a{:href => '#'}
-            %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5@2X.jpg', :width => '570px', :height => '392.5px'}
+            %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5@2X.jpg'}
         %nav
           %span.home-next &gt;
   .gradient
     .wrap
+      #mobile-landing-gallery
+        %img{:alt => 'Openbay', :src => '/assets/landing/1.jpg'}
+        %img{:alt => 'rePurpose', :src => '/assets/landing/2.jpg'}
+        %img{:alt => 'Provider Tool', :src => '/assets/landing/4.jpg'}
+        %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5.jpg'}
       .col-span
         %h2 Blog
         - articles = RecentArticles::Article.retrieve_articles
@@ -39,3 +43,6 @@
       .col3
         = render :partial => 'shared/events'
       .clear
+
+:javascript
+  var swipe = new Swipe(document.getElementById('swipe'));
