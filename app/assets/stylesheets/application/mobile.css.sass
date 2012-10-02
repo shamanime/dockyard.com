@@ -13,7 +13,6 @@ $l-blue: #ABD4E7
   header .nav ul li a, footer .footer-text a, #home .gradient li a, #community .content .col3 a, #contact .content .col1 .bold, #contact .content .col3 a
     font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
   .submit
-    width: 100%
     -webkit-border-radius: 8px
     -webkit-appearance: none
 
@@ -22,7 +21,6 @@ $l-blue: #ABD4E7
     min-width: 768px
   .wrap
     width: 700px
-    
   #people
     .col-span2
       width: 100%
@@ -31,7 +29,6 @@ $l-blue: #ABD4E7
       display: none
     #team li img
       width: 100%
-  
   #community .content .colspan ul li a
     width: 343px
 
@@ -85,13 +82,12 @@ $l-blue: #ABD4E7
   #site-header
     display: none
   .wrap
-    width: 100%
+    width: 90%
   .title h1
+    width: 480px
     font-size: 5em
     top: .38em
-    width: 100%
-    overflow: hidden
-    
+    overflow-x: hidden
     margin: 0
   .content
     top: 3.25em
@@ -203,6 +199,8 @@ $l-blue: #ABD4E7
           font-weight: bold
         div.text span.error
           top: 0
+        .submit
+          width: 100%
   
   footer
     padding-top: 5em
@@ -211,11 +209,15 @@ $l-blue: #ABD4E7
       margin: 0 auto
 
 @media only screen and (max-width: 320px)
+  width: 320px
+  #contact .content form .submit
+    width: 320px
+  .title h1
+    width: 304px
+    margin: 0
+    padding: 0
   #home #mobile-landing-gallery
     height: 15em
-  .title h1
-    width: 90%
-    margin: 0 auto
   #people .content ul#team
     position: relative
     .headline
