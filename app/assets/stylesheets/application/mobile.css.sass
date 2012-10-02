@@ -17,6 +17,24 @@ $l-blue: #ABD4E7
     -webkit-border-radius: 8px
     -webkit-appearance: none
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+  body
+    min-width: 768px
+  .wrap
+    width: 700px
+    
+  #people
+    .col-span2
+      width: 100%
+      float: none
+    #fixed-nav
+      display: none
+    #team li img
+      width: 100%
+  
+  #community .content .colspan ul li a
+    width: 343px
+
 @media only screen and (max-width: 480px)
   body
     min-width: 320px
