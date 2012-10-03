@@ -10,17 +10,67 @@ $l-blue: #ABD4E7
   display: none
 
 .touch
-  header .nav ul li a, footer .footer-text a, #home .gradient li a, #community .content .col3 a, #contact .content .col1 .bold, #contact .content .col3 a
+  header .nav ul li a, footer .footer-text a, #home .gradient li a, #community .content .col3 a, #contact .content .col1 .bold, #contact .content .col3 a, #contact .content form .error
     font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
   .submit
     -webkit-border-radius: 8px
     -webkit-appearance: none
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
+  #home
+    #tide
+      background-image: none
+      .landing-gallery
+        background-color: $blue
+        padding-top: 2em
+        margin-top: 0
+    #mobile-tide
+      height: 30px
+      background:
+        image: url(/assets/mobile-tide.png)
+        repeat: repeat-x
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
   body
     min-width: 768px
   .wrap
     width: 700px
+  #home
+    .circle 
+      width: 44em
+      height: 44em
+      top: -20em
+      border-radius: 22em
+      margin: 0 auto -44em
+    #tide
+      background-image: none
+      .landing-gallery
+        overflow-x: hidden
+        background-color: $blue
+        padding-top: 2em
+        margin-top: 0
+    #mobile-tide
+      height: 30px
+      background:
+        image: url(/assets/mobile-tide.png)
+        repeat: repeat-x
+  #work 
+    .work-nav
+      display: none
+    .portfolio
+      .slider, .slides, .slides img
+        width: 700px
+        height: 454px
+      .slider
+        margin: .25em 0 6em
+    .slider-nav
+      float: left
+      top: 440px
+      left: 300px
+      .prev
+        margin: 0 20px 0 0
+      .next
+        margin: 0
   #people
     .col-span2
       width: 100%
@@ -29,8 +79,40 @@ $l-blue: #ABD4E7
       display: none
     #team li img
       width: 100%
-  #community .content .colspan ul li a
-    width: 343px
+  #community
+    .content .colspan ul li a
+      width: 48%
+    .col3
+      position: relative
+      top: 1em
+      padding-bottom: 2em
+      clear: both
+      width: 100%
+      float: none
+  #contact
+    iframe
+      display: none
+    .content
+      .col2
+        width: 430px
+      form
+        input, textarea
+          width: 430px
+        .error
+          color: $red
+          background-color: transparent
+          border-style: none
+          padding: 8px 0 15px 0
+          font-weight: bold
+        div.text span.error
+          top: 0
+        .submit
+          width: 450px
+      .col3
+        width: 430px
+        position: relative
+        top: -1.5em
+        left: -2em
 
 @media only screen and (max-width: 480px)
   body
