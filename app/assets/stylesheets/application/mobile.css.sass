@@ -6,173 +6,40 @@ $gray: #E8E8E8
 $white: #FFFFFF
 $l-blue: #ABD4E7
 
-#mobile-header, #mobile-landing-gallery
+#mobile-landing-gallery
   display: none
 
 .touch
-  header .nav ul li a, footer .footer-text a, #home .gradient li a, #community .content .col3 a, #contact .content .col1 .bold, #contact .content .col3 a, #contact .content form .error
+  #site-header .nav ul li a, #mobile-header nav ul li a, footer .footer-text a, #home .gradient li a, #community .content .col3 a, #contact .content .col1 .bold, #contact .content .col3 a, #contact .content form .error
     font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
   .submit
     -webkit-border-radius: 8px
     -webkit-appearance: none
 
+/* iPads (landscape) -----------
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
-  #home
-    #tide
-      background-image: none
-      .landing-gallery
-        background-color: $blue
-        padding-top: 2em
-        margin-top: 0
-    #mobile-tide
-      height: 30px
-      background:
-        image: url(/assets/mobile-tide.png)
-        repeat: repeat-x
+  .touch
+    #home
+      #tide
+        background-image: none
+        .landing-gallery
+          background-color: $blue
+          padding-top: 2em
+          margin-top: 0
+      #mobile-tide
+        height: 30px
+        background:
+          image: url(/assets/mobile-tide.png)
+          repeat: repeat-x
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
-  body
-    min-width: 768px
-  .wrap
-    width: 700px
-  #home
-    .circle 
-      width: 44em
-      height: 44em
-      top: -20em
-      border-radius: 22em
-      margin: 0 auto -44em
-    #tide
-      background-image: none
-      .landing-gallery
-        overflow-x: hidden
-        background-color: $blue
-        padding-top: 2em
-        margin-top: 0
-    #mobile-tide
-      height: 30px
-      background:
-        image: url(/assets/mobile-tide.png)
-        repeat: repeat-x
-  #work 
-    .work-nav
-      display: none
-    .portfolio
-      .slider, .slides, .slides img
-        width: 700px
-        height: 454px
-      .slider
-        margin: .25em 0 6em
-    .slider-nav
-      float: left
-      top: 440px
-      left: 300px
-      .prev
-        margin: 0 20px 0 0
-      .next
-        margin: 0
-  #people
-    .col-span2
-      width: 100%
-      float: none
-    #fixed-nav
-      display: none
-    #team li img
-      width: 100%
-  #community
-    .content .colspan ul li a
-      width: 48%
-    .col3
-      position: relative
-      top: 1em
-      padding-bottom: 2em
-      clear: both
-      width: 100%
-      float: none
-  #contact
-    iframe
-      display: none
-    .content
-      .col2
-        width: 430px
-      form
-        input, textarea
-          width: 430px
-        .error
-          color: $red
-          background-color: transparent
-          border-style: none
-          padding: 8px 0 15px 0
-          font-weight: bold
-        div.text span.error
-          top: 0
-        .submit
-          width: 450px
-      .col3
-        width: 430px
-        position: relative
-        top: -1.5em
-        left: -2em
-
-@media only screen and (max-width: 480px)
-  body
-    min-width: 320px
-  #mobile-header
-    display: block
-    background-color: $red
-    div
-      display: block
-      width: 80%
-      margin: 0 auto
-      color: $white
-      h1
-        font-family: leaguegothic
-        font-size: 2em
-        color: $white
-      .mobile-button
-        font-family: fontello
-        font-size: 1.5em
-        text-align: right
-        display: block
-        position: absolute
-        top: .25em
-        right: 10%
-        cursor: pointer
-        padding-left: 2em
-    ul
-      width: 100%
-      display: none
-      text-align: center
-      li
-        position: relative
-        display: inline-block
-        width: 32%
-        margin: 0 auto .35em
-        a
-          display: block
-          color: $white
-          position: relative
-          background-color: lighten($red, 4%)
-          padding: 1em
-          text-align: center
-          font-weight: bold
-          &:active
-            background-color: lighten($red, 7%)
-          span
-            font-family: fontello
-            font-size: 2em
-  #site-header
-    display: none
+/* Smartphones (landscape) -----------
+@media only screen and (max-width: 650px)
   .wrap
     width: 90%
   .title h1
-    width: 480px
-    font-size: 5em
-    top: .38em
-    overflow-x: hidden
-    margin: 0
+    display: none
   .content
-    top: 3.25em
+    top: 0em
   
   #home, #work, #people, #community, #contact
     .content, .gradient
@@ -252,7 +119,7 @@ $l-blue: #ABD4E7
 
   #community
     .content .colspan
-      width: 90%
+      width: 100%
       margin: 0 auto 2em
       float: none
       ul 
@@ -261,6 +128,8 @@ $l-blue: #ABD4E7
           margin: 0 0 12px 0
         .os-icon
           margin-left: -.4em
+    .content .col3
+      width: 100%
   
   #contact
     .content
@@ -290,8 +159,10 @@ $l-blue: #ABD4E7
       width: 250px
       margin: 0 auto
 
+/* Smartphones (portrait) -----------
 @media only screen and (max-width: 320px)
-  width: 320px
+
+    
   #contact .content form .submit
     width: 320px
   .title h1

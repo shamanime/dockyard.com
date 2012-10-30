@@ -1,0 +1,94 @@
+@import compass/css3
+
+$red: #F05051
+$blue: #2A5567
+$gray: #E8E8E8
+$white: #FFFFFF
+$l-blue: #ABD4E7
+
+@media only screen and (min-width: 650px) and (max-width: 1100px)
+  body
+    min-width: 480px
+  .wrap
+    width: 90%
+
+/* iPads (portrait) -----------
+@media only screen and (min-width: 768px) and (max-width: 1000px)
+  #home
+    .circle 
+      width: 44em
+      height: 44em
+      top: -20em
+      border-radius: 22em
+      margin: 0 auto -44em
+    #tide
+      background-image: none
+      .landing-gallery
+        overflow-x: hidden
+        background-color: $blue
+        padding-top: 2em
+        margin-top: 0
+    #mobile-tide
+      height: 30px
+      background:
+        image: url(/assets/mobile-tide.png)
+        repeat: repeat-x
+  #work 
+    .work-nav
+      display: none
+    .portfolio
+      .slider, .slides, .slides img
+        width: 700px
+        height: 454px
+      .slider
+        margin: .25em 0 6em
+    .slider-nav
+      float: left
+      top: 440px
+      left: 300px
+      .prev
+        margin: 0 20px 0 0
+      .next
+        margin: 0
+  #people
+    .col-span2
+      width: 100%
+      float: none
+    #fixed-nav
+      display: none
+    #team li img
+      width: 100%
+  #community
+    .content .colspan ul li a
+      width: 48%
+    .col3
+      position: relative
+      top: 1em
+      padding-bottom: 2em
+      clear: both
+      width: 100%
+      float: none
+  #contact
+    iframe
+      display: none
+    .content
+      .col2
+        width: 430px
+      form
+        input, textarea
+          width: 430px
+        .error
+          color: $red
+          background-color: transparent
+          border-style: none
+          padding: 8px 0 15px 0
+          font-weight: bold
+        div.text span.error
+          top: 0
+        .submit
+          width: 450px
+      .col3
+        width: 430px
+        position: relative
+        top: -1.5em
+        left: -2em
