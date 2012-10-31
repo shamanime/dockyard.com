@@ -23,8 +23,33 @@ $l-blue: #ABD4E7
         height: auto
       .slider
         margin: .25em 0 2em
-@media only screen and (min-width: 0px) and (max-width: 1100px)
   #contact
+    iframe
+      display: none
+    .content
+      .col1
+        width: 30%
+        margin-right: 5%
+        a.address
+          display: block
+      .col2
+        width: 60%
+      form
+        input, textarea
+          width: 100%
+        .error
+          color: $red
+          background-color: transparent
+          border-style: none
+          padding: 8px 0 15px 0
+          font-weight: bold
+        div.text span.error
+          top: 0
+        .submit
+          width: 100%
+          display: inline-block
+      .col3
+        display: none
     div.content
       form
         .error
@@ -65,8 +90,6 @@ $l-blue: #ABD4E7
       background:
         image: url(/assets/mobile-tide.png)
         repeat: repeat-x
-  #work
-    
   #people
     .col-span2
       width: 100%
@@ -85,27 +108,3 @@ $l-blue: #ABD4E7
       clear: both
       width: 100%
       float: none
-  #contact
-    iframe
-      display: none
-    .content
-      .col2
-        width: 430px
-      form
-        input, textarea
-          width: 430px
-        .error
-          color: $red
-          background-color: transparent
-          border-style: none
-          padding: 8px 0 15px 0
-          font-weight: bold
-        div.text span.error
-          top: 0
-        .submit
-          width: 450px
-      .col3
-        width: 430px
-        position: relative
-        top: -1.5em
-        left: -2em
