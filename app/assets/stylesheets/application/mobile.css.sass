@@ -31,6 +31,23 @@ $l-blue: #ABD4E7
         background:
           image: url(/assets/mobile-tide.png)
           repeat: repeat-x
+    #work 
+      .work-nav
+        display: none
+      .portfolio
+        .slider, .slides, .slides img
+          width: 700px
+          height: 454px
+        .slider
+          margin: .25em 0 6em
+      .slider-nav
+        float: left
+        top: 440px
+        left: 300px
+        .prev
+          margin: 0 20px 0 0
+        .next
+          margin: 0
 
 /* Smartphones (landscape) -----------
 @media only screen and (max-width: 650px)
@@ -41,7 +58,7 @@ $l-blue: #ABD4E7
   .content
     top: 0em
   
-  #home, #work, #people, #community, #contact
+  #home, #people, #community, #contact
     .content, .gradient
       .col1, .col2, .col3, .col-span, .col-span2
         width: 90%
@@ -88,20 +105,7 @@ $l-blue: #ABD4E7
       .col-span
         margin-bottom: 2em
         padding-top: 1em
-  
-  #work
-    .work-nav, .slider-nav
-      display: none
-    .italic
-      clear: both
-      display: block
-    .portfolio
-      .slider, .slides, .slides img
-        width: 100%
-        height: auto
-      .slider
-        margin: .25em 0 2em
-  
+
   #people
     #fixed-nav
       display: none
@@ -139,20 +143,7 @@ $l-blue: #ABD4E7
           display: none
         a
           margin: 0 0 2em 0
-      form 
-        input, textarea
-          width: 93%
-        .error
-          color: $red
-          background-color: transparent
-          border-style: none
-          padding: 8px 0 15px 0
-          font-weight: bold
-        div.text span.error
-          top: 0
-        .submit
-          width: 100%
-  
+
   footer
     padding-top: 5em
     p

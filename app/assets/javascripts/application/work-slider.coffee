@@ -1,5 +1,5 @@
 $ ->
-  $(".lg-screen .slides").each ->
+  $(".slider-go .slides").each ->
     p = @parentNode
     $(this).cycle
       fx: "fade"
