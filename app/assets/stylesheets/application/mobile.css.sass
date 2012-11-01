@@ -16,6 +16,27 @@ $l-blue: #ABD4E7
     -webkit-border-radius: 8px
     -webkit-appearance: none
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+  #home
+    .circle 
+      width: 44em
+      height: 44em
+      top: -20em
+      border-radius: 22em
+      margin: 0 auto -44em
+    #tide
+      background-image: none
+      .landing-gallery
+        overflow-x: hidden
+        background-color: $blue
+        padding-top: 2em
+        margin-top: 0
+    #mobile-tide
+      height: 30px
+      background:
+        image: url(/assets/mobile-tide.png)
+        repeat: repeat-x
+
 /* iPads (landscape) -----------
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
   .touch
