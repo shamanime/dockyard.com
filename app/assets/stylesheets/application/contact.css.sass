@@ -51,7 +51,13 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
           style: solid
           color: darken($gray, 15%)
           width: 1px
-        padding: 10px 0
+        padding: 10px
+        -webkit-box-sizing: border-box
+        /* Safari/Chrome, other WebKit
+        -moz-box-sizing: border-box
+        /* Firefox, other Gecko
+        box-sizing: border-box
+        /* Opera/IE 8+
       textarea
         height: 150px
         margin: 2px 0 -.25em 0
