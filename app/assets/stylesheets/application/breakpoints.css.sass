@@ -6,6 +6,13 @@ $gray: #E8E8E8
 $white: #FFFFFF
 $l-blue: #ABD4E7
 
+@media only screen and (min-width: 650px) and (max-width: 800px)
+  div.title h1
+    font-size: 6em
+    top: .25em
+  div.content
+    top: 3.5em
+
 @media only screen and (min-width: 0px) and (max-width: 1100px)
   .slider-go
     display: none
@@ -24,17 +31,11 @@ $l-blue: #ABD4E7
       .slider
         margin: .25em 0 2em
   #community
-    div.content .colspan ul li a
-      height: 100%
-      .os-desc
-        width: 60%
-        float: right
-        margin-left: 10%
-      .os-icon
-        margin: 0
-        width: 30%
-    .os-wrap
-      display: block
+    .content div.colspan
+      width: 100%
+      ul
+        .os-icon
+          font-size: 4em
     .col3
       position: relative
       top: 1em
@@ -117,3 +118,44 @@ $l-blue: #ABD4E7
       display: none
     #team li img
       width: 100%
+
+@media only screen and (min-width: 0px) and (max-width: 650px)
+  #community
+    .content div.colspan
+      margin-left: 5%
+      width: 90%
+      ul li a
+        width: 100%
+        .os-icon
+          display: none
+        .os-desc
+          margin: 0 auto
+          float: none
+
+@media only screen and (min-width: 650px) and (max-width: 780px)
+  #community
+    .content div.colspan
+      ul li a
+        width: 46.5%
+        .os-icon
+          display: none
+        .os-desc
+          margin: 0 auto
+          float: none
+
+@media only screen and (min-width: 780px) and (max-width: 1030px)
+  #community
+    .content div.colspan
+      ul li a
+        width: 48%
+        .os-icon
+          margin-left: 5%
+        .os-desc
+          float: none
+          margin-left: 35%
+
+@media only screen and (min-width: 1030px) and (max-width: 1100px)
+  #community
+    .content div.colspan
+      ul li a
+        width: 31.5%
