@@ -25,26 +25,9 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
   color: darken($gray, 30%)
   text-shadow: $white .5px 1px 0px
 
-@font-face
-  font-family: cubano
-  src: url('/assets/cubano.eot')
-  src: url('/assets/cubano.ttf')
-  src: url('/assets/cubano.eot?#iefix') format("embedded-opentype"), url('/assets/cubano.woff') format("woff"), url('/assets/cubano.svg') format('svg')
-  font-weight: normal
-
-@font-face
-  font-family: leaguegothic
-  src: url('/assets/leaguegothic.eot')
-  src: url('/assets/leaguegothic.ttf')
-  src: url('/assets/leaguegothic.eot?#iefix') format('embedded-opentype'), url('/assets/leaguegothic.woff') format('woff'), url('/assets/leaguegothic.svg') format('svg')
-  font-weight: normal
-
-@font-face
-  font-family: fontello
-  src: url('/assets/fontello.eot')
-  src: url('/assets/fontello.ttf')
-  src: url('/assets/fontello.eot?#iefix') format("embedded-opentype"), url('/assets/fontello.woff') format("woff"), url('/assets/fontello.svg') format('svg')
-  font-weight: normal
++font-face(cubano, font-files('/assets/cubano.eot', '/assets/cubano.ttf', '/assets/cubano.eot', '/assets/cubano.woff'))
++font-face(leaguegothic, font-files('/assets/leaguegothic.eot', '/assets/leaguegothic.ttf', '/assets/leaguegothic.eot', '/assets/leaguegothic.woff'))
++font-face(fontello, font-files('/assets/fontello.eot', '/assets/fontello.ttf', '/assets/fontello.eot', '/assets/fontello.woff'))
 
 body
   background:
@@ -102,6 +85,7 @@ p
 
 .bold
   font-weight: bold
+
 .italic
   @include engrave
   color: darken($gray, 30%)

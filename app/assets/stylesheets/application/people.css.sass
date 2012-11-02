@@ -1,3 +1,5 @@
+@import compass/css3
+
 $blue: #2A5567
 $gray: #E8E8E8
 $white: #FFFFFF
@@ -28,7 +30,7 @@ $red: #F05051
             margin: .25em .5em 0 0
       .social-icon a
         background-color: darken($gray, 15%)
-        box-shadow: $white .5px 1px 0px
+        +box-shadow($white .5px 1px 0px)
         &:hover
           background-color: darken($gray, 10%)
   .scroll-to

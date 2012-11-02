@@ -58,7 +58,7 @@ $l-blue: #ABD4E7
     background: $white
     position: relative
     top: -23em
-    border-radius: 25em
+    +border-radius(25em)
     margin: 0 auto -50em
     z-index: -5
   .callout
@@ -93,8 +93,9 @@ $l-blue: #ABD4E7
     .headline
       color: $white
     h2
-      font-family: cubano
-      font-size: 2.5em
+      font:
+        family: cubano
+        size: 2.5em
     li
       margin-bottom: 1em
       a

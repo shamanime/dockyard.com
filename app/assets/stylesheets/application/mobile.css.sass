@@ -9,6 +9,7 @@ $l-blue: #ABD4E7
 #mobile-landing-gallery
   display: none
 
+/* Helvetica Neue Light needs to be corrected on apple non-desktop products
 .touch
   #site-header .nav ul li a, #mobile-header nav ul li a p, footer .footer-text a, #home .gradient li a, #community .content .col3 a, #contact .content .col1 .bold, #contact .content .col3 a, #contact .content form .error
     font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
@@ -87,8 +88,9 @@ $l-blue: #ABD4E7
         float: none
 
   #home
-    background-color: $white
-    background-image: none
+    background:
+      color: $white
+      image: none
     .circle, #tide
       display: none
     .about
@@ -136,8 +138,7 @@ $l-blue: #ABD4E7
       ul
         float: none
         top: 0
-        margin-top: 0
-        margin-bottom: 5em
+        margin: 0 0 5em 0
       img
         width: 100%
         height: auto
@@ -176,7 +177,6 @@ $l-blue: #ABD4E7
         float: left
         display: block
         right: 50%
-
     footer
       padding-top: 1.5em
   footer ul li
