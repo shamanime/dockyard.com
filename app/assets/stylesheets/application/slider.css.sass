@@ -1,9 +1,11 @@
+@import compass/css3
+
 $gray: #E8E8E8
 $white: #FFFFFF
 
 @mixin engrave
   color: darken($gray, 20%)
-  text-shadow: $white .5px 1px 0px
+  +text-shadow($white .5px 1px 0px)
 
 .slider
   clear: both
@@ -15,6 +17,8 @@ $white: #FFFFFF
     position: relative
     top: 260px
     z-index: 10
+    @media (max-width: 1100px)
+      display: none
     a
       @include engrave
       font:

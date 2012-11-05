@@ -1,9 +1,7 @@
 @import compass/css3
 
-$blue: #2A5567
 $gray: #E8E8E8
 $white: #FFFFFF
-$red: #F05051
 
 #people
   .content
@@ -13,7 +11,7 @@ $red: #F05051
     #team
       span
         color: darken($gray, 20%)
-        text-shadow: $white .5px 1px 0px
+        +text-shadow($white .5px 1px 0px)
         font:
           family: poly, serif
           size: .75em

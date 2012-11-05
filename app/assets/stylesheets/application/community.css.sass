@@ -1,7 +1,7 @@
+@import compass/css3
+
 $red: #F05051
 $blue: #2A5567
-$gray: #E8E8E8
-$white: #FFFFFF
 $l-blue: #ABD4E7
 
 .no-rgba #community .colspan ul li a
@@ -35,24 +35,19 @@ $l-blue: #ABD4E7
           opacity: .2
           margin-left: .35em
         li a
-          -webkit-box-sizing: border-box 
-          /* Safari/Chrome, other WebKit
-          -moz-box-sizing: border-box
-          /* Firefox, other Gecko
-          box-sizing: border-box
-          /* Opera/IE 8+
+          +box-sizing(border-box)
           float: left
           width: 312px
           height: 145px
           padding: 1em 0
           margin: 0 12px 12px 0
-          background-color: rgba(171, 212, 231,.3)
+          background-color: rgba($l-blue, .3)
           border:
             color: darken($l-blue, 5%)
             width: 1px
             style: solid
           &:hover
-            background-color: rgba(171, 212, 231,.5)
+            background-color: rgba($l-blue, .5)
           .os-desc
             width: 190px
             float: right
@@ -63,3 +58,20 @@ $l-blue: #ABD4E7
                 weight: bold
                 style: italic
                 size: 1.25em
+          @media (max-width: 1100px)
+            width: 31.5%
+          @media (max-width: 1030px)
+            width: 48%
+            .os-icon
+              margin-left: 5%
+            .os-desc
+              float: none
+              margin-left: 35%
+          @media (max-width: 780px)
+            width: 46.5%
+            .os-icon
+              display: none
+            .os-desc
+              margin: 0 auto
+          @media (max-width: 650px)
+            width: 100%

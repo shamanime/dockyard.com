@@ -8,7 +8,7 @@ $l-blue: #ABD4E7
 
 @mixin engrave
   color: darken($gray, 30%)
-  text-shadow: $white .5px 1px 0px
+  +text-shadow($white .5px 1px 0px)
 
 @media only screen and (min-width: 1100px)
   .slider-stop
@@ -47,8 +47,8 @@ $l-blue: #ABD4E7
           style: solid
         &:hover
           background-color: #c9dee7
+    @media (max-width: 1100px)
+      display: none
   .content
-    .portfolio
-      clear: both
-      .headline
-        padding-top: .25em
+    .portfolio .headline
+      padding-top: .25em

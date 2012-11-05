@@ -6,21 +6,12 @@ $gray: #E8E8E8
 $white: #FFFFFF
 $l-blue: #ABD4E7
 
-@media only screen and (min-width: 650px) and (max-width: 800px)
-  div.title h1
-    font-size: 6em
-    top: .25em
-  div.content
-    top: 3.5em
-
-@media only screen and (min-width: 0px) and (max-width: 1100px)
+@media (min-width: 0px) and (max-width: 1100px)
   .slider-go
     display: none
   #work
     .wrap
       width: 90%
-    .work-nav, .slider-nav
-      display: none
     .italic
       clear: both
       display: block
@@ -44,8 +35,6 @@ $l-blue: #ABD4E7
       width: 100%
       float: none
   #contact
-    iframe
-      display: none
     .content
       .col1
         width: 30%
@@ -106,38 +95,3 @@ $l-blue: #ABD4E7
     .content div.colspan
       margin-left: 5%
       width: 90%
-      ul li a
-        width: 100%
-        .os-icon
-          display: none
-        .os-desc
-          margin: 0 auto
-          float: none
-
-@media only screen and (min-width: 650px) and (max-width: 780px)
-  #community
-    .content div.colspan
-      ul li a
-        width: 46.5%
-        .os-icon
-          display: none
-        .os-desc
-          margin: 0 auto
-          float: none
-
-@media only screen and (min-width: 780px) and (max-width: 1030px)
-  #community
-    .content div.colspan
-      ul li a
-        width: 48%
-        .os-icon
-          margin-left: 5%
-        .os-desc
-          float: none
-          margin-left: 35%
-
-@media only screen and (min-width: 1030px) and (max-width: 1100px)
-  #community
-    .content div.colspan
-      ul li a
-        width: 31.5%

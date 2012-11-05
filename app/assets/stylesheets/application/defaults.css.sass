@@ -16,14 +16,14 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
   position:relative
   width: 40px
   height: 40px
-  border-radius: 50%
+  +border-radius(50%)
   display: block
   text-align: center
   float: left
 
 @mixin engrave
   color: darken($gray, 30%)
-  text-shadow: $white .5px 1px 0px
+  +text-shadow($white .5px 1px 0px)
 
 +font-face(cubano, font-files('/assets/cubano.eot', '/assets/cubano.ttf', '/assets/cubano.eot', '/assets/cubano.woff'))
 +font-face(leaguegothic, font-files('/assets/leaguegothic.eot', '/assets/leaguegothic.ttf', '/assets/leaguegothic.eot', '/assets/leaguegothic.woff'))
@@ -52,6 +52,8 @@ p
   font-family: $helvetica
   background-color: $gray
   margin-bottom: 1em
+  @media (min-width: 650px) and (max-width: 800px)
+    top: 3.5em
 
 .wrap
   width: 980px
@@ -100,18 +102,23 @@ p
   color: $blue
   font:
     size: 2.5em
-    family: cubano
+    family: cubano, sans-serif
   line-height: 1.2em
 
 .title h1
   color: $gray
   font:
-    family: cubano
+    family: cubano, sans-serif
     size: 8em
   z-index: -5
   position: absolute
   top: .15em
   line-height: 1
+  @media (min-width: 650px) and (max-width: 800px)
+    font-size: 6em
+    top: .25em
+  @media (max-width: 650px)
+    display: none
 
 .social-icon a
   @include icon
@@ -124,15 +131,6 @@ p
   line-height: 40px
 .github
   line-height: 42px
-
-.icon
-  font:
-    family: fontello
-    size: 1.35em
-  color: $blue
-  position: absolute
-  margin-top: -.25em
-  margin-left: -1.25em
 
 #fixed-nav
   position: fixed
