@@ -72,6 +72,8 @@ $l-blue: #ABD4E7
       weight: bold
     p
       margin-bottom: 0
+    @media (max-width: 1000px)
+      padding-bottom: .5em
   #tide
     height: 100%
     width: 100%
@@ -82,19 +84,25 @@ $l-blue: #ABD4E7
       margin: 1em auto 0
       padding-bottom: 2em
       position: relative
-      @media (max-width: 1100px)
-        transform: scale(.85, .85)
-        -ms-transform: scale(.85, .85)
-        -webkit-transform: scale(.85, .85)
-        -o-transform: scale(.85, .85)
-        -moz-transform: scale(.85, .85)
-        margin-top: 0
-        padding-bottom: 0
-      @media (max-width: 860px)
-        display: none
       .home-wrapper img
         width: 570px
         height: 392.5px
+      @media (max-width: 1000px)
+        transform: scale(.9, .9)
+        -ms-transform: scale(.9, .9)
+        -webkit-transform: scale(.9, .9)
+        -o-transform: scale(.9, .9)
+        -moz-transform: scale(.9, .9)
+        margin-top: 0
+        padding-bottom: 0
+      @media (max-width: 900px)
+        transform: scale(.8, .8)
+        -ms-transform: scale(.8, .8)
+        -webkit-transform: scale(.8, .8)
+        -o-transform: scale(.8, .8)
+        -moz-transform: scale(.8, .8)
+        position: relative
+        top: -1.5em
   .gradient
     padding-bottom: 2em
     color: $white
@@ -122,3 +130,30 @@ $l-blue: #ABD4E7
         margin-top: .15em
       ul
         margin-top: .4em
+    @media (max-width: 900px)
+      position: relative
+      top: -3em
+      margin-bottom: -3em
+
+@media only screen and (max-width: 800px)
+  #home
+    .about
+      padding-bottom: 1em
+    .circle 
+      width: 44em
+      height: 44em
+      top: -20em
+      border-radius: 22em
+      margin: 0 auto -44em
+    #mobile-tide
+      height: 30px
+      background:
+        image: url(/assets/mobile-tide.png)
+        repeat: repeat-x
+    #tide
+      display: none
+    .gradient
+      top: 0
+      margin-bottom: 0
+      padding-top: .5em
+
