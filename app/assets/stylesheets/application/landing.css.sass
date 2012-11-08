@@ -6,6 +6,9 @@ $l-blue: #ABD4E7
 
 @import compass/css3
 
+#mobile-landing-gallery
+  display: none
+
 .csstransforms, .cssanimations
   #tide
     background:
@@ -31,6 +34,8 @@ $l-blue: #ABD4E7
 
 #home
   .about
+    @media (max-width: 800px)
+      padding-bottom: 1em
     .dockyard
       width: 28em
       margin: 0 auto -2.5em
@@ -53,14 +58,20 @@ $l-blue: #ABD4E7
           family: leaguegothic
           size: 7.25em
   .circle 
-    width: 50em
-    height: 50em
     background: $white
     position: relative
+    z-index: -5
+    width: 50em
+    height: 50em
     top: -23em
     +border-radius(25em)
     margin: 0 auto -50em
-    z-index: -5
+    @media (max-width: 800px)
+      width: 44em
+      height: 44em
+      top: -20em
+      +border-radius(22em)
+      margin: 0 auto -44em
   .callout
     width: 580px
     margin: 0 auto
@@ -80,29 +91,31 @@ $l-blue: #ABD4E7
     position: relative
     background:
       repeat: repeat-x
-    .landing-gallery
-      margin: 1em auto 0
-      padding-bottom: 2em
+    @media (max-width: 800px)
+      display: none
+  .landing-gallery
+    margin: 1em auto 0
+    padding-bottom: 2em
+    position: relative
+    .home-wrapper img
+      width: 570px
+      height: 392.5px
+    @media (max-width: 1000px)
+      transform: scale(.9, .9)
+      -ms-transform: scale(.9, .9)
+      -webkit-transform: scale(.9, .9)
+      -o-transform: scale(.9, .9)
+      -moz-transform: scale(.9, .9)
+      margin-top: 0
+      padding-bottom: 0
+    @media (max-width: 900px)
+      transform: scale(.8, .8)
+      -ms-transform: scale(.8, .8)
+      -webkit-transform: scale(.8, .8)
+      -o-transform: scale(.8, .8)
+      -moz-transform: scale(.8, .8)
       position: relative
-      .home-wrapper img
-        width: 570px
-        height: 392.5px
-      @media (max-width: 1000px)
-        transform: scale(.9, .9)
-        -ms-transform: scale(.9, .9)
-        -webkit-transform: scale(.9, .9)
-        -o-transform: scale(.9, .9)
-        -moz-transform: scale(.9, .9)
-        margin-top: 0
-        padding-bottom: 0
-      @media (max-width: 900px)
-        transform: scale(.8, .8)
-        -ms-transform: scale(.8, .8)
-        -webkit-transform: scale(.8, .8)
-        -o-transform: scale(.8, .8)
-        -moz-transform: scale(.8, .8)
-        position: relative
-        top: -1.5em
+      top: -1.5em
   .gradient
     padding-bottom: 2em
     color: $white
@@ -111,16 +124,14 @@ $l-blue: #ABD4E7
     .headline
       color: $white
     h2
-      font:
-        family: cubano
-        size: 2.5em
+      font: 2.5em cubano, sans-serif
     li
       margin-bottom: 1em
       a
         color: $l-blue
         font-weight: bold
         text-decoration: underline
-    .col-span
+    .col1
       width: 43%
       margin-left: 4%
     .col3
@@ -134,26 +145,17 @@ $l-blue: #ABD4E7
       position: relative
       top: -3em
       margin-bottom: -3em
-
-@media only screen and (max-width: 800px)
-  #home
-    .about
-      padding-bottom: 1em
-    .circle 
-      width: 44em
-      height: 44em
-      top: -20em
-      +border-radius(22em)
-      margin: 0 auto -44em
-    #mobile-tide
-      height: 30px
-      background:
-        image: url(/assets/mobile-tide.png)
-        repeat: repeat-x
-    #tide
-      display: none
-    .gradient
+    @media (max-width: 800px)
       top: 0
       margin-bottom: 0
       padding-top: .5em
+    @media (max-width: 650px)
+      .col1, .col3
+        width: 90%
+        margin: 0 auto
+        float: none
 
+  @media (max-width: 800px)
+    #mobile-tide
+      height: 30px
+      background: url(/assets/mobile-tide.png) repeat-x

@@ -13,6 +13,10 @@
 #= require jquery
 #= require jquery_ujs
 #= require jquery.cycle.all.js
+#= require jquery.flexnav.js
+#= require landing-gallery.js
+#= require swipe.js
+#= require jquery.flexslider.js
 #= require rails.validations
 #= require rails.validations.simple_form
 #= require_tree .

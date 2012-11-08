@@ -12,23 +12,21 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
   .content
     .col1
       margin-top: 3.5em
-      .address
-        display: none
       @media (max-width: 650px)
         padding-top: 1em
+      .address
+        display: none
+        @media (max-width: 1100px)
+          display: block
     .col3
       width: 220px
       position: relative
       left: -7.5em
       iframe
         margin-top: 3.75em
-        border:
-          style: solid
-          color: darken($gray, 15%)
-          width: 1px
-        @media (max-width: 1100px)
-          display: none
-        
+        border: 1px solid darken($gray, 15%)
+      @media (max-width: 1100px)
+        display: none
     .address
       margin-top: 1em
       display: block
@@ -49,13 +47,8 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
         border: 1px solid $blue
       textarea, input
         width: 350px
-        font:
-          family: $helvetica
-          size: .75em
-        border:
-          style: solid
-          color: darken($gray, 15%)
-          width: 1px
+        font: .75em $helvetica
+        border: 1px solid darken($gray, 15%)
         padding: 10px
         +box-sizing(border-box)
       textarea
@@ -70,10 +63,7 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
         color: $white
         padding: 8px 10px 9px
         margin-left: -.05em
-        border:
-          style: solid
-          color: darken($gray, 15%)
-          width: 1px
+        border: 1px solid darken($gray, 15%)
       div.text span.error
         top: -9.05em
       .submit
@@ -97,6 +87,31 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
         &:hover
           background-color: $l-blue
           color: $blue
+    @media (max-width: 1100px)
+      .col1
+        width: 30%
+        margin-right: 5%
+      .col2
+        width: 60%
+      form
+        input, textarea
+          width: 100%
+        .error
+          color: $red
+          background-color: transparent
+          border-style: none
+          padding: 8px 0 15px 0
+          font-weight: bold
+        div.text span.error
+          top: 0
+        .submit
+          width: 100%
+          display: inline-block
+    @media (max-width: 650px)
+      .col1, .col2, .col3
+        width: 100%
+        margin: 0 auto
+        float: none
 
 @-moz-document url-prefix()
   #contact .content form div.text span.error

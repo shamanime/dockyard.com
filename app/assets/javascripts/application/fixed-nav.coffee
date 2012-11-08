@@ -1,4 +1,4 @@
-window.Scroller = 
+window.Scroller =
   Ids: {}
   Locations: {}
   LocationsNumber: []
@@ -9,7 +9,6 @@ window.Scroller =
       location = $("##{id}").offset().top - 350
       window.Scroller.Locations[location.toString()] = id 
       window.Scroller.LocationsNumber.push location
-      
     window.Scroller.LocationsNumber.sort (a,b) ->
       a - b
     unless window.slowScroll
@@ -34,5 +33,4 @@ $ ->
       $target = $(event.currentTarget)
       $('.active').removeClass('active')
       $target.parent().addClass 'active'
-    
   $(window).scroll window.Scroller.onScroll

@@ -32,7 +32,7 @@
         %img{:alt => 'rePurpose', :src => '/assets/landing/2.jpg'}
         %img{:alt => 'Provider Tool', :src => '/assets/landing/4.jpg'}
         %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5.jpg'}
-      .col-span
+      .col1
         %h2 Blog
         - articles = RecentArticles::Article.retrieve_articles
         %ul
@@ -43,3 +43,38 @@
       .col3
         = render :partial => 'shared/events'
       .clear
+
+
+:javascript
+  var activeSlide;
+
+  $(document).ready(function() {
+
+  $('.cycle').cycle({
+      containerResize: 1,
+      width: 'fit',
+      after: function(curr, next, obj) {
+          activeSlide = obj.currSlide;
+      }
+  });
+
+  $(window).resize(function(){
+      $('.cycle').cycle('destroy');
+      $('.cycle').each(function(){
+          newWidth = $(this).parent('div').width();
+          $(this).width(newWidth);
+          $(this).height('auto');
+          $(this).children('div').width(newWidth);
+          $(this).children('div').height('auto');
+      });
+      $('.cycle').cycle({
+          containerResize: 1,
+          width: 'fit',
+          after: function(curr, next, obj) {
+              activeSlide = obj.currSlide;
+          },
+          startingSlide: activeSlide
+      });
+  });
+
+  });

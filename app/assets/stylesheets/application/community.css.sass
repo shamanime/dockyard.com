@@ -19,9 +19,16 @@ $l-blue: #ABD4E7
         text-decoration: underline
         &:hover
           color: $red
+      @media (max-width: 1100px)
+        position: relative
+        top: 1em
+        padding-bottom: 2em
+        width: 100%
     .colspan
       width: 680px
       float: left
+      @media (max-width: 1100px)
+        width: 100%
       ul
         text-align: center
         .os-icon
@@ -34,10 +41,24 @@ $l-blue: #ABD4E7
           color: $blue
           opacity: .2
           margin-left: .35em
+          @media (max-width: 1100px)
+            font-size: 4em
+          @media (max-width: 1030px)
+            margin-left: 5%
+          @media (max-width: 780px)
+            display: none
         li a
           +box-sizing(border-box)
           float: left
           width: 312px
+          @media (max-width: 1100px)
+            width: 31.5%
+          @media (max-width: 1030px)
+            width: 48%
+          @media (max-width: 780px)
+            width: 46.5%
+          @media (max-width: 650px)
+            width: 100%
           height: 145px
           padding: 1em 0
           margin: 0 12px 12px 0
@@ -52,26 +73,14 @@ $l-blue: #ABD4E7
             width: 190px
             float: right
             margin-right: 18px
+            @media (max-width: 1030px)
+              float: none
+              margin-left: 35%
+            @media (max-width: 780px)
+              margin: 0 auto
             h1
               font:
                 family: georgia
                 weight: bold
                 style: italic
-                size: 1.25em
-          @media (max-width: 1100px)
-            width: 31.5%
-          @media (max-width: 1030px)
-            width: 48%
-            .os-icon
-              margin-left: 5%
-            .os-desc
-              float: none
-              margin-left: 35%
-          @media (max-width: 780px)
-            width: 46.5%
-            .os-icon
-              display: none
-            .os-desc
-              margin: 0 auto
-          @media (max-width: 650px)
-            width: 100%
+                size: 1.25em    

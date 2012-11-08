@@ -13,8 +13,8 @@ $white: #FFFFFF
         color: darken($gray, 20%)
         +text-shadow($white .5px 1px 0px)
         font:
-          family: poly, serif
           size: .75em
+          family: poly, serif
           style: italic
       ul
         color: darken($gray, 20%)
@@ -33,6 +33,49 @@ $white: #FFFFFF
           background-color: darken($gray, 10%)
   .scroll-to
     top: 2em
+  @media (max-width: 1100px)
+    .col-span2
+      width: 100%
+      float: none
+    #fixed-nav
+      display: none
+    #team li img
+      width: 100%
+      height: auto
+  @media (max-width: 650px)
+    #fixed-nav
+      display: none
+    .headline
+      font-size: 1.75em
+    .content ul#team 
+      ul
+        float: none
+        top: 0
+        margin: 0 0 5em 0
+      img
+        width: 100%
+        height: auto
+  @media only screen and (max-width: 360px)
+    .content ul#team
+      position: relative
+      .headline
+        text-align: center
+      span
+        text-align: center
+        position: relative
+        top: -.2em
+        clear: both
+        display: block
+      ul
+        float: left
+        display: block
+        left: 50%
+        margin-bottom: 2em
+        li
+          position: relative
+          float: left
+          display: block
+          right: 50%
 
 @-moz-document url-prefix()
   #people div.content #fixed-nav
