@@ -5,7 +5,7 @@
       %h1.logo-big DockYard
     .callout
       %p
-        We are a web &amp; mobile software consultancy based in Boston, MA that specializes in Ruby on Rails, PostgreSQL, and mobile development.
+        We are a Ruby on Rails, PostgreSQL, and web application development software consultancy based in Boston, MA.
   .circle
   #mobile-tide
   #tide
@@ -33,7 +33,7 @@
         %img{:alt => 'Provider Tool', :src => '/assets/landing/4.jpg'}
         %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5.jpg'}
       .col1
-        %h2 Blog
+        %h1.headline Blog
         - articles = RecentArticles::Article.retrieve_articles
         %ul
           - articles.each do |article|
