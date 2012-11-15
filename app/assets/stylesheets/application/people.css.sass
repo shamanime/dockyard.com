@@ -15,44 +15,29 @@ $white: #FFFFFF
         width: 100%
         float: none
       #team
-        span
-          color: darken($gray, 20%)
-          +text-shadow($white .5px 1px 0px)
-          font:
-            size: .75em
-            family: poly, serif
-            style: italic
-          @media (max-width: 360px)
-            text-align: center
-            position: relative
-            top: -.2em
-            clear: both
-            display: block
+        h1
+          float: left
+          span
+            color: darken($gray, 20%)
+            +text-shadow($white .5px 1px 0px)
+            font:
+              size: .75em
+              family: poly, serif
+              style: italic
+            @media (max-width: 360px)
+              clear: both
+              display: block
+        p
+          clear: both
+          margin-bottom: 1em
         ul
+          display: inline-block
+          margin-bottom: 3em
           color: darken($gray, 20%)
-          margin: .5em 0 1em
-          float: right
-          position: relative
-          top: -3.25em
-          @media (max-width: 650px)
-            float: none
-            top: 0
-            margin: 0 0 5em 0
-          @media (max-width: 360px)
-            float: left
-            display: block
-            left: 50%
-            margin-bottom: 2em
           li
             float: left
             .italic
               margin: .25em .5em 0 0
-            @media (max-width: 360px)
-              position: relative
-              float: left
-              display: block
-              right: 50%
-              
         img
           width: 720px
           height: 320px
@@ -60,16 +45,13 @@ $white: #FFFFFF
             width: 100%
             height: auto
         .social-icon a
+          margin: 0 .5em 0 0
           background-color: darken($gray, 15%)
           +box-shadow($white .5px 1px 0px)
           &:hover
             background-color: darken($gray, 10%)
   .scroll-to
-    top: 2em
-  @media (max-width: 360px)
-    #team
-      .headline
-        text-align: center
+    top: -2em
 
 @-moz-document url-prefix()
   #people div.content #fixed-nav

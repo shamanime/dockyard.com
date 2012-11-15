@@ -58,14 +58,13 @@ $l-blue: #ABD4E7
           family: leaguegothic
           size: 7.25em
       @media (max-width: 550px)
-        width: 21.75em
+        width: 20.875em
         .narwin
-          transform: scale(.75, .75)
-          -ms-transform: scale(.75, .75)
-          -webkit-transform: scale(.75, .75)
-          -o-transform: scale(.75, .75)
-          -moz-transform: scale(.75, .75)
-          margin: -.65em -1em 0 0
+          background:
+            size: 216px 100px
+          width: 108px
+          height: 100px
+          margin: .25em 0 0
         h1
           font-size: 5.5em
     .callout
@@ -91,6 +90,7 @@ $l-blue: #ABD4E7
       @media (max-width: 550px)
         font-size: 14px
         margin: 0
+        padding: 1em 3em
   .circle 
     background: $white
     position: relative
@@ -153,6 +153,10 @@ $l-blue: #ABD4E7
       top: -4.5em
     @media (max-width: 680px)
       display: none
+  @media (max-width: 680px)
+    #mobile-tide
+      height: 30px
+      background: url(/assets/mobile-tide.png) repeat-x
   .gradient
     padding-bottom: 2em
     color: $white
@@ -160,6 +164,33 @@ $l-blue: #ABD4E7
     +background-image(linear-gradient($blue, darken($blue, 5%)))
     .headline
       color: $white
+    #mobile-landing-gallery
+      display: none
+      @media (max-width: 680px)
+        display: block
+        position: relative
+        top: 1em
+        padding-bottom: 1em
+        img
+          width: 90%
+          margin-left: 5%
+          +border-radius(3px)
+        #slider
+          position: relative
+          top: .4em
+          ul li
+            display: none
+            &:first-child
+              display: block
+        .mobile-landing-gallery-control
+          text-align: center
+          a
+            color: $white
+            font: 3em fontello
+            opacity: .5
+            line-height: .85
+            &:hover
+              opacity: 1
     h2
       font: 2.5em cubano, sans-serif
     li
@@ -198,19 +229,3 @@ $l-blue: #ABD4E7
       margin-bottom: 0
       .col1
         padding-top: 1em
-
-    #mobile-landing-gallery
-      display: none
-      @media (max-width: 680px)
-        display: block
-        height: 30em
-        position: relative
-        top: 2em
-        img
-          width: 100%
-          position: relative
-
-  @media (max-width: 680px)
-    #mobile-tide
-      height: 30px
-      background: url(/assets/mobile-tide.png) repeat-x

@@ -26,12 +26,27 @@
         %nav
           %span.home-next &gt;
   .gradient
+    #mobile-landing-gallery
+      .wrap
+        %h1.headline Featured Work
+      #slider
+        %ul
+          %li
+            %a{:href => '/work'}
+              %img{:alt => 'Openbay', :src => '/assets/landing/1@2X.jpg'}
+          %li
+            %a{:href => '/work'}
+              %img{:alt => 'rePurpose', :src => '/assets/landing/2@2X.jpg'}
+          %li
+            %a{:href => '/work'}
+              %img{:alt => 'Provider Tool', :src => '/assets/landing/4@2X.jpg'}
+          %li
+            %a{:href => '/work'}
+              %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5@2X.jpg'}
+      .mobile-landing-gallery-control
+        %a{:href => "#", :onclick => "slider.prev();return false;"} l
+        %a{:href => "#", :onclick => "slider.next();return false;"} i
     .wrap
-      #mobile-landing-gallery
-        %img{:alt => 'Openbay', :src => '/assets/landing/1.jpg'}
-        %img{:alt => 'rePurpose', :src => '/assets/landing/2.jpg'}
-        %img{:alt => 'Provider Tool', :src => '/assets/landing/4.jpg'}
-        %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5.jpg'}
       .col1
         %h1.headline Blog
         - articles = RecentArticles::Article.retrieve_articles
@@ -44,37 +59,8 @@
         = render :partial => 'shared/events'
       .clear
 
-
 :javascript
-  var activeSlide;
-
-  $(document).ready(function() {
-
-  $('.cycle').cycle({
-      containerResize: 1,
-      width: 'fit',
-      after: function(curr, next, obj) {
-          activeSlide = obj.currSlide;
-      }
-  });
-
-  $(window).resize(function(){
-      $('.cycle').cycle('destroy');
-      $('.cycle').each(function(){
-          newWidth = $(this).parent('div').width();
-          $(this).width(newWidth);
-          $(this).height('auto');
-          $(this).children('div').width(newWidth);
-          $(this).children('div').height('auto');
-      });
-      $('.cycle').cycle({
-          containerResize: 1,
-          width: 'fit',
-          after: function(curr, next, obj) {
-              activeSlide = obj.currSlide;
-          },
-          startingSlide: activeSlide
-      });
-  });
-
+  var slider = new Swipe(document.getElementById('slider'), {
+    speed: 500,
+    auto: 3000
   });
