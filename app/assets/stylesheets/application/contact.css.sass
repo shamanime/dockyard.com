@@ -56,16 +56,9 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
         margin: 2px 0 -.25em 0
         resize: none
       .error
-        z-index: 5000
-        background-color: $red
-        position: relative
-        top: .08em
-        color: $white
-        padding: 8px 10px 9px
-        margin-left: -.05em
-        border: 1px solid darken($gray, 15%)
-      div.text span.error
-        top: -9.05em
+        display: block
+        color: $red
+        font-weight: bold
       .submit
         background-color: $blue
         border:
@@ -84,9 +77,6 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
       .success
         background-color: $l-blue
         color: $blue
-        &:hover
-          background-color: $l-blue
-          color: $blue
     @media (max-width: 1100px)
       .col1
         width: 30%
@@ -96,14 +86,6 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
       form
         input, textarea
           width: 100%
-        .error
-          color: $red
-          background-color: transparent
-          border-style: none
-          padding: 8px 0 15px 0
-          font-weight: bold
-        div.text span.error
-          top: 0
         .submit
           width: 100%
           display: inline-block
