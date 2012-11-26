@@ -14,11 +14,12 @@ $l-blue: #ABD4E7
   width: 233px
 
 #work
-  @media (max-width: 1100px)
-    .headline, p
+  .headline, p
+    width: 980px
+    margin-left: auto
+    margin-right: auto
+    @media (max-width: 1100px)
       width: 90%
-      margin-left: auto
-      margin-right: auto
   .work-nav
     background-color: darken($gray, 5%)
     height: 6.85em
@@ -52,10 +53,9 @@ $l-blue: #ABD4E7
       display: none
   .content
     .portfolio
-      width: 1000px
+      width: 1020px
       margin-left: auto
       margin-right: auto
-      padding-left: 20px
       @media (max-width: 1100px)
         width: 100%
         padding: 0
@@ -64,6 +64,7 @@ $l-blue: #ABD4E7
       .slider
         img
           width: 980px
+          margin-left: 20px
           height: auto
           +border-radius(3px)
           @media (max-width: 1100px)
