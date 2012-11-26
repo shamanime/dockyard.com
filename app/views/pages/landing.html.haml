@@ -29,7 +29,7 @@
     #mobile-landing-gallery
       .wrap
         %h1.headline Featured Work
-      #slider
+      .slider#landing-gallery-slider
         %ul
           %li
             %a{:href => '/work'}
@@ -44,8 +44,8 @@
             %a{:href => '/work'}
               %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5@2X.jpg'}
       .mobile-landing-gallery-control
-        %a{:href => "#", :onclick => "slider.prev();return false;"} l
-        %a{:href => "#", :onclick => "slider.next();return false;"} i
+        %a.slider-prev{:href => "#", 'data-slider' => 'landing-gallery-slider'} l
+        %a.slider-next{:href => "#", 'data-slider' => 'landing-gallery-slider'} i
     .wrap
       .col1
         %h1.headline Blog
@@ -60,7 +60,25 @@
       .clear
 
 :javascript
-  var slider = new Swipe(document.getElementById('slider'), {
-    speed: 500,
-    auto: 3000
-  });
+  $(function(){
+    window.sliders = {}
+    $('.slider').each(function(){
+      var id = $(this).attr('id')
+      sliders[id] = new Swipe(this, {
+        speed: 500,
+        auto: 3000
+      });
+    });
+    $('.slider-next').click(function(event){
+      event.preventDefault();
+      var $target = $(event.target);
+      var sliderName = $target.attr('data-slider');
+      sliders[sliderName].next();
+    });
+    $('.slider-prev').click(function(event){
+      event.preventDefault();
+      var $target = $(event.target);
+      var sliderName = $target.attr('data-slider');
+      sliders[sliderName].prev();
+    });
+  })
