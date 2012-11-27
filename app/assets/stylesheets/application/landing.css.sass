@@ -26,8 +26,28 @@ $l-blue: #ABD4E7
       image: url(/assets/gallery-landing-static.png)
       repeat: no-repeat
       position: center
+    .home-wrapper img
+      width: 100%
+      height: auto
   #home-container
     display: none
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .touch
+    #home
+      #tide
+        background-image: none
+        background-color: $blue
+        .landing-gallery
+          background-color: $blue
+          padding-top: 2em
+          margin-top: 0
+      #mobile-tide
+        height: 30px
+        background:
+          image: url(/assets/mobile-tide.png)
+          repeat: repeat-x
 
 #home
   @media (max-width: 880px)
