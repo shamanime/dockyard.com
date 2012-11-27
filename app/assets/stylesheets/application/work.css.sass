@@ -14,7 +14,7 @@ $l-blue: #ABD4E7
   width: 233px
 
 #work
-  .headline, p
+  .headline, p, .testimonial
     width: 980px
     margin-left: auto
     margin-right: auto
@@ -61,6 +61,7 @@ $l-blue: #ABD4E7
         padding: 0
       .headline
         padding-top: .25em
+        margin-bottom: .35em
       .slider
         img
           width: 980px
@@ -80,7 +81,22 @@ $l-blue: #ABD4E7
           line-height: .85
           &:hover
             opacity: 1
-  @media (max-width: 1100px)
-    .italic
-      clear: both
-      display: block
+      .testimonial
+        margin-bottom: 2em
+        background-color: rgba(255,255,255,.65)
+        +border-radius(3px)
+        p
+          width: auto
+          margin: 0
+          padding: 1.15em 1.5em
+          color: $blue
+          opacity: .85
+          font:
+            weight: bold
+            family: georgia, serif
+            style: italic
+        .testimonial-writer
+          padding-top: 0
+          font: 
+            style: normal
+            weight: normal
