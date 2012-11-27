@@ -14,7 +14,7 @@ $l-blue: #ABD4E7
   width: 233px
 
 #work
-  .headline, p, .testimonial
+  .headline, .description, .testimonial, .testimonial-writer
     width: 980px
     margin-left: auto
     margin-right: auto
@@ -56,14 +56,18 @@ $l-blue: #ABD4E7
       width: 1020px
       margin-left: auto
       margin-right: auto
-      ul li
-        margin-bottom: 3em
+      ul li.project
+        margin: 3em 0
+        border-bottom: 1px dashed #CCC
+        &:last-child
+          border: none
       @media (max-width: 1100px)
         width: 100%
         padding: 0
       .headline
-        padding-top: .25em
-        margin-bottom: .35em
+        padding: 0
+        line-height: 1
+        margin: 0 0 0 20px
       .slider
         clear: both
         img
@@ -85,16 +89,15 @@ $l-blue: #ABD4E7
           &:hover
             opacity: 1
       @media (min-width: 1100px)
-        #openbay, #repurpose, #provider
-          .description
-            margin-left: 20px
-            float: left
-            width: 38%
+        .project
           .testimonial
-            margin-right: 20px
-            width: 55%
+            max-width: 66%
+      .description
+        width: auto
+        margin: 20px
+        padding: 1.15em 1.5em
+        background-color: rgba(255,255,255,.65)
       .testimonial
-        margin-bottom: .5em
         .testimonial-quote
           background-color: rgba(255,255,255,.65)
           +border-radius(3px)
@@ -115,5 +118,6 @@ $l-blue: #ABD4E7
           margin-left: 50%
           margin-bottom: .5em
       .testimonial-writer
+        width: 66%
         text-align: center
-        width: 50%
+        margin-bottom: 3em
