@@ -20,6 +20,20 @@
           #openbay
             %h1.headline
               Openbay
+            
+            .slider#openbay-gallery-slider
+              %ul
+                %li
+                  %img{:alt => 'Openbay', :src => '/assets/openbay/openbay.jpg'}
+                %li
+                  %img{:alt => 'Openbay', :src => '/assets/openbay/openbay2.jpg'}
+                %li
+                  %img{:alt => 'Openbay', :src => '/assets/openbay/openbay3.jpg'}
+            .mobile-landing-gallery-control
+              %a.slider-prev{:href => "#", 'data-slider' => 'openbay-gallery-slider'} l
+              %a.slider-next{:href => "#", 'data-slider' => 'openbay-gallery-slider'} i
+            
+
             %p.description
               %span
                 %a.underline{:href => 'http://openbay.com/', :target => '_blank'} Openbay
@@ -34,20 +48,20 @@
               %p.testimonial-writer
                 Robert Infantino
                 %br Founder and CEO at Openbay, Inc.
-            .slider#openbay-gallery-slider
-              %ul
-                %li
-                  %img{:alt => 'Openbay', :src => '/assets/openbay/openbay.jpg'}
-                %li
-                  %img{:alt => 'Openbay', :src => '/assets/openbay/openbay2.jpg'}
-                %li
-                  %img{:alt => 'Openbay', :src => '/assets/openbay/openbay3.jpg'}
-            .mobile-landing-gallery-control
-              %a.slider-prev{:href => "#", 'data-slider' => 'openbay-gallery-slider'} l
-              %a.slider-next{:href => "#", 'data-slider' => 'openbay-gallery-slider'} i
+
         %li#repurpose.scroll-to
           %h1.headline
             RePurpose
+          .slider#repurpose-gallery-slider
+            %ul
+              %li
+                %img{:alt => 'rePurpose', :src => '/assets/repurpose/repurpose.jpg'}
+              %li
+                %img{:alt => 'rePurpose', :src => '/assets/repurpose/repurpose2.jpg'}
+          .mobile-landing-gallery-control
+            %a.slider-prev{:href => "#", 'data-slider' => 'repurpose-gallery-slider'} l
+            %a.slider-next{:href => "#", 'data-slider' => 'repurpose-gallery-slider'} i
+          
           %p.description
             %span
               %a.underline{:href => 'http://repurpose.workersvoice.org', :target => '_blank'} RePurpose 
@@ -59,27 +73,10 @@
             %p.testimonial-writer
               Mike Sager
               %br Political Technology Director at AFL-CIO / Workers' Voice
-          .slider#repurpose-gallery-slider
-            %ul
-              %li
-                %img{:alt => 'rePurpose', :src => '/assets/repurpose/repurpose.jpg'}
-              %li
-                %img{:alt => 'rePurpose', :src => '/assets/repurpose/repurpose2.jpg'}
-          .mobile-landing-gallery-control
-            %a.slider-prev{:href => "#", 'data-slider' => 'repurpose-gallery-slider'} l
-            %a.slider-next{:href => "#", 'data-slider' => 'repurpose-gallery-slider'} i
+          
         %li#provider.scroll-to
           %h1.headline
             Provider Tool
-          %p.description
-            Provider Tool is an interactive medical decision tree that doctors may use with their patients to quickly aid their decision-making. DockYard was hired by the Informed Medical Decisions Foundation to create a custom CMS using Ruby on Rails and Backbone.js.
-          .testimonial
-            %p.testimonial-quote
-              &ldquo;We hired DockYard to develop a web-based application and found them to be fast, efficient, and effective. Everyone we worked with was professional and personable and communication between team members was seamless. We were impressed at how flexible they were in accommodating our requests and ensuring that the application met our needs and would definitely work with them again in the future.&rdquo;
-            .triangle
-            %p.testimonial-writer
-              Julie Riley
-              %br Adult Learning &amp; Development Specialist at Informed Medical Decisions Foundation
           .slider#provider-gallery-slider
             %ul.slides
               %li
@@ -89,6 +86,19 @@
           .mobile-landing-gallery-control
             %a.slider-prev{:href => "#", 'data-slider' => 'provider-gallery-slider'} l
             %a.slider-next{:href => "#", 'data-slider' => 'provider-gallery-slider'} i
+
+          
+          %p.description
+            Provider Tool is an interactive medical decision tree that doctors may use with their patients to quickly aid their decision-making. DockYard was hired by the Informed Medical Decisions Foundation to create a custom CMS using Ruby on Rails and Backbone.js.
+          .testimonial
+            %p.testimonial-quote
+              &ldquo;We hired DockYard to develop a web-based application and found them to be fast, efficient, and effective. Everyone we worked with was professional and personable and communication between team members was seamless. We were impressed at how flexible they were in accommodating our requests and ensuring that the application met our needs and would definitely work with them again in the future.&rdquo;
+            .triangle
+            %p.testimonial-writer
+              Julie Riley
+              %br Adult Learning &amp; Development Specialist at Informed Medical Decisions Foundation
+          
+
         %li#tip.scroll-to
           %h1.headline
             Tip of the Iceberg
