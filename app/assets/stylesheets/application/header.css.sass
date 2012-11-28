@@ -4,7 +4,10 @@ $white: #FFFFFF
 .logo-small
   font: 2em leaguegothic
   color: $white
-  line-height: 1.5
+  line-height: 1.75
+@-moz-document url-prefix()
+  .logo-small
+    line-height: 1.5
 
 #work li.nav-work, #people li.nav-people, #community li.nav-community, #contact li.nav-contact
   a
@@ -30,7 +33,7 @@ $white: #FFFFFF
           font:
             size: .8em
             weight: bold
-          padding: 19px 15px 10px 15px
+          padding: 19px 15px 10px
           float: left
           &:hover
             background-color: lighten($red, 7%)
