@@ -44,8 +44,8 @@
             %a{:href => '/work'}
               %img{:alt => 'Tip of the Iceberg', :src => '/assets/landing/5@2X.jpg'}
       .mobile-landing-gallery-control
-        %a.slider-prev{:href => "#", 'data-slider' => 'landing-gallery-slider'} l
-        %a.slider-next{:href => "#", 'data-slider' => 'landing-gallery-slider'} i
+        %a.slider-prev{:href => "#", 'data-slider' => 'landing-gallery-slider', 'aria-hidden' => 'true', 'data-icon' => '◀'}
+        %a.slider-next{:href => "#", 'data-slider' => 'landing-gallery-slider', 'aria-hidden' => 'true', 'data-icon' => '▶'}
     .wrap
       .col1
         %h1.headline Blog

@@ -1,32 +1,32 @@
 #mobile-header
   %div
     %h1.logo-small DockYard
-    .mobile-button n
+    .mobile-button{'aria-hidden' => 'true', 'data-icon' => '☰'}
   %nav
     %ul#mobile-nav
       %li
         %a{:href => '/'}
-          %span h
+          %span{'aria-hidden' => 'true', 'data-icon' => '⌂'}
           %p Home
       %li
         %a{:href => '/work'}
-          %span w
+          %span{'aria-hidden' => 'true', 'data-icon' => '$'}
           %p Work
       %li
         %a{:href => '/people'}
-          %span p
+          %span{'aria-hidden' => 'true', 'data-icon' => '☺'}
           %p People
       %li
         %a{:href => '/community'}
-          %span c
+          %span{'aria-hidden' => 'true', 'data-icon' => '♥'}
           %p Community
       %li
         %a{:href => 'http://reefpoints.dockyard.com/'}
-          %span b
+          %span{'aria-hidden' => 'true', 'data-icon' => '❝'}
           %p Blog
       %li
         %a{:href => '/contact'}
-          %span m
+          %span{'aria-hidden' => 'true', 'data-icon' => '✉'}
           %p Contact
 
 #site-header

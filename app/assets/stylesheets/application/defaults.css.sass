@@ -23,9 +23,9 @@ $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Hel
   color: darken($gray, 30%)
   +text-shadow($white .5px 1px 0px)
 
-+font-face(cubano, font-files('/assets/cubano.eot', '/assets/cubano.ttf', '/assets/cubano.svg', '/assets/cubano.woff'))
-+font-face(leaguegothic, font-files('/assets/leaguegothic.eot', '/assets/leaguegothic.svg', '/assets/leaguegothic.woff'))
-+font-face(fontello, font-files('/assets/fontello.eot', '/assets/fontello.ttf', '/assets/fontello.svg', '/assets/fontello.woff'))
++font-face(cubano, font-files('/assets/cubano.svg', '/assets/cubano.eot', '/assets/cubano.woff', '/assets/cubano.ttf'))
++font-face(leaguegothic, font-files('/assets/leaguegothic.svg', '/assets/leaguegothic.eot', '/assets/leaguegothic.woff', '/assets/leaguegothic.ttf'))
++font-face(fontello, font-files('/assets/fontello.svg', '/assets/fontello.eot', '/assets/fontello.woff', '/assets/fontello.ttf'))
 
 /* Helvetica Neue Light needs to be corrected on apple non-desktop products
 .touch
@@ -129,11 +129,11 @@ p
   font: 8em cubano, sans-serif
   z-index: -5
   position: absolute
-  top: .15em
+  top: .24em
   line-height: 1
   @media (max-width: 800px)
     font-size: 6em
-    top: .25em
+    top: .34em
   @media (max-width: 650px)
     display: none
 
@@ -143,18 +143,16 @@ p
     background-color: $blue
     color: $white
     margin: 0 .25em
+    line-height: 40px
     &:hover
       background-color: $red
-  .twitter
-    line-height: 40px
   .github
     line-height: 42px
-  .rss
-    line-height: 38px
+    font-size: 1.55em
+  .twitter
     font-size: 1.65em
-  .email
-    line-height: 40px
-    font-size: 1.5em
+  .rss
+    font-size: 1.55em
 
 #fixed-nav
   position: fixed
@@ -173,3 +171,7 @@ p
 
 .scroll-to
   position: relative
+
+[data-icon]:before
+  font-family: fontello
+  content: attr(data-icon)
