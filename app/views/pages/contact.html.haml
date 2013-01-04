@@ -5,10 +5,13 @@
   .content
     .wrap
       .col1
-        .bold Want to hire us?
-        %p We are always wanting to work with great clients and help make their vision a reality. Hire us to build your web or mobile applications.
-        .bold Want to join us?
-        %p We are always looking to hire great developers and designers. If you want to work with the best you should work here.
+        %ul
+          %li
+            %span.contact-icon{'aria-hidden' => 'true', 'data-icon' => '☎'}
+            (855) DOCK-YRD
+          %li
+            %span.contact-icon{'aria-hidden' => 'true', 'data-icon' => '✉'}
+            %a{:href => 'mailto:contact@dockyard.com'} contact@dockyard.com
         %a.address{:href => 'http://goo.gl/maps/G4pnP', :target => '_blank'}
           %p
             101 Tremont Street,
@@ -16,6 +19,10 @@
             Suite 200 (second floor)
             %br
             Boston, MA 02108
+        .bold Want to hire us?
+        %p We always want to work with great clients and help make their vision a reality. Hire us to build your web or mobile applications.
+        .bold Want to join us?
+        %p We are always looking to hire great developers and designers. If you want to work with the best, you should work here.
       .col2
         .headline Contact Us
         = simple_form_for Contact.new, :validate => true, :url => new_contact_path, :remote => true, :class => 'inFieldLabel' do |f|
