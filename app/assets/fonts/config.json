@@ -169,18 +169,6 @@
     },
     {
       "search": [
-        "github"
-      ],
-      "code": 9733,
-      "uid": "0f6a2573a7b6df911ed199bb63717e27",
-      "css": "github",
-      "orig_css": "github",
-      "orig_code": 9733,
-      "src": "fontawesome",
-      "from": 61595
-    },
-    {
-      "search": [
         "mail",
         "email"
       ],
@@ -191,6 +179,20 @@
       "orig_code": 9993,
       "src": "fontawesome",
       "from": 61664
+    },
+    {
+      "search": [
+        "github",
+        "social",
+        "logo"
+      ],
+      "code": 9733,
+      "uid": "d94334f23acba022bfd68e49d76b31bb",
+      "css": "github",
+      "orig_css": "github",
+      "orig_code": 9733,
+      "src": "entypo",
+      "from": 62208
     },
     {
       "search": [
