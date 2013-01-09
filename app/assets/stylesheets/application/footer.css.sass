@@ -1,3 +1,5 @@
+@import compass/css3
+
 $blue: #2A5567
 $l-blue: #ABD4E7
 $white: #FFFFFF
@@ -22,6 +24,8 @@ footer
   .social-icon > a
     background-color: $blue
     color: $white
+    +transition-duration(.5s)
+    +transition-property(background-color)
     &:hover
       background-color: $red
   .social-icon
